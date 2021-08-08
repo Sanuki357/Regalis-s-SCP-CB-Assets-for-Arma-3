@@ -1,0 +1,48 @@
+#define _ARMA_
+
+ambient[] = {1.0,1.0,1.0,1};
+diffuse[] = {1.0,1.0,1.0,1};
+forcedDiffuse[] = {0,0,0,0};
+emmisive[] = {0,0,0,0};
+specular[] = {0.48900002,0.48900002,0.48900002,0};
+specularPower = 70;
+
+PixelShaderID = "Super";
+VertexShaderID = "Super";
+class Stage1
+{
+	texture = "#(argb,8,8,3)color(0.5,0.5,1,1,NOHQ)";
+	uvSource = "tex";
+};
+class Stage2
+{
+	texture = "#(argb,8,8,3)color(0.5,0.5,0.5,1,DT)";
+	uvSource = "tex";
+};
+class Stage3
+{
+	texture = "#(argb,8,8,3)color(0,0,0,0,MC)";
+	uvSource = "tex1";
+
+};
+class Stage4
+{
+	texture = "SCP_CB\facility_room\data\TwoWays1\TwoWay_concretefloor_floor_ADSHQ.paa";
+	uvSource = "tex1";
+
+};
+class Stage5
+{
+	texture = "#(argb,8,8,3)color(1,0,1,0,SMDI)";
+	uvSource = "tex";
+};
+class Stage6
+{
+	texture = "#(ai,64,64,1)fresnel(0.45,0.35)";
+	uvSource = "tex";
+};
+class Stage7
+{
+	texture = "a3\data_f\env_land_co.paa";
+	uvSource = "tex";
+};
