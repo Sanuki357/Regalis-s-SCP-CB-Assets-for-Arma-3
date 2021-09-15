@@ -1,9 +1,9 @@
 name = "SCP-Regalis's Containment Breach Assets";
 author = "Sanuki357";
 //picture = "\SCP_CB\SCP_CB_Logo.paa"; 
-logo = "\SCP_CB\SCP_CB_Logo.paa";
-logoSmall = "\SCP_CB\SCP_CB_Logo.paa";
-logoOver = "\SCP_CB\SCP_CB_LogoGlow.paa";
+logo = "\RegalisSCP_CB\SCP_CB_Logo.paa";
+logoSmall = "\RegalisSCP_CB\SCP_CB_Logo.paa";
+logoOver = "\RegalisSCP_CB\SCP_CB_LogoGlow.paa";
 action = "https://community.bistudio.com/wiki/Mod_Presentation";
 tooltipOwned = "SCP-CB";
 dlcColor[] = {	0.5, 0.5, 0.5, 1};
