@@ -4,22 +4,28 @@
 
 <p align="center">
     <a href="https://github.com/Sanuki357/Regalis-s-SCP-CB-Assets-for-Arma-3/releases/latest">
-        <img src="https://img.shields.io/github/v/release/Sanuki357/Regalis-s-SCP-CB-Assets-for-Arma-3" alt="RSCPCB Version">
+        <img src="https://img.shields.io/github/v/release/Sanuki357/Regalis-s-SCP-CB-Assets-for-Arma-3?logo=github" alt="RSCPCB Version">
     </a>
     <a href="https://github.com/Sanuki357/Regalis-s-SCP-CB-Assets-for-Arma-3/issues">
-        <img src="https://img.shields.io/github/issues-raw/Sanuki357/Regalis-s-SCP-CB-Assets-for-Arma-3.svg?style=flat-square&label=Issues" alt="RSCPCB Issues">
+        <img src="https://img.shields.io/github/issues-raw/Sanuki357/Regalis-s-SCP-CB-Assets-for-Arma-3.svg?logo=github&style=flat-square&label=Issues" alt="RSCPCB Issues">
     </a>
     <a href="https://github.com/Sanuki357/Regalis-s-SCP-CB-Assets-for-Arma-3/releases">
-        <img src="https://img.shields.io/github/downloads/Sanuki357/Regalis-s-SCP-CB-Assets-for-Arma-3/total.svg?style=flat-square&label=Downloads" alt="RSCPCB Downloads">
+        <img src="https://img.shields.io/github/downloads/Sanuki357/Regalis-s-SCP-CB-Assets-for-Arma-3/total.svg?logo=github&style=flat-square&label=Downloads" alt="RSCPCB Downloads">
     </a>
     <a href="https://discord.gg/XQ24K3vxzv">
-        <img src="https://img.shields.io/discord/870904834193231944" alt="RSCPCB Discord">
+        <img src="https://img.shields.io/discord/870904834193231944?logo=discord" alt="RSCPCB Discord">
+    </a>
+    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2560357734">
+        <img src="https://img.shields.io/steam/views/2560357734?logo=steam" alt="RSCPCB Steam Views">
     </a>
      <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2560357734">
-        <img src="https://img.shields.io/steam/favorites/2560357734" alt="RSCPCB Steam Favorites">
+        <img src="https://img.shields.io/steam/favorites/2560357734?logo=steam" alt="RSCPCB Steam Favorites">
     </a>
      <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2560357734">
-        <img src="https://img.shields.io/steam/subscriptions/2560357734" alt="RSCPCB Steam Subscribers">
+        <img src="https://img.shields.io/steam/subscriptions/2560357734?logo=steam" alt="RSCPCB Steam Subscribers">
+    </a>
+    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2560357734">
+        <img src="https://img.shields.io/steam/downloads/2560357734?logo=steam" alt="RSCPCB Steam Downloads">
     </a>
     
     
