@@ -2,9 +2,7 @@
     <sup><strong>Requires the latest version of <a href="https://github.com/CBATeam/CBA_A3/releases">CBA A3</a>.<br/></strong></sup>
 </p>
 
-# Arma3 AddOn Project template
-
-A project template for Arma3 AddOn projects using the CBA_A3 framework. This template is based off the ACE3 project structure.
+# Arma3 AddOn SCP - Regalis's Containment Breach Assets
 
 The project template comes with it's own implementation of tools used within the ACE project, such as build and release scripts, SQF validation scripts and more.
 
