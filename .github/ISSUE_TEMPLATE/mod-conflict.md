@@ -1,6 +1,6 @@
 ---
 name: Mod conflict
-about: Report issues where PROJ_TEMPL doesn't play nice with other mods
+about: Report issues where RSCPCB doesn't play nice with other mods
 
 ---
 
