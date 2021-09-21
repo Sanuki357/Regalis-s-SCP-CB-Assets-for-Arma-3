@@ -6,12 +6,12 @@ about: Report an issue with PROJ_TEMPL
 
 **Arma 3 Version:** `x.xx` (stable / rc / dev)
 **CBA Version:** `3.x.x` (stable / dev + commit hash)
-**proj_templ Version:** `x.x.x` (stable / dev + commit hash)
+**RSCPCB: Version:** `x.x.x` (stable / dev + commit hash)
 
 **Mods:**
 ```
 - CBA_A3
-- proj_templ
+- SCP - Regalis's Containment Breach Assets
 ```
 
 **Description:**
