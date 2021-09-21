@@ -15,6 +15,16 @@
     <a href="https://discord.gg/XQ24K3vxzv">
         <img src="https://img.shields.io/discord/870904834193231944" alt="RSCPCB Discord">
     </a>
+     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2560357734">
+        <img src="https://img.shields.io/steam/favorites/2560357734" alt="RSCPCB Steam Favorites">
+    </a>
+     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2560357734">
+        <img src="https://img.shields.io/steam/subscriptions/2560357734" alt="RSCPCB Steam Subscribers">
+    </a>
+    
+    
+    
+    
 </p>
 <p align="center">
     <sup><strong>Requires the latest version of <a href="https://github.com/CBATeam/CBA_A3/releases">CBA A3</a>.<br/></strong></sup>
