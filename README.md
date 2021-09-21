@@ -1,4 +1,19 @@
 <p align="center">
+    <img src="https://github.com/Sanuki357/Regalis-s-SCP-CB-Assets-for-Arma-3/blob/11-Refactor-codebase/SCP_CB_logo.png" width="240">
+</p>
+
+<p align="center">
+    <a href="https://github.com/Sanuki357/Regalis-s-SCP-CB-Assets-for-Arma-3/releases/latest">
+        <img src="https://img.shields.io/github/v/release/Sanuki357/Regalis-s-SCP-CB-Assets-for-Arma-3" alt="RSCPCB Version">
+    </a>
+    <a href="https://github.com/Sanuki357/Regalis-s-SCP-CB-Assets-for-Arma-3/issues">
+        <img src="https://img.shields.io/github/issues-raw/Sanuki357/Regalis-s-SCP-CB-Assets-for-Arma-3.svg?style=flat-square&label=Issues" alt="RSCPCB Issues">
+    </a>
+    <a href="https://github.com/Sanuki357/Regalis-s-SCP-CB-Assets-for-Arma-3/releases">
+        <img src="https://img.shields.io/github/downloads/Sanuki357/Regalis-s-SCP-CB-Assets-for-Arma-3/total.svg?style=flat-square&label=Downloads" alt="RSCPCB Downloads">
+    </a>
+</p>
+<p align="center">
     <sup><strong>Requires the latest version of <a href="https://github.com/CBATeam/CBA_A3/releases">CBA A3</a>.<br/></strong></sup>
 </p>
 
