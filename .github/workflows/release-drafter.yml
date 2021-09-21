@@ -1,40 +1,16 @@
-branches:
-  - main
-  - release-drafter  # for testing edits to this configuration
+name: Release Drafter
 
-name-template: 'Version $NEXT_PATCH_VERSION'
-tag-template: 'v$NEXT_PATCH_VERSION'
+on:
+  push:
+    branches:
+    - main
 
-categories:
-  - title: '**ADDED:**'
-    labels:
-      - 'kind/feature request'
-      - 'kind/added feature'
-  - title: '**FIXED:**'
-    labels:
-      - 'kind/bug fix'
-  - title: '**IMPROVED:**'
-    labels:
-      - 'kind/enhancement'
-      - 'kind/optimization'
-  - title: '**CHANGED:**'
-    labels:
-      - 'kind/cleanup'
-      - 'area/compatibility'
-  - title: '**TRANSLATIONS:**'
-    labels:
-      - 'area/translations'
-
-exclude-labels:
-  - 'ignore changelog'
-  - 'dependencies'
-
-change-template: '- $TITLE (#$NUMBER)'
-template: |
-  _Requires CBA version X.Y.Z or later and Arma 3 version X.Y or later._
-  ## Change Log Summary
-  $CHANGES
-replacers:
-  # Category titles
-  - search: '/\#\# (\*\*(ADDED|FIXED|IMPROVED|CHANGED|TRANSLATIONS):\*\*)/g'
-    replace: '$1'
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Release Drafter
+        if: github.repository == 'Sanuki357/Regalis-s-SCP-CB-Assets-for-Arma-3'
+        uses: release-drafter/release-drafter@v5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
