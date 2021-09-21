@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Report an issue with PROJ_TEMPL
+about: Report an issue with RSCPCB
 
 ---
 
