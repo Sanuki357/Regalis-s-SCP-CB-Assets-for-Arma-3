@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://github.com/Sanuki357/Regalis-s-SCP-CB-Assets-for-Arma-3/blob/11-Refactor-codebase/SCP_CB_logo.png" width="240">
+    <img src="https://github.com/Sanuki357/Regalis-s-SCP-CB-Assets-for-Arma-3/blob/main/SCP_CB_logo.png" width="240">
 </p>
 
 <p align="center">
