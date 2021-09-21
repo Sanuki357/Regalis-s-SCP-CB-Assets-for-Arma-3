@@ -4,7 +4,7 @@ about: Request a new feature or functionality
 
 ---
 
-**Important: Please report feature requests in {your github url}**
+**Important: Please report feature requests in https://github.com/Sanuki357/Regalis-s-SCP-CB-Assets-for-Arma-3/issues/21**
 
 ### Before reporting
 
