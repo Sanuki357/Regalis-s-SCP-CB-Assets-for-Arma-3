@@ -1,7 +1,7 @@
 name = "SCP-Regalis's Containment Breach Assets";
 author = "Sanuki357";
 //picture = "\SCP_CB\SCP_CB_Logo.paa"; 
-logo = "SCP_CB_Logo.paa";
+logo = "logo_RegalisSCP_CB_ca.paa";
 logoSmall = "SCP_CB_Logo.paa";
 logoOver = "SCP_CB_LogoGlow.paa";
 action = "https://community.bistudio.com/wiki/Mod_Presentation";
