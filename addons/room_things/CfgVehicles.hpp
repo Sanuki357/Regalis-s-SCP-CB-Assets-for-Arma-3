@@ -41,7 +41,7 @@ class CfgVehicles
             class Close_door_F
             {
                 displayName = "Close Door";
-                displayNameDefault = "<img image='z\RegalisSCP_CB\textures\handsymbol.paa' size='2.5' />";
+                displayNameDefault = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
                 position = "button_f";
                 radius = 1;
                 onlyForPlayer = 0;
@@ -59,7 +59,7 @@ class CfgVehicles
             class Close_door_B
             {
                 displayName = "Close Door";
-                displayNameDefault = "<img image='z\RegalisSCP_CB\textures\handsymbol.paa' size='2.5' />";
+                displayNameDefault = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
                 position = "button_b";
                 radius = 1;
                 onlyForPlayer = 0;
