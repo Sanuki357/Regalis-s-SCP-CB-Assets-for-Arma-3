@@ -79,7 +79,7 @@ class CfgVehicles
         scope = 2;
         curatorScope = 2;
         displayName = "Four-Way Hallway"; // Name in editor
-        model = QPATHTOF(data\\Hallway4One.p3d); // Path to model
+        model = QPATHTOF(data\Hallway4One.p3d); // Path to model
     };
     class SCPLCZ_Hallway_4_Two : SCPLCZ_base
     {
