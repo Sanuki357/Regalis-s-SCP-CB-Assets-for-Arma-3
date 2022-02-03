@@ -6,17 +6,17 @@ class CfgPatches
         requiredVersion = 0.1;
         units[] =
         {
-            "SCPLCZ_Hallway_2_One",
-            "SCPLCZ_Hallway_2_Two",
-            "SCPLCZ_Hallway_2_Three",
-            "SCPLCZ_Hallway_2_Four",
-            "SCPLCZ_Hallway_3_One",
-            "SCPLCZ_Hallway_3_Two",
-            "SCPLCZ_Hallway_3_Three",
-            "SCPLCZ_Hallway_C_One",
-            "SCPLCZ_Hallway_4_One",
-            "SCPLCZ_Hallway_4_Two",
-            "SCPLCZ_Hallway_4_Three"
+            "SCP_CB_LCZ_Hallway_Two_1",
+            "SCP_CB_LCZ_Hallway_Two_2",
+            "SCP_CB_LCZ_Hallway_Two_3",
+            "SCP_CB_LCZ_Hallway_Two_4",
+            "SCP_CB_LCZ_Hallway_Three_1",
+            "SCP_CB_LCZ_Hallway_Three_2",
+            "SCP_CB_LCZ_Hallway_Three_3",
+            "SCP_CB_LCZ_Hallway_Corner_1",
+            "SCP_CB_LCZ_Hallway_Four_1",
+            "SCP_CB_LCZ_Hallway_Four_2",
+            "SCP_CB_LCZ_Hallway_Four_3"
         };
         weapons[] = {};
     };
