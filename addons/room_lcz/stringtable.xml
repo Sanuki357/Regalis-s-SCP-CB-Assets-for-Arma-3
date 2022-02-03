@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="SCP_CB">
+    <Package name="Room_LCZ">
+        <Key ID="STR_SCP_CB_Room_LCZ_Facility">
+            <English>Structures (SCP)</English>
+        </Key>
+        <Key ID="STR_SCP_CB_Room_LCZ_LCZ">
+            <English>Light Containment Zone</English>
+        </Key>
+        <Key ID="STR_SCP_CB_Room_LCZ_HallwayCornerI">
+            <English>Corner Hallway</English>
+        </Key>
+        <Key ID="STR_SCP_CB_Room_LCZ_HallwayFourI">
+            <English>Four-Way Hallway</English>
+        </Key>
+        <Key ID="STR_SCP_CB_Room_LCZ_HallwayFourII">
+            <English>Four-Way Hallway (Catwalk)</English>
+        </Key>
+        <Key ID="STR_SCP_CB_Room_LCZ_HallwayFourIII">
+            <English>Four-Way Hallway (Info Desk)</English>
+        </Key>
+        <Key ID="STR_SCP_CB_Room_LCZ_HallwayThreeI">
+            <English>Three-Way Hallway</English>
+        </Key>
+        <Key ID="STR_SCP_CB_Room_LCZ_HallwayThreeII">
+            <English>Three-Way Hallway (Maintenance)</English>
+        </Key>
+        <Key ID="STR_SCP_CB_Room_LCZ_HallwayThreeIII">
+            <English>Three-Way Hallway (Floor Lights)</English>
+        </Key>
+        <Key ID="STR_SCP_CB_Room_LCZ_HallwayTwoI">
+            <English>Two-Way Hallway</English>
+        </Key>
+        <Key ID="STR_SCP_CB_Room_LCZ_HallwayTwoII">
+            <English>Two-Way Hallway (Low Ceiling)</English>
+        </Key>
+        <Key ID="STR_SCP_CB_Room_LCZ_HallwayTwoIII">
+            <English>Two-Way Hallway (Fan)</English>
+        </Key>
+        <Key ID="STR_SCP_CB_Room_LCZ_HallwayTwoIV">
+            <English>Two-Way Hallway (Floor Lights)</English>
+        </Key>
+    </Package>
+</Project>

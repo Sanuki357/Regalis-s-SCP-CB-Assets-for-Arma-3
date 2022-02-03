@@ -6,6 +6,10 @@ bin-release/
 
 
 release
+*.biprivatekey
+keys/*
+.hemtt/local
+releases/*
 # Other files and folders
 .settings/
 

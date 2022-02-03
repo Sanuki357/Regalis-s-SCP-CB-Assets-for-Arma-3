@@ -63,11 +63,11 @@ Note that both lower and upper case are necessary. Once done, replace the logo (
 ##### Example:
 
 ```
-RegalisSCP_CB by acex
+RegalisSCP_CB
 ```
 
 ```
-SCP_CB by ACEX
+SCP_CB
 ```
 
 ### Tooling
