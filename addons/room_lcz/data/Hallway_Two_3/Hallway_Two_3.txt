@@ -1,0 +1,11 @@
+Light2048_1	whitewall
+		controlpanel
+
+Light1024_1	concretefloor
+
+Light1024_2	2_office_lamps_dif
+		dirtymetal
+		metalpanels2
+		metalpanels
+		vent
+		misc

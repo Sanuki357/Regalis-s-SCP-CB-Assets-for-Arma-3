@@ -1,0 +1,9 @@
+Light1_2048	whitewall
+
+Light1_1024	concretefloor
+		
+Light2_1024	2_office_lamps_diff
+		metalpanels2
+		dirtymetal
+		misc
+		

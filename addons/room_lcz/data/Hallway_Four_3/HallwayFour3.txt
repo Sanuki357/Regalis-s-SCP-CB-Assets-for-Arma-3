@@ -1,0 +1,30 @@
+Light1_2048	whitewall
+		white
+		grey
+
+Light1_1024	metal
+		tilefloor
+
+Light2_1024	pipes_norust
+		2_office_lamps_dif
+		lamp3
+		keyboard
+		metalpanels
+		metal_darker
+		slh_miscsigns
+		miscsigns
+		miscsigns3
+		miscsigns4
+		mat_glass
+		glass
+		papertexture
+		door
+		red
+		dirtymetal
+		controlpanel
+		misc
+
+
+
+
+
