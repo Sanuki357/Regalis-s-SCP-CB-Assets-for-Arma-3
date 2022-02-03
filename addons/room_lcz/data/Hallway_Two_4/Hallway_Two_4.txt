@@ -1,0 +1,5 @@
+Light2048_1	whitewall
+
+Light1024_1	tilefloor
+		misc
+		metal

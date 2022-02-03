@@ -1,0 +1,15 @@
+2048_1	whitewall
+	white
+
+1024_1	concretefloor
+
+1024_2	door01
+	dirtymetal
+	metalpanels2
+	metalpanels
+	misc
+
+
+
+
+
