@@ -6,10 +6,11 @@
 
 #include "script_version.hpp"
 
-#define VERSION MAJOR.MINOR.PATCHLVL.BUILD
+#define VERSION MAJOR.MINOR
+#define VERSION_STR MAJOR.MINOR.PATCHLVL.BUILD
 #define VERSION_AR MAJOR,MINOR,PATCHLVL,BUILD
 
-#define SCP_CB_TAG SCP_CB
+// #define SCP_CB_TAG SCP_CB
 
 // MINIMAL required version for the Mod. Components can specify others..
 #define REQUIRED_VERSION 0.1

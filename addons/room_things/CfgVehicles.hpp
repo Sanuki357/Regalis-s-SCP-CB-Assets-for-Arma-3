@@ -23,7 +23,7 @@ class CfgVehicles
     {
         scope= 2;
         curatorScope = 2;
-        displayName = "Door (LCZ)(Static)"; // Name in editor
+        displayName = CSTRING(Door_LCZ_1_Static); // Name in editor
         model = QPATHTOF(data\StaticDoor1.p3d); // Path to model
         editorSubCategory   = "SCP_Doors";
     };
@@ -32,7 +32,7 @@ class CfgVehicles
     {
         scope = 2;
         curatorScope = 2;
-        displayName = "Door (LCZ)"; // Name in editor
+        displayName = CSTRING(Door_LCZ_1); // Name in editor
         model = QPATHTOF(data\Door1.p3d); // Path to model
         editorSubCategory = "SCP_Doors";
         

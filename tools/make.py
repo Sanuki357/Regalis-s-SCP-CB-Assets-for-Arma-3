@@ -72,7 +72,7 @@ dssignfile = ""
 prefix = "RegalisSCP_CB"
 pbo_name_prefix = "RegalisSCP_CB_"
 signature_blacklist = []
-importantFiles = ["mod.cpp", "README.md", "AUTHORS.txt", "LICENSE", "logo_RegalisSCP_CB_ca.paa"]
+importantFiles = ["mod.cpp", "README.md", "AUTHORS.txt", "LICENSE", "logo_RegalisSCP_CB_ca.paa", "SCP_CB_LogoGlow.paa", "SCP_CB_logo.png"]
 versionFiles = ["README.md", "mod.cpp"]
 
 ciBuild = False # Used for CI builds

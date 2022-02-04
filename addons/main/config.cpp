@@ -6,3 +6,4 @@
 
 #include "CfgSettings.hpp"
 #include "CfgModuleCategories.hpp"
+#include "CfgEditorSubcategories.hpp"

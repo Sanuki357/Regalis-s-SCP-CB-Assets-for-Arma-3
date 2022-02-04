@@ -16,7 +16,7 @@ import xml.etree.ElementTree as ET
 
 
 ######## GLOBALS #########
-PROJECT_NAME = "SCP_CB"
+PROJECT_NAME = "RegalisSCP_CB"
 ##########################
 
 

@@ -1,10 +1,10 @@
 name = "SCP-Regalis's Containment Breach Assets";
 author = "Sanuki357";
-//picture = "\SCP_CB\SCP_CB_Logo.paa"; 
-logo = "z\logo_RegalisSCP_CB_ca.paa";
-logoSmall = "z\logo_RegalisSCP_CB_ca.paa"; // SCP_CB_Logo.paa
-logoOver = "z\SCP_CB_LogoGlow.paa";
-action = "https://community.bistudio.com/wiki/Mod_Presentation";
+picture = "logo_RegalisSCP_CB_ca.paa"; 
+logo = "logo_RegalisSCP_CB_ca.paa";
+logoSmall = "logo_RegalisSCP_CB_ca.paa"; // SCP_CB_Logo.paa
+logoOver = "SCP_CB_LogoGlow.paa";
+action = "https://github.com/Sanuki357/Regalis-s-SCP-CB-Assets-for-Arma-3";
 tooltipOwned = "SCP-CB";
 dlcColor[] = {	0.5, 0.5, 0.5, 1};
 overview = "Adds stuff";

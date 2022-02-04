@@ -5,6 +5,9 @@ class CfgFactionClasses {
         priority = 2;
         side = 7;
     };
+    class SCP_CB_Logi: SCP_CB {
+        displayName = CSTRING(Category);
+    };
 };
 
 class CfgVehicleClasses {

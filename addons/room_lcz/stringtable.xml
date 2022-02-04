@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="SCP_CB">
+<Project name="RegalisSCP_CB">
     <Package name="Room_LCZ">
-        <Key ID="STR_SCP_CB_Room_LCZ_Facility">
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Facility">
             <English>Structures (SCP)</English>
         </Key>
-        <Key ID="STR_SCP_CB_Room_LCZ_LCZ">
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_LCZ">
             <English>Light Containment Zone</English>
         </Key>
-        <Key ID="STR_SCP_CB_Room_LCZ_HallwayCornerI">
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Corner_1">
             <English>Corner Hallway</English>
         </Key>
-        <Key ID="STR_SCP_CB_Room_LCZ_HallwayFourI">
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Four_1">
             <English>Four-Way Hallway</English>
         </Key>
-        <Key ID="STR_SCP_CB_Room_LCZ_HallwayFourII">
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Four_2">
             <English>Four-Way Hallway (Catwalk)</English>
         </Key>
-        <Key ID="STR_SCP_CB_Room_LCZ_HallwayFourIII">
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Four_3">
             <English>Four-Way Hallway (Info Desk)</English>
         </Key>
-        <Key ID="STR_SCP_CB_Room_LCZ_HallwayThreeI">
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Three_1">
             <English>Three-Way Hallway</English>
         </Key>
-        <Key ID="STR_SCP_CB_Room_LCZ_HallwayThreeII">
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Three_2">
             <English>Three-Way Hallway (Maintenance)</English>
         </Key>
-        <Key ID="STR_SCP_CB_Room_LCZ_HallwayThreeIII">
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Three_3">
             <English>Three-Way Hallway (Floor Lights)</English>
         </Key>
-        <Key ID="STR_SCP_CB_Room_LCZ_HallwayTwoI">
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Two_1">
             <English>Two-Way Hallway</English>
         </Key>
-        <Key ID="STR_SCP_CB_Room_LCZ_HallwayTwoII">
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Two_2">
             <English>Two-Way Hallway (Low Ceiling)</English>
         </Key>
-        <Key ID="STR_SCP_CB_Room_LCZ_HallwayTwoIII">
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Two_3">
             <English>Two-Way Hallway (Fan)</English>
         </Key>
-        <Key ID="STR_SCP_CB_Room_LCZ_HallwayTwoIV">
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Two_4">
             <English>Two-Way Hallway (Floor Lights)</English>
         </Key>
     </Package>
