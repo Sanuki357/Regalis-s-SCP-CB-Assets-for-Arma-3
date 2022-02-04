@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="SCP_CB">
+<Project name="RegalisSCP_CB">
     <Package name="Room_Things">
-        <Key ID="STR_SCP_CB_Room_Things_Facility">
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Facility">
             <English>Structures (SCP)</English>
         </Key>
-        <Key ID="STR_SCP_CB_Room_Things_Doors">
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Doors">
             <English>Doors</English>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Door_LCZ_1">
+            <English>Door (LCZ)</English>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Door_LCZ_1_Static">
+            <English>Door (LCZ)(Static)</English>
         </Key>
     </Package>
 </Project>

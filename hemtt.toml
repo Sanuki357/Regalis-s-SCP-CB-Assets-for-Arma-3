@@ -9,6 +9,8 @@ files = [
     "AUTHORS.txt",
     "LICENSE",
     "logo_RegalisSCP_CB_ca.paa",
+    "SCP_CB_logo.png",
+    "SCP_CB_LogoGlow.paa"
 ]
 
 keyname = "{{prefix}}_{{version}}"

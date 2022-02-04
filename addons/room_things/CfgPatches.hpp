@@ -1,7 +1,8 @@
 class CfgPatches
 {
-    class SCP_CB_Things
+    class ADDON
     {
+        name = COMPONENT_NAME;
         requiredAddons[] = {"A3_Structures_F"};
         requiredVersion = 0.1;
         units[] =

@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="SCP_CB">
+<Project name="RegalisSCP_CB">
     <Package name="Main">
-        <Key ID="STR_SCP_CB_Main_URL">
+        <Key ID="STR_RegalisSCP_CB_Main_URL">
             <English>https://github.com/Sanuki357/Regalis-s-SCP-CB-Assets-for-Arma-3</English>
         </Key>
-        <Key ID="STR_SCP_CB_Main_NAME">
+        <Key ID="STR_RegalisSCP_CB_Main_NAME">
             <English>Regalis SCP CB Assets for arma 3</English>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Main_Category">
+            <English>SCP CB</English>
         </Key>
     </Package>
 </Project>

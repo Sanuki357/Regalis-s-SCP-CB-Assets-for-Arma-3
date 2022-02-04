@@ -1,9 +1,10 @@
 class CfgPatches
 {
-    class SCP_CB_LCZ
+    class ADDON
     {
+        name= COMPONENT_NAME;
         requiredAddons[] = {"A3_Structures_F"};
-        requiredVersion = 0.1;
+        requiredVersion = REQUIRED_VERSION;
         units[] =
         {
             "SCP_CB_LCZ_Hallway_Two_1",
