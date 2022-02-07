@@ -37,7 +37,7 @@ class Stage3 {
 	};
 };
 class Stage4 {
-	texture = "#(argb,8,8,3)color(1,1,1,1,AS)";
+	texture = "z\RegalisSCP_CB\addons\room_lcz\data\Hallway_Two_2\Hallway_Two_2_1024_2_ADSHQ.paa";
 	uvSource = "tex";
 	class uvTransform {
 		aside[] = { 1, 0, 0 };

@@ -1,13 +1,9 @@
-/*
-	Generated on https://jdtools.dev/
-	Made by John Doe
-*/
 ambient[] = { 1, 1, 1, 1 };
 diffuse[] = { 1, 1, 1, 1 };
 forcedDiffuse[] = { 0, 0, 0, 1 };
 emmisive[] = { 0, 0, 0, 1 };
-specular[] = { 0.4, 0.19, 0.08, 1 };
-specularPower = 45;
+specular[] = { 0.1, 0.1, 0.1, 1 };
+specularPower = 2;
 PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1 {

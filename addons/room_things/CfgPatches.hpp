@@ -7,8 +7,9 @@ class CfgPatches
         requiredVersion = 0.1;
         units[] =
         {
-            "SCPThing_Door_1",
-            "SCPThing_Door_1_Static"
+            "SCP_CB_Things_Door1_Button",
+            "SCP_CB_Things_Door1_Button_Error",
+            "SCP_CB_Things_Door1_Button_NoRespose"
         };
         weapons[] = {};
     };
