@@ -2,16 +2,24 @@
 <Project name="RegalisSCP_CB">
     <Package name="Room_Things">
         <Key ID="STR_RegalisSCP_CB_Room_Things_Facility">
-            <English>Structures (SCP)</English>
+            <English>Structure (SCP)</English>
+            <Japanese>構造物（SCP）</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_Doors">
             <English>Doors</English>
+            <Japanese>ドア</Japanese>
         </Key>
-        <Key ID="STR_RegalisSCP_CB_Room_Things_Door_LCZ_1">
-            <English>Door (LCZ)</English>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Door1_Button">
+            <English>Door with Button</English>
+            <Japanese>ドアとボタン</Japanese>
         </Key>
-        <Key ID="STR_RegalisSCP_CB_Room_Things_Door_LCZ_1_Static">
-            <English>Door (LCZ)(Static)</English>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Door1_Button_Error">
+            <English>Door with Button (Error)</English>
+            <Japanese>ドアとボタン (エラー)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Door1_Button_NoResponse">
+            <English>Door with Button (No Response)</English>
+            <Japanese>ドアとボタン (反応無し)</Japanese>
         </Key>
     </Package>
 </Project>

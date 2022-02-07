@@ -1,14 +1,14 @@
 class CfgVehicles
 {
     class Land_ToiletBox_F; 
-    class SCPThing_base: Land_ToiletBox_F
+    class SCP_CB_Things_base: Land_ToiletBox_F
     {
         scope = 0;
         scopeCurator = 0;
         armor = 999999;
         armorStructural = 999;
         model = "\A3\Weapons_F\empty.p3d";
-        destrType="DestructNo";
+        destrType = "DestructNo";
         simulation = House;
         
         editorCategory = "SCP_Facility";
@@ -19,20 +19,11 @@ class CfgVehicles
 // Doors //
 //*******//
 
-    class SCPThing_Door_1_Static : SCPThing_base
-    {
-        scope= 2;
-        curatorScope = 2;
-        displayName = CSTRING(Door_LCZ_1_Static); // Name in editor
-        model = QPATHTOF(data\StaticDoor1.p3d); // Path to model
-        editorSubCategory   = "SCP_Doors";
-    };
-
-    class SCPThing_Door_1 : SCPThing_base
+    class SCP_CB_Things_Door1_Button : SCP_CB_Things_base
     {
         scope = 2;
         curatorScope = 2;
-        displayName = CSTRING(Door_LCZ_1); // Name in editor
+        displayName = CSTRING(Door1_Button); // Name in editor
         model = QPATHTOF(data\Door1.p3d); // Path to model
         editorSubCategory = "SCP_Doors";
         
@@ -40,38 +31,38 @@ class CfgVehicles
         {
             class Close_door_F
             {
-                displayName = "Close Door";
+                displayName = "Push Button";
                 displayNameDefault = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
                 position = "button_f";
                 radius = 1;
                 onlyForPlayer = 0;
                 condition = "this animationSourcePhase ""open_door"" == 1";
-                statement = "this animateSource [""open_door"",0]; _array = ["QPATHTOF(data\Door1\DoorClose1.ogg)", "QPATHTOF(data\Door1\DoorClose2.ogg)", "QPATHTOF(data\Door1\DoorClose3.ogg)"]; _random = _array select floor random count _array; playSound3D [_random, this, false, getPosASL this, 5]; playSound3D ["QPATHTOF(data\Door1\Button.ogg)", this, false, this modelToWorld [-1.06957,0.30788,1.26843], 5]";
+                statement = "[this, ""Door1 Close"", ""open_door"", 2.5] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, ""Press"", 0.5, ""button_f""] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
             };
 
             class Open_door_F: Close_door_F
             {
-                displayName ="Open Door";
+                displayName = "Push Button";
                 condition = "this animationSourcePhase ""open_door"" == 0";
-                statement = "this animateSource [""open_door"",1]; _array = ["QPATHTOF(data\Door1\DoorOpen1.ogg)", "QPATHTOF(data\Door1\DoorOpen2.ogg)", "QPATHTOF(data\Door1\DoorOpen3.ogg)"]; _random = _array select floor random count _array; playSound3D [_random, this, false, getPosASL this, 5]; playSound3D ["QPATHTOF(data\Door1\Button.ogg)", this, false, this modelToWorld [-1.06957,0.30788,1.26843], 5]";
+                statement = "[this, ""Door1 Open"", ""open_door"", 2.5] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, ""Press"", 0.5, ""button_f""] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
             };
             
             class Close_door_B
             {
-                displayName = "Close Door";
+                displayName = "Push Button";
                 displayNameDefault = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
                 position = "button_b";
                 radius = 1;
                 onlyForPlayer = 0;
                 condition = "this animationSourcePhase ""open_door"" == 1";
-                statement = "this animateSource [""open_door"",0]; _array = ["QPATHTOF(data\Door1\DoorClose1.ogg)", "QPATHTOF(data\Door1\DoorClose2.ogg)", "QPATHTOF(data\Door1\DoorClose3.ogg)"]; _random = _array select floor random count _array; playSound3D [_random, this, false, getPosASL this, 5]; playSound3D ["QPATHTOF(data\Door1\Button.ogg)", this, false, this modelToWorld [1.06957,-0.30788,1.26843], 5]";
+                statement = "[this, ""Door1 Close"", ""open_door"", 2.5] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, ""Press"", 0.5, ""button_b""] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
             };
             
             class Open_door_B: Close_door_B
             {
-                displayName ="Open Door";
+                displayName ="Push Button";
                 condition = "this animationSourcePhase ""open_door"" == 0";
-                statement = "this animateSource [""open_door"",1]; _array = ["QPATHTOF(data\Door1\DoorOpen1.ogg)", "QPATHTOF(data\Door1\DoorOpen2.ogg)", "QPATHTOF(data\Door1\DoorOpen3.ogg)"]; _random = _array select floor random count _array; playSound3D [_random, this, false, getPosASL this, 5]; playSound3D ["QPATHTOF(data\Door1\Button.ogg)", this, false, this modelToWorld [1.06957,-0.30788,1.26843], 5]";
+                statement = "[this, ""Door1 Open"", ""open_door"", 2.5] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, ""Press"", 0.5, ""button_b""] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
             };
         };
         
@@ -86,4 +77,51 @@ class CfgVehicles
         };
     };
 
+    class SCP_CB_Things_Door1_Button_Error : SCP_CB_Things_base
+    {
+        scope = 2;
+        curatorScope = 2;
+        displayName = CSTRING(Door1_Button_Error); // Name in editor
+        model = QPATHTOF(data\Door1.p3d); // Path to model
+        editorSubCategory   = "SCP_Doors";
+
+        class UserActions
+        {
+            class Error_door_F
+            {
+                displayName = "Push Button";
+                displayNameDefault = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
+                position = "button_f";
+                radius = 1;
+                onlyForPlayer = 0;
+                condition = "this animationSourcePhase ""open_door"" == 0";
+                statement = "[this, ""Press (Denied)"", 0.5, ""button_f""] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+            };
+
+            class Error_door_B: Error_door_F
+            {
+                position = "button_b";
+                statement = "[this, ""Press (Denied)"", 0.5, ""button_b""] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+            };
+        };
+    };
+
+    class SCP_CB_Things_Door1_Button_NoRespose : SCP_CB_Things_Door1_Button_Error
+    {
+        displayName = CSTRING(Door1_Button_NoResponse); // Name in editor
+
+        class UserActions : UserActions
+        {
+            class NoResponse_door_F :Error_door_F
+            {
+                statement = "[this, ""Press"", 0.5, ""button_f""] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+            };
+
+            class NoResponse_door_B: NoResponse_door_F
+            {
+                position = "button_b";
+                statement = "[this, ""Press"", 0.5, ""button_b""] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+            };
+        };
+    };
 };

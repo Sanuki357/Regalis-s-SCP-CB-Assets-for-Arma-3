@@ -1,0 +1,1 @@
+#include "\z\RegalisSCP_CB\addons\room_things\script_component.hpp"
