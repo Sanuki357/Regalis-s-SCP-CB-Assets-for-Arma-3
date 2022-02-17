@@ -2,7 +2,7 @@
 <Project name="RegalisSCP_CB">
     <Package name="Room_Things">
         <Key ID="STR_RegalisSCP_CB_Room_Things_Facility">
-            <English>Structure (SCP)</English>
+            <English>Structures (SCP)</English>
             <Japanese>構造物（SCP）</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_Doors">

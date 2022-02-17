@@ -3,42 +3,55 @@
     <Package name="Room_LCZ">
         <Key ID="STR_RegalisSCP_CB_Room_LCZ_Facility">
             <English>Structures (SCP)</English>
+            <Japanese>構造物（SCP）</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_LCZ_LCZ">
             <English>Light Containment Zone</English>
+            <Japanese>軽収容区域</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Corner_1">
             <English>Corner Hallway</English>
+            <Japanese>曲がり廊下</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Four_1">
             <English>Four-Way Hallway</English>
+            <Japanese>十字廊下</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Four_2">
             <English>Four-Way Hallway (Catwalk)</English>
+            <Japanese>十字廊下（キャットウォーク）</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Four_3">
             <English>Four-Way Hallway (Info Desk)</English>
+            <Japanese>十字廊下（インフォメーションデスク）</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Three_1">
             <English>Three-Way Hallway</English>
+            <Japanese>T字廊下</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Three_2">
             <English>Three-Way Hallway (Maintenance)</English>
+            <Japanese>T字廊下（メンテナンス）</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Three_3">
             <English>Three-Way Hallway (Floor Lights)</English>
+            <Japanese>T字廊下（床照明）</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Two_1">
             <English>Two-Way Hallway</English>
+            <Japanese>廊下</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Two_2">
             <English>Two-Way Hallway (Low Ceiling)</English>
+            <Japanese>廊下（低天井）</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Two_3">
             <English>Two-Way Hallway (Fan)</English>
+            <Japanese>廊下（換気扇）</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Two_4">
             <English>Two-Way Hallway (Floor Lights)</English>
+            <Japanese>廊下（床照明）</Japanese>
         </Key>
     </Package>
 </Project>
