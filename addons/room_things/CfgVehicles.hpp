@@ -106,14 +106,24 @@ class CfgVehicles
         };
     };
 
-    class SCP_CB_Things_Door1_Button_NoRespose : SCP_CB_Things_Door1_Button_Error
+    class SCP_CB_Things_Door1_Button_NoRespose : SCP_CB_Things_base
     {
+        scope = 2;
+        curatorScope = 2;
         displayName = CSTRING(Door1_Button_NoResponse); // Name in editor
+        model = QPATHTOF(data\Door1.p3d); // Path to model
+        editorSubCategory   = "SCP_Doors";
 
-        class UserActions : UserActions
+        class UserActions
         {
-            class NoResponse_door_F :Error_door_F
+            class NoResponse_door_F
             {
+                displayName = "Push Button";
+                displayNameDefault = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
+                position = "button_f";
+                radius = 1;
+                onlyForPlayer = 0;
+                condition = "this animationSourcePhase ""open_door"" == 0";
                 statement = "[this, ""Press"", 0.5, ""button_f""] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
             };
 
