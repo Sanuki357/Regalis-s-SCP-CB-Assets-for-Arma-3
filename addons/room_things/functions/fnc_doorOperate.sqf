@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+// #include "script_component.hpp"
 /*
  * Author: Sanuki357
  * Handles opening a door and emit a appopriate sound effect.

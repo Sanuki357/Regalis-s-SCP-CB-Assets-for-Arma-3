@@ -1,4 +1,4 @@
-#define COMPONENT room_Things
+#define COMPONENT room_things
 #define COMPONENT_BEAUTIFIED Room_Things
 #include "\z\RegalisSCP_CB\addons\main\script_mod.hpp"
 
