@@ -1,4 +1,4 @@
- #include "script_component.hpp"
+#include "script_component.hpp"
 /*
  * Author: 
  * Handles deafness due to explosions going off near the player.
