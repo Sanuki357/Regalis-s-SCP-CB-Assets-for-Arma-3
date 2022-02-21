@@ -13,8 +13,8 @@
 // #define SCP_CB_TAG SCP_CB
 
 // MINIMAL required version for the Mod. Components can specify others..
-#define REQUIRED_VERSION 0.1
-#define REQUIRED_CBA_VERSION {3,15,0}
+#define REQUIRED_VERSION 0.4.2
+#define REQUIRED_CBA_VERSION {3,15,6}
 
 #ifdef COMPONENT_BEAUTIFIED
     #define COMPONENT_NAME QUOTE(RegalisSCP_CB - COMPONENT_BEAUTIFIED)
