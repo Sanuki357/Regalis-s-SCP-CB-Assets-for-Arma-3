@@ -47,7 +47,7 @@ class Stage4 {
 	};
 };
 class Stage5 {
-	texture = "#(argb,8,8,3)color(1,1,1,1,SMDI)";
+	texture = "#(argb,8,8,3)color(0,0,0,1,SMDI)";
 	uvSource = "tex";
 	class uvTransform {
 		aside[] = { 1, 0, 0 };
@@ -67,8 +67,8 @@ class Stage6 {
 	};
 };
 class Stage7 {
-	texture = "a3\data_f\env_land_ca.paa";
-	useWorldEnvMap = "true";
+	texture = "a3\data_f\env_bathroom_co.paa";
+	useWorldEnvMap = "false";
 	uvSource = "tex";
 	class uvTransform {
 		aside[] = { 1, 0, 0 };

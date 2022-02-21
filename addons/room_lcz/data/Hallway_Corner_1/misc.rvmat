@@ -67,8 +67,8 @@ class Stage6 {
 	};
 };
 class Stage7 {
-	texture = "a3\data_f\env_land_ca.paa";
-	useWorldEnvMap = "true";
+	texture = "a3\data_f\env_bathroom_co.paa";
+	useWorldEnvMap = "false";
 	uvSource = "tex";
 	class uvTransform {
 		aside[] = { 1, 0, 0 };
