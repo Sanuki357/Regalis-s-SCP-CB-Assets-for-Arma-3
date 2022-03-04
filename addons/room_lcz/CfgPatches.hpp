@@ -12,7 +12,6 @@ class CfgPatches
             "SCP_CB_LCZ_Hallway_Two_3",
             "SCP_CB_LCZ_Hallway_Two_4",
             "SCP_CB_LCZ_Hallway_Two_5",
-            "SCP_CB_LCZ_Hallway_Two_5_NoDoor",
             "SCP_CB_LCZ_Hallway_Three_1",
             "SCP_CB_LCZ_Hallway_Three_2",
             "SCP_CB_LCZ_Hallway_Three_3",

@@ -61,9 +61,5 @@
             <English>Two-Way Hallway (Indented)</English>
             <Japanese>廊下（湾入）</Japanese>
         </Key>
-        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Two_5_NoDoor">
-            <English>Two-Way Hallway (Indented, No door)</English>
-            <Japanese>廊下（湾入、ドアなし）</Japanese>
-        </Key>
     </Package>
 </Project>
