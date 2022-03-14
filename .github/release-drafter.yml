@@ -1,5 +1,6 @@
 branches:
   - main
+  - v0.5
   - release-drafter  # for testing edits to this configuration
 
 name-template: 'Version $NEXT_PATCH_VERSION'
@@ -8,11 +9,11 @@ tag-template: 'v$NEXT_PATCH_VERSION'
 categories:
   - title: '**ADDED:**'
     labels:
-      - 'kind/feature request'
-      - 'kind/added feature'
+      - 'kind/feature_request'
+      - 'kind/added_feature'
   - title: '**FIXED:**'
     labels:
-      - 'kind/bug fix'
+      - 'kind/bugfix'
   - title: '**IMPROVED:**'
     labels:
       - 'kind/enhancement'
