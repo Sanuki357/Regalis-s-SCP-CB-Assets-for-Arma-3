@@ -25,14 +25,15 @@ class CfgVehicles
         curatorScope = 2;
         displayName = CSTRING(Door1_Button); // Name in editor
         model = QPATHTOF(data\Door1.p3d); // Path to model
+        hiddenSelections[] = {"camo_door", "camo_button"};
         editorSubCategory = "SCP_Doors";
         
         class UserActions
         {
             class Close_door_F
             {
-                displayName = "Push Button";
                 displayNameDefault = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
+                displayName = CSTRING(Button_Press);
                 position = "button_f";
                 radius = 1;
                 onlyForPlayer = 0;
@@ -42,15 +43,14 @@ class CfgVehicles
 
             class Open_door_F: Close_door_F
             {
-                displayName = "Push Button";
                 condition = "this animationSourcePhase ""open_door"" == 0";
                 statement = "[this, ""Door1 Open"", ""open_door"", 2.5] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, ""Press"", 0.5, ""button_f""] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
             };
             
             class Close_door_B
             {
-                displayName = "Push Button";
                 displayNameDefault = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
+                displayName = CSTRING(Button_Press);
                 position = "button_b";
                 radius = 1;
                 onlyForPlayer = 0;
@@ -60,7 +60,6 @@ class CfgVehicles
             
             class Open_door_B: Close_door_B
             {
-                displayName ="Push Button";
                 condition = "this animationSourcePhase ""open_door"" == 0";
                 statement = "[this, ""Door1 Open"", ""open_door"", 2.5] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, ""Press"", 0.5, ""button_b""] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
             };
@@ -89,8 +88,8 @@ class CfgVehicles
         {
             class Error_door_F
             {
-                displayName = "Push Button";
                 displayNameDefault = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
+                displayName = CSTRING(Button_Press);
                 position = "button_f";
                 radius = 1;
                 onlyForPlayer = 0;
@@ -118,8 +117,8 @@ class CfgVehicles
         {
             class NoResponse_door_F
             {
-                displayName = "Push Button";
                 displayNameDefault = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
+                displayName = CSTRING(Button_Press);
                 position = "button_f";
                 radius = 1;
                 onlyForPlayer = 0;

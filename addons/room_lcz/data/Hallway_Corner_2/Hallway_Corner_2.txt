@@ -1,0 +1,10 @@
+2048_1	whitewall
+	door01
+
+1024_1	concretefloor
+	tilefloor
+
+1024_2	dirtymetal
+	metalpanels2
+	2_office_lamps_dif
+	

@@ -23,7 +23,9 @@ Light2_1024	pipes_norust
 		dirtymetal
 		controlpanel
 		misc
-
+		officeseat_a
+		cabinet_a
+		ceiling
 
 
 

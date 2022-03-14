@@ -1,3 +1,0 @@
-
-PREP(doorOperate);
-PREP(buttonSound);

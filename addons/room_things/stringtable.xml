@@ -21,5 +21,9 @@
             <English>Door with Button (No Response)</English>
             <Japanese>ドアとボタン (反応無し)</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Button_Press">
+            <English>Press Button</English>
+            <Japanese>ボタンを押す</Japanese>
+        </Key>
     </Package>
 </Project>

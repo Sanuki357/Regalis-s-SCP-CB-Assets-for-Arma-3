@@ -10,6 +10,10 @@
             <Japanese>軽収容区域</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Corner_1">
+            <English>Corner Hallway (Iron Bars)</English>
+            <Japanese>曲がり廊下 (鉄格子)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Corner_2">
             <English>Corner Hallway</English>
             <Japanese>曲がり廊下</Japanese>
         </Key>
@@ -19,7 +23,7 @@
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Four_2">
             <English>Four-Way Hallway (Catwalk)</English>
-            <Japanese>十字廊下（キャットウォーク）</Japanese>
+            <Japanese>十字廊下（吊り足場）</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Four_3">
             <English>Four-Way Hallway (Info Desk)</English>
@@ -52,6 +56,10 @@
         <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Two_4">
             <English>Two-Way Hallway (Floor Lights)</English>
             <Japanese>廊下（床照明）</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Two_5">
+            <English>Two-Way Hallway (Indented)</English>
+            <Japanese>廊下（湾入）</Japanese>
         </Key>
     </Package>
 </Project>
