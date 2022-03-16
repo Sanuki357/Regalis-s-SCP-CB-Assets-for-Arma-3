@@ -19,14 +19,31 @@ class CfgVehicles
 // Doors //
 //*******//
 
-    class SCP_CB_Things_Door1_Button : SCP_CB_Things_base
+    class SCP_CB_Things_Door1 : SCP_CB_Things_base
     {
         scope = 2;
         curatorScope = 2;
+        displayName = CSTRING(Door1); // Name in editor
+        model = QPATHTOF(data\Door1_NoButton.p3d); // Path to model
+        hiddenSelections[] = {"camo_door"};
+        editorSubCategory = "SCP_Doors";
+        
+        class AnimationSources
+        {
+            class open_door
+            {
+                source = "user";
+                animPeriod = 1.2;
+                initPhase = 0;
+            };
+        };
+    };
+
+    class SCP_CB_Things_Door1_Button : SCP_CB_Things_Door1
+    {
         displayName = CSTRING(Door1_Button); // Name in editor
         model = QPATHTOF(data\Door1.p3d); // Path to model
         hiddenSelections[] = {"camo_door", "camo_button"};
-        editorSubCategory = "SCP_Doors";
         
         class UserActions
         {
@@ -64,16 +81,12 @@ class CfgVehicles
                 statement = "[this, ""Door1 Open"", ""open_door"", 2.5] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, ""Press"", 0.5, ""button_b""] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
             };
         };
-        
-        class AnimationSources
-        {
-            class open_door
-            {
-                source = "user";
-                animPeriod = 1.2;
-                initPhase = 0;
-            };
-        };
+    };
+
+    class SCP_CB_Things_Door1_Button_Inverted : SCP_CB_Things_Door1_Button
+    {
+        displayName = CSTRING(Door1_Button_Inverted);
+        model = QPATHTOF(data\Door1_Inverted.p3d);
     };
 
     class SCP_CB_Things_Door1_Button_Error : SCP_CB_Things_base
@@ -105,6 +118,12 @@ class CfgVehicles
         };
     };
 
+    class SCP_CB_Things_Door1_Button_Error_Inverted : SCP_CB_Things_Door1_Button_Error
+    {
+        displayName = CSTRING(Door1_Button_Error_Inverted);
+        model = QPATHTOF(data\Door1_Inverted.p3d);
+    };
+
     class SCP_CB_Things_Door1_Button_NoRespose : SCP_CB_Things_base
     {
         scope = 2;
@@ -132,5 +151,32 @@ class CfgVehicles
                 statement = "[this, ""Press"", 0.5, ""button_b""] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
             };
         };
+    };
+
+    class SCP_CB_Things_Door1_Button_NoRespose_Inverted : SCP_CB_Things_Door1_Button_NoRespose
+    {
+        displayName = CSTRING(Door1_Button_NoResponse_Inverted);
+        model = QPATHTOF(data\Door1_Inverted.p3d);
+    };
+
+    //----------    Card Reader variants
+    class SCP_CB_Things_Door1_CardReader : SCP_CB_Things_Door1_Button
+    {
+        displayName = CSTRING(Door1_CardReader);
+        model = QPATHTOF(data\Door1_CardReader.p3d);
+    };
+
+    //----------    Scanner variants
+    class SCP_CB_Things_Door1_Scanner : SCP_CB_Things_Door1_Button
+    {
+        displayName = CSTRING(Door1_Scanner);
+        model = QPATHTOF(data\Door1_Scanner.p3d);
+    };
+
+    //----------    Numpad variants
+    class SCP_CB_Things_Door1_Numpad : SCP_CB_Things_Door1_Button
+    {
+        displayName = CSTRING(Door1_Numpad);
+        model = QPATHTOF(data\Door1_Numpad.p3d);
     };
 };
