@@ -16,7 +16,9 @@ class CfgPatches
             "SCP_CB_Things_Door1_Button_NoRespose_Inverted",
             "SCP_CB_Things_Door1_CardReader",
             "SCP_CB_Things_Door1_Scanner",
-            "SCP_CB_Things_Door1_Numpad"
+            "SCP_CB_Things_Door1_Numpad",
+            "SCP_CB_Things_HeavyDoor",
+            "SCP_CB_Things_HeavyDoor_Button"
         };
         weapons[] = {};
     };
