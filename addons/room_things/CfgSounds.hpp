@@ -1,5 +1,5 @@
 class CfgSounds {
-    //Buttons
+    //----------    Buttons
     class SCP_CB_Button_Press {
         sound[] = {QPATHTOF(data\Keypad\Button.ogg), 1, 1};
         titles[] = {};
@@ -10,7 +10,7 @@ class CfgSounds {
         titles[] = {};
     };
     
-    //Opening and Closing of Door1
+    //----------    Opening and Closing of Door1
     class SCP_CB_Door1_Open_1 {
         sound[] = {QPATHTOF(data\Door1\DoorOpen1.ogg), 1, 1};
         titles[] = {};
@@ -41,7 +41,7 @@ class CfgSounds {
         titles[] = {};
     };
 
-    //HeavyDoor
+    //----------    HeavyDoor
     class SCP_CB_HeavyDoor_Open_1 {
         sound[] = {QPATHTOF(data\HeavyDoor\Door2Open1.ogg), 1, 1};
         titles[] = {};
@@ -72,6 +72,34 @@ class CfgSounds {
         titles[] = {};
     };
 
+    //----------    ContainmentDoor
+    class SCP_CB_ContainmentDoor_Open_1 {
+        sound[] = {QPATHTOF(data\ContainmentDoor\BigDoorOpen.ogg), 1, 1};
+        titles[] = {};
+    };
 
+    class SCP_CB_ContainmentDoor_Open_2 {
+        sound[] = {QPATHTOF(data\ContainmentDoor\BigDoorOpen1.ogg), 1, 1};
+        titles[] = {};
+    };
 
+    class SCP_CB_ContainmentDoor_Open_3 {
+        sound[] = {QPATHTOF(data\ContainmentDoor\BigDoorOpen2.ogg), 1, 1};
+        titles[] = {};
+    };
+
+    class SCP_CB_ContainmentDoor_Close_1 {
+        sound[] = {QPATHTOF(data\ContainmentDoor\BigDoorClose.ogg), 1, 1};
+        titles[] = {};
+    };
+
+    class SCP_CB_ContainmentDoor_Close_2 {
+        sound[] = {QPATHTOF(data\ContainmentDoor\BigDoorClose1.ogg), 1, 1};
+        titles[] = {};
+    };
+
+    class SCP_CB_ContainmentDoor_Close_3 {
+        sound[] = {QPATHTOF(data\ContainmentDoor\BigDoorClose2.ogg), 1, 1};
+        titles[] = {};
+    };    
 };

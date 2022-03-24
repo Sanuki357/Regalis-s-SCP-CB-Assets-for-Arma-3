@@ -9,6 +9,10 @@
             <English>Doors</English>
             <Japanese>ドア</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Furnitures">
+            <English>Furnitures</English>
+            <Japanese>家具</Japanese>
+        </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_Door1">
             <English>Door</English>
             <Japanese>ドア</Japanese>
@@ -60,6 +64,22 @@
         <Key ID="STR_RegalisSCP_CB_Room_Things_HeavyDoor_Button">
             <English>Heavy Door with Button</English>
             <Japanese>重厚ドアとボタン</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_HeavyDoor_Button">
+            <English>Heavy Door with Button</English>
+            <Japanese>重厚ドアとボタン</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_ContainmentDoor">
+            <English>Containment Door</English>
+            <Japanese>ブラストドア</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_FileCabinet">
+            <English>File Cabinet</English>
+            <Japanese>ファイルキャビネット</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_OfficeSeat">
+            <English>Office Chair</English>
+            <Japanese>事務椅子</Japanese>
         </Key>
     </Package>
 </Project>

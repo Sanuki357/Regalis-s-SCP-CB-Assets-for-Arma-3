@@ -15,9 +15,9 @@ class CfgVehicles
         mapSize = 20.27;
     };
 
-//*******//
-// Doors //
-//*******//
+    //*******//
+    // Doors //
+    //*******//
 
     //----------    Door1
     class SCP_CB_Things_Door1 : SCP_CB_Things_base
@@ -244,5 +244,50 @@ class CfgVehicles
                 statement = "[this, ""HeavyDoor Open"", ""open_door"", 2.5] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, ""Press"", 0.5, ""button_b""] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
             };
         };
+    };
+
+    //----------    ContainmentDoor
+    class SCP_CB_Things_ContainmentDoor : SCP_CB_Things_base
+    {
+        scope = 2;
+        curatorScope = 2;
+        displayName = CSTRING(ContainmentDoor); // Name in editor
+        model = QPATHTOF(data\ContainmentDoor\ContainmentDoor.p3d); // Path to model
+        hiddenSelections[] = {"camo_containmentdoor"};
+        editorSubCategory = "SCP_Doors";
+        
+        class AnimationSources
+        {
+            class open_door
+            {
+                source = "user";
+                animPeriod = 1.2;
+                initPhase = 0;
+            };
+        };
+    };
+
+    //************//
+    // Furnitures //
+    //************//
+
+    class SCP_CB_Things_FileCabinet : SCP_CB_Things_base
+    {
+        scope = 2;
+        curatorScope = 2;
+        displayName = CSTRING(FileCabinet); // Name in editor
+        model = QPATHTOF(data\Furniture\Cabinet_a.p3d); // Path to model
+        hiddenSelections[] = {"camo_cabinet"};
+        editorSubCategory = "SCP_Furnitures";
+    };
+
+    class SCP_CB_Things_OfficeSeat : SCP_CB_Things_base
+    {
+        scope = 2;
+        curatorScope = 2;
+        displayName = CSTRING(OfficeSeat); // Name in editor
+        model = QPATHTOF(data\Furniture\Officeseat_a.p3d); // Path to model
+        hiddenSelections[] = {"camo_cabinet"};
+        editorSubCategory = "SCP_Furnitures";
     };
 };
