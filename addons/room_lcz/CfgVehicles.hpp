@@ -38,6 +38,15 @@ class CfgVehicles
         displayName = CSTRING(Hallway_Two_3);
         model = QPATHTOF(data\Hallway_Two_3\Hallway_Two_3.p3d);
         
+        class AnimationSources
+		{
+			class Fan_source
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 1;
+			};
+        };
     };
     class SCP_CB_LCZ_Hallway_Two_4 : SCP_CB_LCZ_base
     {

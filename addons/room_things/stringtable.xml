@@ -9,21 +9,77 @@
             <English>Doors</English>
             <Japanese>ドア</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Furnitures">
+            <English>Furnitures</English>
+            <Japanese>家具</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Door1">
+            <English>Door</English>
+            <Japanese>ドア</Japanese>
+        </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_Door1_Button">
             <English>Door with Button</English>
             <Japanese>ドアとボタン</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Door1_Button_Inverted">
+            <English>Door with Button (Inverted)</English>
+            <Japanese>ドアとボタン（反転）</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_Door1_Button_Error">
             <English>Door with Button (Error)</English>
             <Japanese>ドアとボタン (エラー)</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Door1_Button_Error_Inverted">
+            <English>Door with Button (Error, Inverted)</English>
+            <Japanese>ドアとボタン (エラー、反転)</Japanese>
+        </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_Door1_Button_NoResponse">
             <English>Door with Button (No Response)</English>
             <Japanese>ドアとボタン (反応無し)</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Door1_Button_NoResponse_Inverted">
+            <English>Door with Button (No Response, Inverted)</English>
+            <Japanese>ドアとボタン (反応無し、反転)</Japanese>
+        </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_Button_Press">
             <English>Press Button</English>
             <Japanese>ボタンを押す</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Door1_CardReader">
+            <English>Door with Card Reader</English>
+            <Japanese>ドアとカードリーダー</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Door1_Scanner">
+            <English>Door with Fingerprint Scanner</English>
+            <Japanese>ドアと指紋認証リーダー</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Door1_Numpad">
+            <English>Door with Numpad</English>
+            <Japanese>ドアとテンキー</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_HeavyDoor">
+            <English>Heavy Door</English>
+            <Japanese>重厚ドア</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_HeavyDoor_Button">
+            <English>Heavy Door with Button</English>
+            <Japanese>重厚ドアとボタン</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_HeavyDoor_Button">
+            <English>Heavy Door with Button</English>
+            <Japanese>重厚ドアとボタン</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_ContainmentDoor">
+            <English>Containment Door</English>
+            <Japanese>ブラストドア</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_FileCabinet">
+            <English>File Cabinet</English>
+            <Japanese>ファイルキャビネット</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_OfficeSeat">
+            <English>Office Chair</English>
+            <Japanese>事務椅子</Japanese>
         </Key>
     </Package>
 </Project>
