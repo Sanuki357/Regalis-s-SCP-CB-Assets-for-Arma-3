@@ -595,4 +595,65 @@ class CfgVehicles
 			};
         };
     };
+    class SCP_CB_LCZ_Hallway_Tesla : SCP_CB_LCZ_base
+    {
+        scope = 2;
+        curatorScope = 2;
+        displayName = CSTRING(Hallway_Tesla);
+        model = QPATHTOF(data\Hallway_Tesla\Hallway_Tesla.p3d);
+    };
+	class SCP_CB_LCZ_Room_Endroom : SCP_CB_LCZ_base
+    {
+        scope = 2;
+        curatorScope = 2;
+        displayName = CSTRING(Room_Endroom);
+        model = QPATHTOF(data\Room_Endroom\Room_Endroom.p3d);
+    };
+	class SCP_CB_LCZ_Room_Storeroom : SCP_CB_LCZ_base
+    {
+        scope = 2;
+        curatorScope = 2;
+        displayName = CSTRING(Room_Storeroom);
+        model = QPATHTOF(data\Room_Storeroom\Room_Storeroom.p3d);
+    };
+	class SCP_CB_LCZ_Room_Archive: SCP_CB_LCZ_base
+    {
+        scope = 2;
+        curatorScope = 2;
+        displayName = CSTRING(Room_Archive);
+        model = QPATHTOF(data\Room_Archive\Room_Archive.p3d);
+    };
+
+//**********************//
+// Containment Chambers //
+//**********************//
+
+	class SCP_CB_LCZ_Room_372: SCP_CB_LCZ_base
+    {
+        scope = 2;
+        curatorScope = 2;
+        displayName = CSTRING(Room_372);
+        model = QPATHTOF(data\Room_372\Room_372.p3d);
+    };
+	class SCP_CB_LCZ_Room_1162: SCP_CB_LCZ_base
+    {
+        scope = 2;
+        curatorScope = 2;
+        displayName = CSTRING(Room_1162);
+        model = QPATHTOF(data\Room_1162\Chamber_1162.p3d);
+		class UserActions
+		{
+			class SCP1162
+			{
+				displayNameDefault = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
+				displayName = $STR_DN_OUT_O_DOOR;
+				position = "scp_1162";
+				radius = 2;
+				aiMaxRange = 2;
+				onlyForPlayer = 0;
+				condition = "alive this";
+				statement = (this execVM ("z\regalisscp_cb\addons\room_lcz\data\Room_1162\1162_script.sqf"));
+			};
+		};
+	};
 };

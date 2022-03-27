@@ -61,5 +61,33 @@
             <English>Two-Way Hallway (Indented)</English>
             <Japanese>廊下（湾入）</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Tesla">
+            <English>Tesla Coil Hallway</English>
+            <Japanese>テスラコイル廊下</Japanese>
+        </Key>
+		<Key ID="STR_RegalisSCP_CB_Room_LCZ_Room_Archive">
+            <English>Archive Room</English>
+            <Japanese>書庫</Japanese>
+        </Key>
+		<Key ID="STR_RegalisSCP_CB_Room_LCZ_Room_Endroom">
+            <English>End Room</English>
+            <Japanese>エンドルーム</Japanese>
+        </Key>
+		<Key ID="STR_RegalisSCP_CB_Room_LCZ_Room_Storeroom">
+            <English>Store Room</English>
+            <Japanese>物置部屋</Japanese>
+        </Key>
+		<Key ID="STR_RegalisSCP_CB_Room_LCZ_Room_372">
+            <English>SCP-372 Chamber</English>
+            <Japanese>SCP-372収容区画</Japanese>
+        </Key>
+		<Key ID="STR_RegalisSCP_CB_Room_LCZ_Room_Keycard">
+            <English>Input Keycard</English>
+            <Japanese>入力キーカード</Japanese>
+        </Key>
+		<Key ID="STR_RegalisSCP_CB_Room_LCZ_Room_1162">
+            <English>SCP-1162 Chamber</English>
+            <Japanese>SCP-1162収容区画</Japanese>
+        </Key>
     </Package>
 </Project>
