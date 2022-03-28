@@ -15,6 +15,8 @@
     <a href="https://discord.gg/XQ24K3vxzv">
         <img src="https://img.shields.io/discord/870904834193231944?logo=discord" alt="RSCPCB Discord">
     </a>
+<br>
+    <img src="https://img.shields.io/badge/Build-Production-green" alt="production build stats">
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2560357734">
         <img src="https://img.shields.io/steam/views/2560357734?logo=steam" alt="RSCPCB Steam Views">
     </a>
@@ -27,7 +29,20 @@
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2560357734">
         <img src="https://img.shields.io/steam/downloads/2560357734?logo=steam" alt="RSCPCB Steam Downloads">
     </a>
-    
+</br>
+    <img src="https://img.shields.io/badge/Build-Development-blue" alt="development build stats">
+    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2758207071">
+        <img src="https://img.shields.io/steam/views/2758207071?logo=steam" alt="RSCPCB Dev Steam Views">
+    </a>
+     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2758207071">
+        <img src="https://img.shields.io/steam/favorites/2758207071?logo=steam" alt="RSCPCB Dev Steam Favorites">
+    </a>
+     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2758207071">
+        <img src="https://img.shields.io/steam/subscriptions/2758207071?logo=steam" alt="RSCPCB Dev Steam Subscribers">
+    </a>
+    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2758207071">
+        <img src="https://img.shields.io/steam/downloads/2758207071?logo=steam" alt="RSCPCB Dev Steam Downloads">
+    </a>
     
     
     
