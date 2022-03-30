@@ -1,0 +1,24 @@
+Light1_1024	concretefloor
+		whitewall
+		white
+		dirtymetal
+		glass
+
+Light1_512	controlpanel
+		2_office_lamps_dif
+		crtrec
+		metal
+		crtbev
+		door01
+		keyboard
+		controlpanel
+		papertexture
+		chatscreen
+		misc
+		red
+		label372
+
+Light2_1024	
+
+No Light	ContainmentDoor
+		Keypad

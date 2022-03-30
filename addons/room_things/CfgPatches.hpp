@@ -20,6 +20,10 @@ class CfgPatches
             "SCP_CB_Things_HeavyDoor",
             "SCP_CB_Things_HeavyDoor_Button",
             "SCP_CB_Things_ContainmentDoor",
+            "SCP_CB_Things_Keypad_Button",
+            "SCP_CB_Things_Keypad_CardReader",
+            "SCP_CB_Things_Keypad_Code",
+            "SCP_CB_Things_Keypad_Scanner",
             "SCP_CB_Things_FileCabinet",
             "SCP_CB_Things_OfficeSeat"
         };

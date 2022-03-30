@@ -31,7 +31,7 @@ class CfgVehicles
         
         class AnimationSources
         {
-            class open_door
+            class Door_1_source
             {
                 source = "user";
                 animPeriod = 1.2;
@@ -55,14 +55,14 @@ class CfgVehicles
                 position = "button_f";
                 radius = 1;
                 onlyForPlayer = 0;
-                condition = "this animationSourcePhase ""open_door"" == 1";
-                statement = "[this, ""Door1 Close"", ""open_door"", 2.5] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, ""Press"", 0.5, ""button_f""] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+                condition = "this animationSourcePhase 'Door_1_source' == 1";
+                statement = "[this, ""Door1 Close"", 'Door_1_source'] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, 'Press', 0.5, 'button_f'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
             };
 
             class Open_door_F: Close_door_F
             {
-                condition = "this animationSourcePhase ""open_door"" == 0";
-                statement = "[this, ""Door1 Open"", ""open_door"", 2.5] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, ""Press"", 0.5, ""button_f""] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+                condition = "this animationSourcePhase 'Door_1_source' == 0";
+                statement = "[this, ""Door1 Open"", 'Door_1_source'] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, 'Press', 0.5, 'button_f'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
             };
             
             class Close_door_B
@@ -72,14 +72,14 @@ class CfgVehicles
                 position = "button_b";
                 radius = 1;
                 onlyForPlayer = 0;
-                condition = "this animationSourcePhase ""open_door"" == 1";
-                statement = "[this, ""Door1 Close"", ""open_door"", 2.5] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, ""Press"", 0.5, ""button_b""] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+                condition = "this animationSourcePhase 'Door_1_source' == 1";
+                statement = "[this, ""Door1 Close"", 'Door_1_source'] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, 'Press', 0.5, 'button_b'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
             };
             
             class Open_door_B: Close_door_B
             {
-                condition = "this animationSourcePhase ""open_door"" == 0";
-                statement = "[this, ""Door1 Open"", ""open_door"", 2.5] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, ""Press"", 0.5, ""button_b""] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+                condition = "this animationSourcePhase 'Door_1_source' == 0";
+                statement = "[this, ""Door1 Open"", 'Door_1_source'] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, 'Press', 0.5, 'button_b'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
             };
         };
     };
@@ -107,14 +107,14 @@ class CfgVehicles
                 position = "button_f";
                 radius = 1;
                 onlyForPlayer = 0;
-                condition = "this animationSourcePhase ""open_door"" == 0";
-                statement = "[this, ""Press (Denied)"", 0.5, ""button_f""] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+                condition = "this animationSourcePhase 'Door_1_source' == 0";
+                statement = "[this, 'Press (Denied)', 0.5, 'button_f'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
             };
 
             class Error_door_B: Error_door_F
             {
                 position = "button_b";
-                statement = "[this, ""Press (Denied)"", 0.5, ""button_b""] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+                statement = "[this, 'Press (Denied)', 0.5, 'button_b'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
             };
         };
     };
@@ -142,14 +142,14 @@ class CfgVehicles
                 position = "button_f";
                 radius = 1;
                 onlyForPlayer = 0;
-                condition = "this animationSourcePhase ""open_door"" == 0";
-                statement = "[this, ""Press"", 0.5, ""button_f""] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+                condition = "this animationSourcePhase 'Door_1_source' == 0";
+                statement = "[this, 'Press', 0.5, 'button_f'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
             };
 
             class NoResponse_door_B: NoResponse_door_F
             {
                 position = "button_b";
-                statement = "[this, ""Press"", 0.5, ""button_b""] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+                statement = "[this, 'Press', 0.5, 'button_b'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
             };
         };
     };
@@ -193,7 +193,7 @@ class CfgVehicles
         
         class AnimationSources
         {
-            class open_door
+            class Door_1_source
             {
                 source = "user";
                 animPeriod = 1.2;
@@ -217,14 +217,14 @@ class CfgVehicles
                 position = "button_f";
                 radius = 1;
                 onlyForPlayer = 0;
-                condition = "this animationSourcePhase ""open_door"" == 1";
-                statement = "[this, ""HeavyDoor Close"", ""open_door"", 2.5] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, ""Press"", 0.5, ""button_f""] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+                condition = "this animationSourcePhase 'Door_1_source' == 1";
+                statement = "[this, 'HeavyDoor Close', 'Door_1_source'] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, 'Press', 0.5, 'button_f'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
             };
 
             class Open_door_F: Close_door_F
             {
-                condition = "this animationSourcePhase ""open_door"" == 0";
-                statement = "[this, ""HeavyDoor Open"", ""open_door"", 2.5] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, ""Press"", 0.5, ""button_f""] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+                condition = "this animationSourcePhase 'Door_1_source' == 0";
+                statement = "[this, 'HeavyDoor Open', 'Door_1_source'] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, 'Press', 0.5, 'button_f'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
             };
             
             class Close_door_B
@@ -234,14 +234,14 @@ class CfgVehicles
                 position = "button_b";
                 radius = 1;
                 onlyForPlayer = 0;
-                condition = "this animationSourcePhase ""open_door"" == 1";
-                statement = "[this, ""HeavyDoor Close"", ""open_door"", 2.5] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, ""Press"", 0.5, ""button_b""] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+                condition = "this animationSourcePhase 'Door_1_source' == 1";
+                statement = "[this, 'HeavyDoor Close', 'Door_1_source'] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, 'Press', 0.5, 'button_b'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
             };
             
             class Open_door_B: Close_door_B
             {
-                condition = "this animationSourcePhase ""open_door"" == 0";
-                statement = "[this, ""HeavyDoor Open"", ""open_door"", 2.5] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, ""Press"", 0.5, ""button_b""] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+                condition = "this animationSourcePhase 'Door_1_source' == 0";
+                statement = "[this, 'HeavyDoor Open', 'Door_1_source'] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, 'Press', 0.5, 'button_b'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
             };
         };
     };
@@ -258,11 +258,111 @@ class CfgVehicles
         
         class AnimationSources
         {
-            class open_door
+            class Door_1_source
             {
                 source = "user";
                 animPeriod = 1.2;
                 initPhase = 0;
+            };
+        };
+    };
+
+    //**********//
+    // Keypads //
+    //*********//
+
+    class SCP_CB_Things_Keypad_Button : SCP_CB_Things_base
+    {
+        scope = 2;
+        curatorScope = 2;
+        displayName = CSTRING(Keypad_Button); // Name in editor
+        model = QPATHTOF(data\Keypad\Keypad_Button.p3d); // Path to model
+        hiddenSelections[] = {"camo_button"};
+        editorSubCategory = "SCP_Keypads";
+        
+        class UserActions
+        {
+            class Button_f
+            {
+                displayNameDefault = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
+                displayName = CSTRING(Button_Press);
+                position = "button_f";
+                radius = 1;
+                onlyForPlayer = 0;
+                condition = "true";
+                statement = "[this, 'Press', 0.5, 'button_f'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+            };
+        };
+    };
+
+    class SCP_CB_Things_Keypad_CardReader : SCP_CB_Things_base
+    {
+        scope = 2;
+        curatorScope = 2;
+        displayName = CSTRING(Keypad_CardReader); // Name in editor
+        model = QPATHTOF(data\Keypad\Keypad_CardReader.p3d); // Path to model
+        hiddenSelections[] = {"camo_button"};
+        editorSubCategory = "SCP_Keypads";
+        
+        class UserActions
+        {
+            class Button_f
+            {
+                displayNameDefault = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
+                displayName = CSTRING(Button_Press);
+                position = "button_f";
+                radius = 1;
+                onlyForPlayer = 0;
+                condition = "true";
+                statement = "[this, 'Press', 0.5, 'button_f'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+            };
+        };
+    };
+
+    class SCP_CB_Things_Keypad_Code : SCP_CB_Things_base
+    {
+        scope = 2;
+        curatorScope = 2;
+        displayName = CSTRING(Keypad_Code); // Name in editor
+        model = QPATHTOF(data\Keypad\Keypad_Code.p3d); // Path to model
+        hiddenSelections[] = {"camo_button"};
+        editorSubCategory = "SCP_Keypads";
+        
+        class UserActions
+        {
+            class Button_f
+            {
+                displayNameDefault = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
+                displayName = CSTRING(Button_Press);
+                position = "button_f";
+                radius = 1;
+                onlyForPlayer = 0;
+                condition = "true";
+                statement = "[this, 'Press', 0.5, 'button_f'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+            };
+        };
+    };
+
+    class SCP_CB_Things_Keypad_Scanner : SCP_CB_Things_base
+    {
+        scope = 2;
+        curatorScope = 2;
+        displayName = CSTRING(Keypad_Scanner); // Name in editor
+        model = QPATHTOF(data\Keypad\Keypad_Scanner.p3d); // Path to model
+        hiddenSelections[] = {"camo_button"};
+        editorSubCategory = "SCP_Keypads";
+        
+        class UserActions
+        {
+            class Button_f
+            {
+                displayNameDefault = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
+                displayName = CSTRING(Button_Press);
+                position = "button_f";
+                radius = 1;
+                onlyForPlayer = 0;
+                condition = "true";
+                statement = "[this, 'Press', 0.5, 'button_f'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
             };
         };
     };

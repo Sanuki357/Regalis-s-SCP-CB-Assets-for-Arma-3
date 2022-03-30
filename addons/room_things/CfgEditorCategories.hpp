@@ -14,6 +14,12 @@ class CfgEditorSubcategories
         displayName = CSTRING(Doors);
     };
 
+    class SCP_Keypads
+    {
+        // displayName = "Keypads";
+        displayName = CSTRING(Keypads);
+    };
+
     class SCP_Furnitures
     {
         // displayName = "Furnitures";

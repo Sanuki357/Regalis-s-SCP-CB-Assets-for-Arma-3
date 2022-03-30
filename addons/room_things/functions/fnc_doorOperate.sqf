@@ -11,19 +11,18 @@
  * 0: object - Object to be controled its animateSource phase and origin of sounds <OBJECT>
  * 1: soundSet - String from one of pre-defined set of strings. Determines the object to be opened or closed, and what sounds to play <STRING>
  * 2: animSource - String of the animation source from AnimationSources class. Required for animateSource <STRING>
- * 3: soundDuration - Number for the duration of say3D in seconds. To not let say3D loop the sound effect <NUMBER>
  *
  * Return Value:
  * None
  *
  * Example:
- * [this, ""Door1 Open"", ""open_door"", 2.5] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"
- * [this, ""Door1 Open"", ""open_door"", 2.5] call fnc_doorOperate???????????????????????
+ * [this, ""Door1 Open"", ""open_door""] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"
+ * [this, ""Door1 Open"", ""open_door""] call fnc_doorOperate???????????????????????
  *
  * Public: No
  */
 
-params ["_object", "_soundSet", "_animSource", "_soundDuration"];
+params ["_object", "_soundSet", "_animSource"];
 
 switch (_soundSet) do {
     case "Door1 Open": {
@@ -66,7 +65,7 @@ private _soundOrigin = "#particlesource" createVehicle position _object;
 [_object, _randomSound] remoteExec ["say3D", 0];
 
 //Removes _soundOrigin after _soundDuration seconds.
-[_soundOrigin, _soundDuration] spawn {
-    sleep (_this select 1);
+[_soundOrigin] spawn {
+    sleep 2.5;
     deleteVehicle (_this select 0);
 };

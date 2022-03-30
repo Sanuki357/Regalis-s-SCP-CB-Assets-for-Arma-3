@@ -13,6 +13,10 @@
             <English>Furnitures</English>
             <Japanese>家具</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Keypads">
+            <English>Keypads</English>
+            <Japanese>キーパッド</Japanese>
+        </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_Door1">
             <English>Door</English>
             <Japanese>ドア</Japanese>
@@ -72,6 +76,22 @@
         <Key ID="STR_RegalisSCP_CB_Room_Things_ContainmentDoor">
             <English>Containment Door</English>
             <Japanese>ブラストドア</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Keypad_Button">
+            <English>Button</English>
+            <Japanese>ボタン</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Keypad_CardReader">
+            <English>Card Reader</English>
+            <Japanese>カードリーダー</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Keypad_Code">
+            <English>Keypad</English>
+            <Japanese>キーパッド</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Keypad_Scanner">
+            <English>DNA Scanner</English>
+            <Japanese>DNAスキャナー</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_FileCabinet">
             <English>File Cabinet</English>
