@@ -56,13 +56,13 @@ class CfgVehicles
                 radius = 1;
                 onlyForPlayer = 0;
                 condition = "this animationSourcePhase 'Door_1_source' == 1";
-                statement = "[this, ""Door1 Close"", 'Door_1_source'] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, 'Press', 0.5, 'button_f'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+                statement = "[this, 'Door1 Close', 'Door_1_source'] call SCP_fnc_doorOperate; [this, 'Press', 'button_f'] call SCP_fnc_buttonSound";
             };
 
             class Open_door_F: Close_door_F
             {
                 condition = "this animationSourcePhase 'Door_1_source' == 0";
-                statement = "[this, ""Door1 Open"", 'Door_1_source'] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, 'Press', 0.5, 'button_f'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+                statement = "[this, 'Door1 Open', 'Door_1_source'] call SCP_fnc_doorOperate; [this, 'Press', 'button_f'] call SCP_fnc_buttonSound";
             };
             
             class Close_door_B
@@ -73,13 +73,13 @@ class CfgVehicles
                 radius = 1;
                 onlyForPlayer = 0;
                 condition = "this animationSourcePhase 'Door_1_source' == 1";
-                statement = "[this, ""Door1 Close"", 'Door_1_source'] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, 'Press', 0.5, 'button_b'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+                statement = "[this, 'Door1 Close', 'Door_1_source'] call SCP_fnc_doorOperate; [this, 'Press', 'button_b'] call SCP_fnc_buttonSound";
             };
             
             class Open_door_B: Close_door_B
             {
                 condition = "this animationSourcePhase 'Door_1_source' == 0";
-                statement = "[this, ""Door1 Open"", 'Door_1_source'] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, 'Press', 0.5, 'button_b'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+                statement = "[this, 'Door1 Open', 'Door_1_source'] call SCP_fnc_doorOperate; [this, 'Press', 'button_b'] call SCP_fnc_buttonSound";
             };
         };
     };
@@ -108,13 +108,13 @@ class CfgVehicles
                 radius = 1;
                 onlyForPlayer = 0;
                 condition = "this animationSourcePhase 'Door_1_source' == 0";
-                statement = "[this, 'Press (Denied)', 0.5, 'button_f'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+                statement = "[this, 'Press Error', 'button_f'] call SCP_fnc_buttonSound";
             };
 
             class Error_door_B: Error_door_F
             {
                 position = "button_b";
-                statement = "[this, 'Press (Denied)', 0.5, 'button_b'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+                statement = "[this, 'Press Error', 'button_b'] call SCP_fnc_buttonSound";
             };
         };
     };
@@ -143,13 +143,13 @@ class CfgVehicles
                 radius = 1;
                 onlyForPlayer = 0;
                 condition = "this animationSourcePhase 'Door_1_source' == 0";
-                statement = "[this, 'Press', 0.5, 'button_f'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+                statement = "[this, 'Press', 'button_f'] call SCP_fnc_buttonSound";
             };
 
             class NoResponse_door_B: NoResponse_door_F
             {
                 position = "button_b";
-                statement = "[this, 'Press', 0.5, 'button_b'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+                statement = "[this, 'Press', 'button_b'] call SCP_fnc_buttonSound";
             };
         };
     };
@@ -218,13 +218,13 @@ class CfgVehicles
                 radius = 1;
                 onlyForPlayer = 0;
                 condition = "this animationSourcePhase 'Door_1_source' == 1";
-                statement = "[this, 'HeavyDoor Close', 'Door_1_source'] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, 'Press', 0.5, 'button_f'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+                statement = "[this, 'HeavyDoor Close', 'Door_1_source'] call SCP_fnc_doorOperate; [this, 'Press', 'button_f'] call SCP_fnc_buttonSound";
             };
 
             class Open_door_F: Close_door_F
             {
                 condition = "this animationSourcePhase 'Door_1_source' == 0";
-                statement = "[this, 'HeavyDoor Open', 'Door_1_source'] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, 'Press', 0.5, 'button_f'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+                statement = "[this, 'HeavyDoor Open', 'Door_1_source'] call SCP_fnc_doorOperate; [this, 'Press', 'button_f'] call SCP_fnc_buttonSound";
             };
             
             class Close_door_B
@@ -235,13 +235,13 @@ class CfgVehicles
                 radius = 1;
                 onlyForPlayer = 0;
                 condition = "this animationSourcePhase 'Door_1_source' == 1";
-                statement = "[this, 'HeavyDoor Close', 'Door_1_source'] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, 'Press', 0.5, 'button_b'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+                statement = "[this, 'HeavyDoor Close', 'Door_1_source'] call SCP_fnc_doorOperate; [this, 'Press', 'button_b'] call SCP_fnc_buttonSound";
             };
             
             class Open_door_B: Close_door_B
             {
                 condition = "this animationSourcePhase 'Door_1_source' == 0";
-                statement = "[this, 'HeavyDoor Open', 'Door_1_source'] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, 'Press', 0.5, 'button_b'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+                statement = "[this, 'HeavyDoor Open', 'Door_1_source'] call SCP_fnc_doorOperate; [this, 'Press', 'button_b'] call SCP_fnc_buttonSound";
             };
         };
     };
@@ -290,7 +290,7 @@ class CfgVehicles
                 radius = 1;
                 onlyForPlayer = 0;
                 condition = "true";
-                statement = "[this, 'Press', 0.5, 'button_f'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+                statement = "[this, 'Press', 'button_f'] call SCP_fnc_buttonSound";
             };
         };
     };
@@ -314,7 +314,7 @@ class CfgVehicles
                 radius = 1;
                 onlyForPlayer = 0;
                 condition = "true";
-                statement = "[this, 'Press', 0.5, 'button_f'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+                statement = "[this, 'Press', 'button_f'] call SCP_fnc_buttonSound";
             };
         };
     };
@@ -338,7 +338,7 @@ class CfgVehicles
                 radius = 1;
                 onlyForPlayer = 0;
                 condition = "true";
-                statement = "[this, 'Press', 0.5, 'button_f'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+                statement = "[this, 'Press', 'button_f'] call SCP_fnc_buttonSound";
             };
         };
     };
@@ -362,7 +362,7 @@ class CfgVehicles
                 radius = 1;
                 onlyForPlayer = 0;
                 condition = "true";
-                statement = "[this, 'Press', 0.5, 'button_f'] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
+                statement = "[this, 'Press', 'button_f'] call SCP_fnc_buttonSound";
             };
         };
     };

@@ -37,23 +37,23 @@ class CfgWeapons
 	{
 		displayName                 = CSTRING(Keycard_C3);
         descriptionShort            = CSTRING(Keycard_C3_desc);
-		picture                     = QPATHTOF(data\Keycard\UI\gear_Keycard_C2_CA.paa);
-		hiddenSelectionsTextures[]  = {QPATHTOF(data\Keycard\Keycard_C2_CO.paa)};
+		picture                     = QPATHTOF(data\Keycard\UI\gear_Keycard_C3_CA.paa);
+		hiddenSelectionsTextures[]  = {QPATHTOF(data\Keycard\Keycard_C3_CO.paa)};
 	};
 	
 	class Keycard_C4: Keycard_C1
 	{
 		displayName                 = CSTRING(Keycard_C4);
         descriptionShort            = CSTRING(Keycard_C4_desc);
-		picture                     = QPATHTOF(data\Keycard\UI\gear_Keycard_C2_CA.paa);
-		hiddenSelectionsTextures[]  = {QPATHTOF(data\Keycard\Keycard_C2_CO.paa)};
+		picture                     = QPATHTOF(data\Keycard\UI\gear_Keycard_C4_CA.paa);
+		hiddenSelectionsTextures[]  = {QPATHTOF(data\Keycard\Keycard_C4_CO.paa)};
 	};
 	
 	class Keycard_C5: Keycard_C1
 	{
 		displayName                 = CSTRING(Keycard_C5);
         descriptionShort            = CSTRING(Keycard_C5_desc);
-		picture                     = QPATHTOF(data\Keycard\UI\gear_Keycard_C2_CA.paa);
-		hiddenSelectionsTextures[]  = {QPATHTOF(data\Keycard\Keycard_C2_CO.paa)};
+		picture                     = QPATHTOF(data\Keycard\UI\gear_Keycard_C5_CA.paa);
+		hiddenSelectionsTextures[]  = {QPATHTOF(data\Keycard\Keycard_C5_CO.paa)};
 	};
 };

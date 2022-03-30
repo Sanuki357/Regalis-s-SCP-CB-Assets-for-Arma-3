@@ -20,8 +20,8 @@
  * None
  *
  * Example:
- * [this, ""Door1 Open"", ""open_door""] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"
- * [this, ""Door1 Open"", ""open_door""] call fnc_doorOperate???????????????????????
+ * [this, 'Door1 Open', 'open_door'] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"
+ * [this, 'Door1 Open', 'open_door'] call fnc_doorOperate???????????????????????
  *
  * Public: No
  */
@@ -54,7 +54,7 @@ switch (_soundSet) do {
         _object animateSource [_animSource, 0, 0.4];
     };
     default {
-        systemChat format ["fnc_doorOpen error: %1 is not a recognised _soundSet string."];
+        ["fnc_doorOperate error: %1 is not a recognised _soundSet string.", _soundSet] call BIS_fnc_error;
     };
 };
 
