@@ -4,3 +4,4 @@
 #include "CfgEditorCategories.hpp"
 #include "CfgSounds.hpp"
 #include "CfgVehicles.hpp"
+#include "CfgWeapons.hpp"

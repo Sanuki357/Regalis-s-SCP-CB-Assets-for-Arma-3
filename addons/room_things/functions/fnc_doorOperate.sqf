@@ -5,7 +5,11 @@
  *
  * Possible soundSet input:
  *  "Door1 Open"    |
- *  "Door1 Closed"  \ Simple opening and closing of Door1 with 3 audio valiants.
+ *  "Door1 Closed"  \ Simple opening and closing of Door1 with 3 audio variants.
+ *  "HeavyDoor Open"    |
+ *  "HeavyDoor Closed"  \ HeavyDoor version with 3 audio variants. 0.8 times slower to open or close.
+ *  "ContainmentDoor Open"      |
+ *  "ContainmentDoor Closed"    \ ContainmentDoor version with 3 audio variants. 0.4 times slower to open or close.
  *
  * Arguments:
  * 0: object - Object to be controled its animateSource phase and origin of sounds <OBJECT>
@@ -35,11 +39,11 @@ switch (_soundSet) do {
     };
     case "HeavyDoor Open": {
         _soundSet = ["SCP_CB_HeavyDoor_Open_1", "SCP_CB_HeavyDoor_Open_2", "SCP_CB_HeavyDoor_Open_3"];
-        _object animateSource [_animSource, 1];
+        _object animateSource [_animSource, 1, 0.8];
     };
     case "HeavyDoor Close": {
         _soundSet = ["SCP_CB_HeavyDoor_Close_1", "SCP_CB_HeavyDoor_Close_2", "SCP_CB_HeavyDoor_Close_3"];
-        _object animateSource [_animSource, 0];
+        _object animateSource [_animSource, 0, 0.8];
     };
     case "ContainmentDoor Open": {
         _soundSet = ["SCP_CB_ContainmentDoor_Open_1", "SCP_CB_ContainmentDoor_Open_2", "SCP_CB_ContainmentDoor_Open_3"];

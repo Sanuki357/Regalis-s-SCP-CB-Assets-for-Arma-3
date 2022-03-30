@@ -93,6 +93,46 @@
             <English>DNA Scanner</English>
             <Japanese>DNAスキャナー</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Keycard_C1">
+            <English>Level 1 Keycard</English>
+            <Japanese>レベル１キーカード</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Keycard_C1_desc">
+            <English>A keycard with Level 1 Clearance</English>
+            <Japanese>レベル１のクリアランスを持つキーカード</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Keycard_C2">
+            <English>Level 2 Keycard</English>
+            <Japanese>レベル２キーカード</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Keycard_C2_desc">
+            <English>A keycard with Level 2 Clearance</English>
+            <Japanese>レベル２のクリアランスを持つキーカード</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Keycard_C3">
+            <English>Level 3 Keycard</English>
+            <Japanese>レベル３キーカード</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Keycard_C3_desc">
+            <English>A keycard with Level 3 Clearance</English>
+            <Japanese>レベル３のクリアランスを持つキーカード</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Keycard_C4">
+            <English>Level 4 Keycard</English>
+            <Japanese>レベル４キーカード</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Keycard_C4_desc">
+            <English>A keycard with Level 4 Clearance</English>
+            <Japanese>レベル４のクリアランスを持つキーカード</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Keycard_C5">
+            <English>Level 5 Keycard</English>
+            <Japanese>レベル５キーカード</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Keycard_C5_desc">
+            <English>A keycard with Level 5 Clearance</English>
+            <Japanese>レベル５のクリアランスを持つキーカード</Japanese>
+        </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_FileCabinet">
             <English>File Cabinet</English>
             <Japanese>ファイルキャビネット</Japanese>
