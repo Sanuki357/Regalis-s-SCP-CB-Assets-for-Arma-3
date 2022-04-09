@@ -7,7 +7,7 @@ class CfgWeapons
     // Keycards //
     //**********//
 
-	class Keycard_C1: CBA_MiscItem
+	class SCP_CB_Things_Keycard_C1: CBA_MiscItem
 	{
 		scope                       = 2;
 		scopeArsenal                = 2;
@@ -25,7 +25,7 @@ class CfgWeapons
 		};
 	};
 	
-	class Keycard_C2: Keycard_C1
+	class SCP_CB_Things_Keycard_C2: SCP_CB_Things_Keycard_C1
 	{
 		displayName                 = CSTRING(Keycard_C2);
         descriptionShort            = CSTRING(Keycard_C2_desc);
@@ -33,7 +33,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[]  = {QPATHTOF(data\Keycard\Keycard_C2_CO.paa)};
 	};
 	
-	class Keycard_C3: Keycard_C1
+	class SCP_CB_Things_Keycard_C3: SCP_CB_Things_Keycard_C1
 	{
 		displayName                 = CSTRING(Keycard_C3);
         descriptionShort            = CSTRING(Keycard_C3_desc);
@@ -41,7 +41,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[]  = {QPATHTOF(data\Keycard\Keycard_C3_CO.paa)};
 	};
 	
-	class Keycard_C4: Keycard_C1
+	class SCP_CB_Things_Keycard_C4: SCP_CB_Things_Keycard_C1
 	{
 		displayName                 = CSTRING(Keycard_C4);
         descriptionShort            = CSTRING(Keycard_C4_desc);
@@ -49,7 +49,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[]  = {QPATHTOF(data\Keycard\Keycard_C4_CO.paa)};
 	};
 	
-	class Keycard_C5: Keycard_C1
+	class SCP_CB_Things_Keycard_C5: SCP_CB_Things_Keycard_C1
 	{
 		displayName                 = CSTRING(Keycard_C5);
         descriptionShort            = CSTRING(Keycard_C5_desc);

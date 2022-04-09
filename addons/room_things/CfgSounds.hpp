@@ -9,6 +9,17 @@ class CfgSounds {
         sound[] = {QPATHTOF(data\Keypad\Button2.ogg), 1, 1};
         titles[] = {};
     };
+
+    //----------    Card Reader
+    class SCP_CB_CardReader_Granted {
+        sound[] = {QPATHTOF(data\Keypad\KeycardUse1.ogg), 1, 1};
+        titles[] = {};
+    };
+
+    class SCP_CB_CardReader_Denied {
+        sound[] = {QPATHTOF(data\Keypad\KeycardUse2.ogg), 1, 1};
+        titles[] = {};
+    };
     
     //----------    Opening and Closing of Door1
     class SCP_CB_Door1_Open_1 {

@@ -15,6 +15,56 @@ class CfgVehicles
         mapSize = 20.27;
     };
 
+    class SCP_CB_Things_base_cardReader: SCP_CB_Things_base
+    {
+        class Attributes
+		{
+			class RequiredClearanceLevel
+			{
+				displayName     = CSTRING(RequiredClearanceLevel_displayname);
+				tooltip         = CSTRING(RequiredClearanceLevel_tooltip);
+				property        = "RequiredClearanceLevel";
+				control         = "Combo";
+				expression      = "_this setVariable ['SCP_RequiredClearanceLevel', _value]";
+				defaultValue    = 1;
+                typeName        = "NUMBER";
+                class Values {
+                    class Level1 {
+                        name    = CSTRING(RequiredClearanceLevel_level1);
+                        tooltip = CSTRING(RequiredClearanceLevel_level1_tooltip);
+                        value   = 1;
+                        picture = QPATHTOF(data\Keycard\UI\gear_Keycard_C1_CA.paa);
+                        //pictureRight = "\a3\data_f_tacops\logos\arma3_tacops_icon_ca.paa";
+                    };
+                    class Level2 {
+                        name    = CSTRING(RequiredClearanceLevel_level2);
+                        tooltip = CSTRING(RequiredClearanceLevel_level2_tooltip);
+                        value = 2;
+                        picture = QPATHTOF(data\Keycard\UI\gear_Keycard_C2_CA.paa);
+                    };
+                    class Level3 {
+                        name    = CSTRING(RequiredClearanceLevel_level3);
+                        tooltip = CSTRING(RequiredClearanceLevel_level3_tooltip);
+                        value = 3;
+                        picture = QPATHTOF(data\Keycard\UI\gear_Keycard_C3_CA.paa);
+                    };
+                    class Level4 {
+                        name    = CSTRING(RequiredClearanceLevel_level4);
+                        tooltip = CSTRING(RequiredClearanceLevel_level4_tooltip);
+                        value = 4;
+                        picture = QPATHTOF(data\Keycard\UI\gear_Keycard_C4_CA.paa);
+                    };
+                    class Level5 {
+                        name    = CSTRING(RequiredClearanceLevel_level5);
+                        tooltip = CSTRING(RequiredClearanceLevel_level5_tooltip);
+                        value = 5;
+                        picture = QPATHTOF(data\Keycard\UI\gear_Keycard_C5_CA.paa);
+                    };
+                };
+			};
+        };
+    };
+
     //*******//
     // Doors //
     //*******//
@@ -56,6 +106,7 @@ class CfgVehicles
                 radius = 1;
                 onlyForPlayer = 0;
                 condition = "this animationSourcePhase 'Door_1_source' == 1";
+                // old statement: [daar, "ContainmentDoor Open", "Door_1_source", 3] execVM "z\RegalisSCP_CB\addons\room_things\functions\fnc_doorOperate.sqf"
                 statement = "[this, 'Door1 Close', 'Door_1_source'] call SCP_fnc_doorOperate; [this, 'Press', 'button_f'] call SCP_fnc_buttonSound";
             };
 
@@ -295,7 +346,7 @@ class CfgVehicles
         };
     };
 
-    class SCP_CB_Things_Keypad_CardReader : SCP_CB_Things_base
+    class SCP_CB_Things_Keypad_CardReader : SCP_CB_Things_base_cardReader
     {
         scope = 2;
         curatorScope = 2;
@@ -304,19 +355,21 @@ class CfgVehicles
         hiddenSelections[] = {"camo_button"};
         editorSubCategory = "SCP_Keypads";
         
+        /*
         class UserActions
         {
             class Button_f
             {
                 displayNameDefault = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
-                displayName = CSTRING(Button_Press);
+                displayName = CSTRING(CardReader_Insert);
                 position = "button_f";
                 radius = 1;
                 onlyForPlayer = 0;
                 condition = "true";
-                statement = "[this, 'Press', 'button_f'] call SCP_fnc_buttonSound";
+                statement = "[this, this, this getVariable ['SCP_RequiredClearanceLevel', 0], 'button_f'] call SCP_fnc_clearanceLevelCheck";
             };
         };
+        */
     };
 
     class SCP_CB_Things_Keypad_Code : SCP_CB_Things_base

@@ -26,6 +26,12 @@ switch (_soundSet) do {
     case "Press Error": {
         _sound = "SCP_CB_Button_Error";
     };
+    case "Keycard Granted": {
+        _sound = "SCP_CB_CardReader_Granted";
+    };
+    case "Keycard Denied": {
+        _sound = "SCP_CB_CardReader_Denied";
+    };
     default {
         ["fnc_buttonSound error: %1 is not a recognised _soundSet string.", _soundSet] call BIS_fnc_error;
     };
@@ -42,12 +48,4 @@ _soundOrigin attachTo [_object, [0,0,0], _soundPosition];
 [_soundOrigin] spawn {
     sleep 1;
     deleteVehicle (_this select 0);
-}
-
-
-/*
-_soundOrigin spawn {
-	sleep _soundDuration;
-	deleteVehicle _soundOrigin;
 };
-*/

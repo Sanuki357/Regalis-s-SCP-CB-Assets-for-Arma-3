@@ -45,10 +45,6 @@
             <English>Door with Button (No Response, Inverted)</English>
             <Japanese>ドアとボタン (反応無し、反転)</Japanese>
         </Key>
-        <Key ID="STR_RegalisSCP_CB_Room_Things_Button_Press">
-            <English>Press Button</English>
-            <Japanese>ボタンを押す</Japanese>
-        </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_Door1_CardReader">
             <English>Door with Card Reader</English>
             <Japanese>ドアとカードリーダー</Japanese>
@@ -129,9 +125,61 @@
             <English>Level 5 Keycard</English>
             <Japanese>レベル５キーカード</Japanese>
         </Key>
-        <Key ID="STR_RegalisSCP_CB_Room_Things_Keycard_C5_desc">
-            <English>A keycard with Level 5 Clearance</English>
-            <Japanese>レベル５のクリアランスを持つキーカード</Japanese>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_RequiredClearanceLevel_displayname">
+            <English>Required Clearance Level</English>
+            <Japanese>必須クリアランスレベル</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_RequiredClearanceLevel_tooltip">
+            <English>Sets the required security clearance level of the card reader to activate a synced object.</English>
+            <Japanese>接続されたオブジェクトの作動に必要なセキュリティクリアランスレベルの設定</Japanese> 
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_RequiredClearanceLevel_level1">
+            <English>Level 1</English>
+            <Japanese>レベル１</Japanese> 
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_RequiredClearanceLevel_level1_tooltip">
+            <English>Level 1 Staff Access / Janitorial Access</English>
+            <Japanese>レベル１職員アクセス / 清掃員アクセス</Japanese> 
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_RequiredClearanceLevel_level2">
+            <English>Level 2</English>
+            <Japanese>レベル２</Japanese> 
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_RequiredClearanceLevel_level2_tooltip">
+            <English>Level 2 Staff Access</English>
+            <Japanese>レベル２職員アクセス</Japanese> 
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_RequiredClearanceLevel_level3">
+            <English>Level 3</English>
+            <Japanese>レベル３</Japanese> 
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_RequiredClearanceLevel_level1_tooltip">
+            <English>Level 3 Staff Access</English>
+            <Japanese>レベル３職員アクセス</Japanese> 
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_RequiredClearanceLevel_level4">
+            <English>Level 4</English>
+            <Japanese>レベル４</Japanese> 
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_RequiredClearanceLevel_level1_tooltip">
+            <English>Level 4 Staff Access</English>
+            <Japanese>レベル４職員アクセス</Japanese> 
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_RequiredClearanceLevel_level5">
+            <English>Level 5</English>
+            <Japanese>レベル５</Japanese> 
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_RequiredClearanceLevel_level1_tooltip">
+            <English>Level 5 Staff Access / Omni Card Access</English>
+            <Japanese>レベル５職員アクセス / オムニカードアクセス</Japanese> 
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Button_Press">
+            <English>Press Button</English>
+            <Japanese>ボタンを押す</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_CardReader_Insert">
+            <English>Insert Card</English>
+            <Japanese>カードを入れる</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_FileCabinet">
             <English>File Cabinet</English>
