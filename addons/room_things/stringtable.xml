@@ -65,10 +65,6 @@
             <English>Heavy Door with Button</English>
             <Japanese>重厚ドアとボタン</Japanese>
         </Key>
-        <Key ID="STR_RegalisSCP_CB_Room_Things_HeavyDoor_Button">
-            <English>Heavy Door with Button</English>
-            <Japanese>重厚ドアとボタン</Japanese>
-        </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_ContainmentDoor">
             <English>Containment Door</English>
             <Japanese>ブラストドア</Japanese>
@@ -153,7 +149,7 @@
             <English>Level 3</English>
             <Japanese>レベル３</Japanese> 
         </Key>
-        <Key ID="STR_RegalisSCP_CB_Room_Things_RequiredClearanceLevel_level1_tooltip">
+        <Key ID="STR_RegalisSCP_CB_Room_Things_RequiredClearanceLevel_level3_tooltip">
             <English>Level 3 Staff Access</English>
             <Japanese>レベル３職員アクセス</Japanese> 
         </Key>
@@ -161,7 +157,7 @@
             <English>Level 4</English>
             <Japanese>レベル４</Japanese> 
         </Key>
-        <Key ID="STR_RegalisSCP_CB_Room_Things_RequiredClearanceLevel_level1_tooltip">
+        <Key ID="STR_RegalisSCP_CB_Room_Things_RequiredClearanceLevel_level4_tooltip">
             <English>Level 4 Staff Access</English>
             <Japanese>レベル４職員アクセス</Japanese> 
         </Key>
@@ -169,16 +165,16 @@
             <English>Level 5</English>
             <Japanese>レベル５</Japanese> 
         </Key>
-        <Key ID="STR_RegalisSCP_CB_Room_Things_RequiredClearanceLevel_level1_tooltip">
+        <Key ID="STR_RegalisSCP_CB_Room_Things_RequiredClearanceLevel_level5_tooltip">
             <English>Level 5 Staff Access / Omni Card Access</English>
             <Japanese>レベル５職員アクセス / オムニカードアクセス</Japanese> 
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_Button_Press">
-            <English>Press Button</English>
+            <English>Press button</English>
             <Japanese>ボタンを押す</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_CardReader_Insert">
-            <English>Insert Card</English>
+            <English>Insert card</English>
             <Japanese>カードを入れる</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_FileCabinet">
