@@ -45,7 +45,7 @@ class Stage3
 };
 class Stage4
 {
-	texture = "#(argb,8,8,3)color(1,1,1,1,AS)";
+	texture = "z\RegalisSCP_CB\addons\room_lcz\data\Room_372\Room_372_1_2048_1_ADSHQ.paa";
 	uvSource = "tex1";
 	class uvTransform
 	{

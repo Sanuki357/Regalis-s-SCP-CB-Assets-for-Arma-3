@@ -17,6 +17,10 @@
             <English>Corner Hallway</English>
             <Japanese>曲がり廊下</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Corner_Elevator">
+            <English>Corner Hallway (Elevator)</English>
+            <Japanese>曲がり廊下（エレベーター）</Japanese>
+        </Key>
         <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Four_1">
             <English>Four-Way Hallway</English>
             <Japanese>十字廊下</Japanese>

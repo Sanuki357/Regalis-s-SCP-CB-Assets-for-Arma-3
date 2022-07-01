@@ -100,6 +100,14 @@ class CfgVehicles
         model = QPATHTOF(data\Hallway_Corner_2\Hallway_Corner_2.p3d);
         hiddenSelections[] = {"camo_floor", "camo_ceiling", "camo_wall", "camo_door"};
     };
+    class SCP_CB_LCZ_Hallway_Corner_Elevator : SCP_CB_LCZ_base
+    {
+        scope = 2;
+        curatorScope = 2;
+        displayName = CSTRING(Hallway_Corner_Elevator);
+        model = QPATHTOF(data\Hallway_Corner_Elevator\Hallway_Corner_Elevator.p3d);
+        //hiddenSelections[] = {"camo_floor", "camo_ceiling", "camo_wall", "camo_door"};
+    };
     class SCP_CB_LCZ_Hallway_Four_1 : SCP_CB_LCZ_base
     {
         scope = 2;
@@ -601,6 +609,7 @@ class CfgVehicles
         curatorScope = 2;
         displayName = CSTRING(Hallway_Tesla);
         model = QPATHTOF(data\Hallway_Tesla\Hallway_Tesla.p3d);
+        hiddenSelections[] = {"camo_ceiling", "camo_floor", "camo_wall", "camo_toroid", "camo_warning_sign"};
     };
 	class SCP_CB_LCZ_Room_Endroom : SCP_CB_LCZ_base
     {
@@ -622,6 +631,7 @@ class CfgVehicles
         curatorScope = 2;
         displayName = CSTRING(Room_Archive);
         model = QPATHTOF(data\Room_Archive\Room_Archive.p3d);
+        hiddenSelections[] = {"camo_floor", "camo_wall"};
     };
 
 //**********************//
@@ -634,13 +644,14 @@ class CfgVehicles
         curatorScope = 2;
         displayName = CSTRING(Room_372);
         model = QPATHTOF(data\Room_372\Room_372.p3d);
+        hiddenSelections[] = {"camo_ceiling", "camo_floor", "camo_wall"};
     };
 	class SCP_CB_LCZ_Room_1162: SCP_CB_LCZ_base
     {
         scope = 2;
         curatorScope = 2;
         displayName = CSTRING(Room_1162);
-        model = QPATHTOF(data\Room_1162\Chamber_1162.p3d);
+        model = QPATHTOF(data\Room_1162\Room_1162.p3d);
 		class UserActions
 		{
 			class SCP1162

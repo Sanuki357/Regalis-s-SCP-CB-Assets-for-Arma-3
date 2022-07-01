@@ -20,12 +20,16 @@ class CfgPatches
             "SCP_CB_Things_HeavyDoor",
             "SCP_CB_Things_HeavyDoor_Button",
             "SCP_CB_Things_ContainmentDoor",
+            "SCP_CB_Things_ElevatorRoom_Door",
             "SCP_CB_Things_Keypad_Button",
             "SCP_CB_Things_Keypad_CardReader",
             "SCP_CB_Things_Keypad_Code",
             "SCP_CB_Things_Keypad_Scanner",
             "SCP_CB_Things_FileCabinet",
-            "SCP_CB_Things_OfficeSeat"
+            "SCP_CB_Things_OfficeSeat",
+            "SCP_CB_Things_Crate1",
+            "SCP_CB_Things_Crate2",
+            "SCP_CB_Things_Crate3"
         };
         weapons[] = {};
     };

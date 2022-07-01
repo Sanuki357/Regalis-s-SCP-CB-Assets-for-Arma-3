@@ -1,4 +1,4 @@
-// #include "script_component.hpp"
+#include "script_component.hpp"
 /*
  * Author: 
  * Handles deafness due to explosions going off near the player.
@@ -18,8 +18,6 @@
 
 params ["_object", "_caller", "_requiredLvl", "_soundPosition"];
 
-//systemChat "woah";
-
 _idCardLvl = 0;
 
 if (true) then {
@@ -32,15 +30,23 @@ if (true) then {
 
 if (_idCardLvl == 0) exitWith {
     systemChat "You do not have any ID card in your inventory.";
+    false
 };
 
 if (_idCardLvl >= _requiredLvl) exitWith {
-    //[this, 'Door1 Close', 'Door_1_source'] call SCP_fnc_doorOperate;
+    /*
+    for "_i" from 0 to count synchronizedObjects _object do {
+        [synchronizedObjects _object select _i, 'Door1 Close', 'Door_1_source'] call SCP_fnc_doorOperate;
+    };
+    */
     [_object, 'Keycard Granted', _soundPosition] call SCP_fnc_buttonSound;
+    true
 };
 
 if (_idCardLvl < _requiredLvl) exitWith {
     [_object, 'Keycard Denied', _soundPosition] call SCP_fnc_buttonSound;
+    false
 };
 
 ["fnc_clearanceLevelCheck error: %1 is not a recognised _soundSet string.", _idCardLvl] call BIS_fnc_error;
+false

@@ -13,6 +13,10 @@
             <English>Furnitures</English>
             <Japanese>家具</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Crates">
+            <English>Crates</English>
+            <Japanese>クレート</Japanese>
+        </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_Keypads">
             <English>Keypads</English>
             <Japanese>キーパッド</Japanese>
@@ -67,7 +71,35 @@
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_ContainmentDoor">
             <English>Containment Door</English>
-            <Japanese>ブラストドア</Japanese>
+            <Japanese>収容ドア</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_ElevatorRoom_Door">
+            <English>Elevator</English>
+            <Japanese>エレベーター</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_DoorHingeState_displayName">
+            <English>Initial door hinge state</English>
+            <Japanese>初期開閉設定</Japanese> 
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_DoorHingeState_tooltip">
+            <English>Sets wherther the door should be opened or closed.</English>
+            <Japanese>ドアが開いているか、閉じているか</Japanese> 
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_DoorHingeState_Close">
+            <English>Close</English>
+            <Japanese>閉扉</Japanese> 
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_DoorHingeState_Open">
+            <English>Open</English>
+            <Japanese>開扉</Japanese> 
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_DoorLockState_displayName">
+            <English>Placeholder</English>
+            <Japanese>Placeholder</Japanese> 
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_DoorLockState_tooltip">
+            <English>Placeholder</English>
+            <Japanese>Placeholder</Japanese> 
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_Keypad_Button">
             <English>Button</English>
@@ -121,13 +153,21 @@
             <English>Level 5 Keycard</English>
             <Japanese>レベル５キーカード</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_PressExpression_displayname">
+            <English>Expression</English>
+            <Japanese>式</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_PressExpression_tooltip">
+            <English>The expression to be executed when the button is pressed.</English>
+            <Japanese>ボタンが押された際に実行する式</Japanese>
+        </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_RequiredClearanceLevel_displayname">
             <English>Required Clearance Level</English>
             <Japanese>必須クリアランスレベル</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_RequiredClearanceLevel_tooltip">
-            <English>Sets the required security clearance level of the card reader to activate a synced object.</English>
-            <Japanese>接続されたオブジェクトの作動に必要なセキュリティクリアランスレベルの設定</Japanese> 
+            <English>Sets the required security clearance level of the card reader.</English>
+            <Japanese>必要なセキュリティクリアランスレベルの設定</Japanese> 
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_RequiredClearanceLevel_level1">
             <English>Level 1</English>
@@ -184,6 +224,18 @@
         <Key ID="STR_RegalisSCP_CB_Room_Things_OfficeSeat">
             <English>Office Chair</English>
             <Japanese>事務椅子</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Crate1">
+            <English>BEV Crate</English>
+            <Japanese>BEVクレート</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Crate2">
+            <English>REC Crate</English>
+            <Japanese>RECクレート</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Crate3">
+            <English>ROC Crate</English>
+            <Japanese>ROCクレート</Japanese>
         </Key>
     </Package>
 </Project>

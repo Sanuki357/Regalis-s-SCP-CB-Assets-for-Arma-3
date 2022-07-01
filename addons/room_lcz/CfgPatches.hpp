@@ -17,6 +17,7 @@ class CfgPatches
             "SCP_CB_LCZ_Hallway_Three_3",
             "SCP_CB_LCZ_Hallway_Corner_1",
             "SCP_CB_LCZ_Hallway_Corner_2",
+            "SCP_CB_LCZ_Hallway_Corner_Elevator",
             "SCP_CB_LCZ_Hallway_Four_1",
             "SCP_CB_LCZ_Hallway_Four_2",
             "SCP_CB_LCZ_Hallway_Four_3",

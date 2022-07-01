@@ -25,4 +25,10 @@ class CfgEditorSubcategories
         // displayName = "Furnitures";
         displayName = CSTRING(Furnitures);
     };
+
+    class SCP_Crates
+    {
+        // displayName = "Crates";
+        displayName = CSTRING(Crates);
+    };
 };

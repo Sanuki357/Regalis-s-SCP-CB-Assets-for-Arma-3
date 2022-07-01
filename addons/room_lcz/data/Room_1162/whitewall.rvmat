@@ -37,8 +37,8 @@ class Stage3 {
 	};
 };
 class Stage4 {
-	texture = "#(argb,8,8,3)color(1,1,1,1,AS)";
-	uvSource = "tex";
+	texture = "z\RegalisSCP_CB\addons\room_lcz\data\Room_1162\Room_1162_1_2048_1_ADSHQ.paa";
+	uvSource = "tex1";
 	class uvTransform {
 		aside[] = { 1, 0, 0 };
 		up[] = { 0, 1, 0 };
@@ -67,8 +67,8 @@ class Stage6 {
 	};
 };
 class Stage7 {
-	texture = "a3\data_f\env_land_ca.paa";
-	useWorldEnvMap = "true";
+	texture = "a3\data_f\env_bathroom_co.paa";
+	useWorldEnvMap = "false";
 	uvSource = "tex";
 	class uvTransform {
 		aside[] = { 1, 0, 0 };
