@@ -1,0 +1,17 @@
+2048_1	tilefloor
+	whitewall
+	white
+	concretefloor
+	dirtymetal
+	
+1024_1	metal
+	metalpanels
+	scplogo
+	metalpanels2
+	door01
+	misc
+	glass
+	cabinet_a
+	crtbev
+	crtroc
+	crtrec

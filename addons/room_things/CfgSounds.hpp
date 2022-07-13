@@ -9,6 +9,17 @@ class CfgSounds {
         sound[] = {QPATHTOF(data\Keypad\Button2.ogg), 1, 1};
         titles[] = {};
     };
+
+    //----------    Card Reader
+    class SCP_CB_CardReader_Granted {
+        sound[] = {QPATHTOF(data\Keypad\KeycardUse1.ogg), 1, 1};
+        titles[] = {};
+    };
+
+    class SCP_CB_CardReader_Denied {
+        sound[] = {QPATHTOF(data\Keypad\KeycardUse2.ogg), 1, 1};
+        titles[] = {};
+    };
     
     //----------    Opening and Closing of Door1
     class SCP_CB_Door1_Open_1 {
@@ -101,5 +112,45 @@ class CfgSounds {
     class SCP_CB_ContainmentDoor_Close_3 {
         sound[] = {QPATHTOF(data\ContainmentDoor\BigDoorClose2.ogg), 1, 1};
         titles[] = {};
-    };    
+    };
+
+    class SCP_CB_Elevator_Close_1 {
+        sound[] = {QPATHTOF(data\Elevator\ElevatorClose1.ogg), 1, 1};
+        titles[] = {};
+    };
+
+    class SCP_CB_Elevator_Close_2 {
+        sound[] = {QPATHTOF(data\Elevator\ElevatorClose2.ogg), 1, 1};
+        titles[] = {};
+    };
+    
+    class SCP_CB_Elevator_Close_3 {
+        sound[] = {QPATHTOF(data\Elevator\ElevatorClose3.ogg), 1, 1};
+        titles[] = {};
+    };
+
+    class SCP_CB_Elevator_Open_1 {
+        sound[] = {QPATHTOF(data\Elevator\ElevatorOpen1.ogg), 1, 1};
+        titles[] = {};
+    };
+
+    class SCP_CB_Elevator_Open_2 {
+        sound[] = {QPATHTOF(data\Elevator\ElevatorOpen2.ogg), 1, 1};
+        titles[] = {};
+    };
+
+    class SCP_CB_Elevator_Open_3 {
+        sound[] = {QPATHTOF(data\Elevator\ElevatorOpen3.ogg), 1, 1};
+        titles[] = {};
+    };
+
+    class SCP_CB_Elevator_Moving {
+        sound[] = {QPATHTOF(data\Elevator\Moving.ogg), 1, 1};
+        titles[] = {};
+    };
+
+    class SCP_CB_Elevator_Beep {
+        sound[] = {QPATHTOF(data\Elevator\Beep.ogg), 1, 1};
+        titles[] = {};
+    };
 };

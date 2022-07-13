@@ -17,9 +17,16 @@ class CfgPatches
             "SCP_CB_LCZ_Hallway_Three_3",
             "SCP_CB_LCZ_Hallway_Corner_1",
             "SCP_CB_LCZ_Hallway_Corner_2",
+            "SCP_CB_LCZ_Hallway_Corner_Elevator",
             "SCP_CB_LCZ_Hallway_Four_1",
             "SCP_CB_LCZ_Hallway_Four_2",
-            "SCP_CB_LCZ_Hallway_Four_3"
+            "SCP_CB_LCZ_Hallway_Four_3",
+            "SCP_CB_LCZ_Hallway_Tesla",
+			"SCP_CB_LCZ_Room_Archive",
+			"SCP_CB_LCZ_Room_Endroom",
+			"SCP_CB_LCZ_Room_Storeroom",
+			"SCP_CB_LCZ_Room_327",
+			"SCP_CB_LCZ_Room_1162"
         };
         weapons[] = {};
     };

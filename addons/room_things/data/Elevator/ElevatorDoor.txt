@@ -1,0 +1,4 @@
+1024_1	metal
+	cable_black
+	Door01
+	dirtymetal
