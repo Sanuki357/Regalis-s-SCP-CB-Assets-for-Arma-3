@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="RegalisSCP_CB">
+    <Package name="Room_Anomaly">
+        <Key ID="STR_RegalisSCP_CB_Anomaly_Anomalies">
+            <English>Anomalies</English>
+            <Japanese>構造物（SCP）</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_Sentient_Static">
+            <English>Sentient (Static)</English>
+            <Japanese>構造物（SCP）</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP-173_Static">
+            <English>SCP-173 "The Sculpture"</English>
+            <Japanese>構造物（SCP）</Japanese>
+        </Key>
+    </Package>
+</Project>
