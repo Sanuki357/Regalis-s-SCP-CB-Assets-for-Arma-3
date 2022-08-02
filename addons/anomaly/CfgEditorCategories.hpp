@@ -6,7 +6,11 @@ class CfgEditorCategories {
 };
 
 class CfgEditorSubcategories {
-    class SCP_Sentient_Static {
-        displayName = CSTRING(Sentient_Static);
+    class SCP_Autonomous_Static {
+        displayName = CSTRING(Autonomous_Static);
+    };
+
+    class SCP_Inanimate {
+        displayName = CSTRING(Inanimate);
     };
 };

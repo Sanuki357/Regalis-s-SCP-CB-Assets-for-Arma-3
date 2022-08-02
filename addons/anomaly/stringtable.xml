@@ -5,12 +5,28 @@
             <English>Anomalies</English>
             <Japanese>構造物（SCP）</Japanese>
         </Key>
-        <Key ID="STR_RegalisSCP_CB_Anomaly_Sentient_Static">
-            <English>Sentient (Static)</English>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_Autonomous_Static">
+            <English>Autonomous (Static)</English>
+            <Japanese>構造物（SCP）</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_Inanimate">
+            <English>Inanimate</English>
             <Japanese>構造物（SCP）</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Anomaly_SCP173_Static">
             <English>SCP-173 "The Sculpture"</English>
+            <Japanese>構造物（SCP）</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP079">
+            <English>SCP-079 "Old AI"</English>
+            <Japanese>構造物（SCP）</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP079_Active">
+            <English>SCP-079 "Old AI"</English>
+            <Japanese>構造物（SCP）</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP079_Refuse">
+            <English>SCP-079 "Old AI"</English>
             <Japanese>構造物（SCP）</Japanese>
         </Key>
     </Package>
