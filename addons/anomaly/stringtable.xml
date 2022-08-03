@@ -1,32 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="RegalisSCP_CB">
     <Package name="Room_Anomaly">
-        <Key ID="STR_RegalisSCP_CB_Anomaly_Anomalies">
+        <Key ID="STR_RegalisSCP_CB_Anomaly_EdCat_Anomalies">
             <English>Anomalies</English>
             <Japanese>構造物（SCP）</Japanese>
         </Key>
-        <Key ID="STR_RegalisSCP_CB_Anomaly_Autonomous_Static">
+        <Key ID="STR_RegalisSCP_CB_Anomaly_EdSubcat_Autonomous_Static">
             <English>Autonomous (Static)</English>
             <Japanese>構造物（SCP）</Japanese>
         </Key>
-        <Key ID="STR_RegalisSCP_CB_Anomaly_Inanimate">
+        <Key ID="STR_RegalisSCP_CB_Anomaly_EdSubcat_Inanimate">
             <English>Inanimate</English>
-            <Japanese>構造物（SCP）</Japanese>
-        </Key>
-        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP173_Static">
-            <English>SCP-173 "The Sculpture"</English>
             <Japanese>構造物（SCP）</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Anomaly_SCP079">
             <English>SCP-079 "Old AI"</English>
             <Japanese>構造物（SCP）</Japanese>
         </Key>
-        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP079_Active">
-            <English>SCP-079 "Old AI"</English>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP173_Static">
+            <English>SCP-173 "The Sculpture"</English>
             <Japanese>構造物（SCP）</Japanese>
         </Key>
-        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP079_Refuse">
-            <English>SCP-079 "Old AI"</English>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP294">
+            <English>SCP-294 "The Coffee Machine"</English>
             <Japanese>構造物（SCP）</Japanese>
         </Key>
     </Package>

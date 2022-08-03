@@ -12,23 +12,13 @@ class CfgVehicles
         icon = "z\RegalisSCP_CB\addons\textures\UI\SCP_iconFoundationSolid_CA.paa";
         destrType = "DestructNo";
         simulation = House;
-        editorCategory = "SCP_Anomalies";
-        editorSubcategory = "SCP_Inanimate";
+        editorCategory = "SCP_EdCat_Anomalies";
+        editorSubcategory = "SCP_EdSubcat_Inanimate";
     };
 
 //******************//
 // Hallways & Rooms //
 //******************//
-
-    class SCP_CB_Anomaly_SCP173_Static : SCP_CB_Anomaly_base
-    {
-        scope = 2;
-        curatorScope = 2;
-        displayName = CSTRING(SCP173_Static);
-        model = QPATHTOF(data\SCP173\SCP173.p3d); // Path to model
-        hiddenSelections[] = {"camo"};
-        editorSubcategory = "SCP_Autonomous_Static";
-    };
 
     class SCP_CB_Anomaly_SCP079 : SCP_CB_Anomaly_base
     {
@@ -39,7 +29,27 @@ class CfgVehicles
         hiddenSelections[] = {"camo_monitor_screen"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\SCP079\SCP079_monitor_screen_CO.paa)};
         hiddenSelectionsMaterials[] = {QPATHTOF(data\SCP079\SCP079_monitor_screen.rvmat)};
-        editorSubcategory = "SCP_Inanimate";
+        editorSubcategory = "SCP_EdSubcat_Inanimate";
+    };
+
+    class SCP_CB_Anomaly_SCP173_Static : SCP_CB_Anomaly_base
+    {
+        scope = 2;
+        curatorScope = 2;
+        displayName = CSTRING(SCP173_Static);
+        model = QPATHTOF(data\SCP173\SCP173.p3d); // Path to model
+        hiddenSelections[] = {"camo"};
+        editorSubcategory = "SCP_EdSubcat_Autonomous_Static";
+    };
+
+    class SCP_CB_Anomaly_SCP294 : SCP_CB_Anomaly_base
+    {
+        scope = 2;
+        curatorScope = 2;
+        displayName = CSTRING(SCP294);
+        model = QPATHTOF(data\SCP294\SCP294.p3d); // Path to model
+        hiddenSelections[] = {"camo"};
+        editorSubcategory = "SCP_EdSubcat_Inanimate";
     };
 
     /*
