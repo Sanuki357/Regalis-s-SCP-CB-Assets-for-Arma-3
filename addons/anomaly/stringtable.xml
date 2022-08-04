@@ -17,6 +17,14 @@
             <English>SCP-079 "Old AI"</English>
             <Japanese>構造物（SCP）</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP106">
+            <English>SCP-106 "Old Man"</English>
+            <Japanese>構造物（SCP）</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP106_Skin">
+            <English>SCP-106 "Old Man" Skin</English>
+            <Japanese>構造物（SCP）</Japanese>
+        </Key>
         <Key ID="STR_RegalisSCP_CB_Anomaly_SCP173_Static">
             <English>SCP-173 "The Sculpture"</English>
             <Japanese>構造物（SCP）</Japanese>

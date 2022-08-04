@@ -1,7 +1,7 @@
 class CfgVehicles
 {
     class ThingX;
-    class SCP_CB_Anomaly_base: ThingX
+    class SCP_CB_Anomaly_Object_base: ThingX
     {
         mapSize = 0.97;
         scope = 0;
@@ -16,11 +16,11 @@ class CfgVehicles
         editorSubcategory = "SCP_EdSubcat_Inanimate";
     };
 
-//******************//
-// Hallways & Rooms //
-//******************//
+    //******************//
+    // Static/Immobile  //
+    //******************//
 
-    class SCP_CB_Anomaly_SCP079 : SCP_CB_Anomaly_base
+    class SCP_CB_Anomaly_SCP079 : SCP_CB_Anomaly_Object_base
     {
         scope = 2;
         curatorScope = 2;
@@ -32,7 +32,7 @@ class CfgVehicles
         editorSubcategory = "SCP_EdSubcat_Inanimate";
     };
 
-    class SCP_CB_Anomaly_SCP173_Static : SCP_CB_Anomaly_base
+    class SCP_CB_Anomaly_SCP173_Static : SCP_CB_Anomaly_Object_base
     {
         scope = 2;
         curatorScope = 2;
@@ -42,7 +42,7 @@ class CfgVehicles
         editorSubcategory = "SCP_EdSubcat_Autonomous_Static";
     };
 
-    class SCP_CB_Anomaly_SCP294 : SCP_CB_Anomaly_base
+    class SCP_CB_Anomaly_SCP294 : SCP_CB_Anomaly_Object_base
     {
         scope = 2;
         curatorScope = 2;
@@ -65,4 +65,30 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {QPATHTOF(data\SCP079\SCP079_AIface2_CO.paa)};
     };
     */
+
+    //******************//
+    // Wearable stuff  //
+    //******************//
+
+    class I_Soldier_base_F ;
+    class SCP_CB_Anomaly_SCP106 : I_Soldier_base_F 
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        identityTypes[] = {"LanguageENG_F","Head_NATO","G_NATO_default"};
+        displayName = CSTRING(SCP106);
+        cost = 200000;
+        camouflage = 1.5;
+		sensitivity = 2.5;
+		threat[] = {1, 1, 0.8};
+		model = QPATHTOF(data\SCP106\SCP106.p3d);
+		uniformClass = "U_B_soldier_new";
+		hiddenSelections[] = {"camo"};
+        canDeactivateMines = false;
+		engineer = false;
+		attendant = 0;
+		icon = "z\RegalisSCP_CB\addons\textures\UI\SCP_iconFoundationSolid_CA.paa";
+		picture = "z\RegalisSCP_CB\addons\textures\UI\SCP_iconFoundationSolid_CA.paa";
+    };
 };

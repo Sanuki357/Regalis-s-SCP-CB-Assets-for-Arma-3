@@ -8,9 +8,13 @@ class CfgPatches
         units[] =
         {
             "SCP_CB_Anomaly_SCP079",
+            "SCP_CB_Anomaly_SCP106",
             "SCP_CB_Anomaly_SCP173_Static",
             "SCP_CB_Anomaly_SCP294"
         };
-        weapons[] = {};
+        weapons[] =
+        {
+            "SCP_CB_Anomaly_SCP106_U"
+        };
     };
 };
