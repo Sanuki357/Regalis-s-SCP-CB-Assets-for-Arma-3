@@ -125,6 +125,7 @@ class CfgVehicles
     };
 
     class ReammoBox_F;
+    class Item_Base_F;
 
     //*******//
     // Doors //
@@ -510,4 +511,80 @@ class CfgVehicles
         hiddenSelections[] = {"camo_crate"};
         maximumLoad = 800;
     };
+
+    //********//
+    // Items //
+    //*******//
+
+    class SCP_CB_Things_Item_Keycard_C1 : Item_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = CSTRING(Keycard_C1);
+		author = "$STR_A3_Bohemia_Interactive";
+		editorCategory = "EdCat_Equipment";
+		editorSubcategory = "EdSubcat_InventoryItems";
+		vehicleClass = "Items";
+		model = "\A3\Weapons_F\DummyItemHorizontal.p3d";
+		class TransportItems
+		{
+			class MineDetector
+			{
+				name = "SCP_CB_Things_Keycard_C1";
+				count = 1;
+			};
+		};
+	};
+
+    class SCP_CB_Things_Item_Keycard_C2 : SCP_CB_Things_Item_Keycard_C1
+	{
+		displayName = CSTRING(Keycard_C2);
+		class TransportItems
+		{
+			class MineDetector
+			{
+				name = "SCP_CB_Things_Keycard_C2";
+				count = 1;
+			};
+		};
+	};
+
+    class SCP_CB_Things_Item_Keycard_C3 : SCP_CB_Things_Item_Keycard_C1
+	{
+		displayName = CSTRING(Keycard_C3);
+		class TransportItems
+		{
+			class MineDetector
+			{
+				name = "SCP_CB_Things_Keycard_C3";
+				count = 1;
+			};
+		};
+	};
+
+    class SCP_CB_Things_Item_Keycard_C4 : SCP_CB_Things_Item_Keycard_C1
+	{
+		displayName = CSTRING(Keycard_C4);
+		class TransportItems
+		{
+			class MineDetector
+			{
+				name = "SCP_CB_Things_Keycard_C4";
+				count = 1;
+			};
+		};
+	};
+
+    class SCP_CB_Things_Item_Keycard_C5 : SCP_CB_Things_Item_Keycard_C1
+	{
+		displayName = CSTRING(Keycard_C5);
+		class TransportItems
+		{
+			class MineDetector
+			{
+				name = "SCP_CB_Things_Keycard_C5";
+				count = 1;
+			};
+		};
+	};
 };
