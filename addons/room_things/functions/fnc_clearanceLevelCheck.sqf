@@ -29,7 +29,7 @@ if (true) then {
 };
 
 if (_idCardLvl == 0) exitWith {
-    systemChat "You do not have any ID card in your inventory.";
+    //systemChat "You do not have any ID card in your inventory.";
     false
 };
 

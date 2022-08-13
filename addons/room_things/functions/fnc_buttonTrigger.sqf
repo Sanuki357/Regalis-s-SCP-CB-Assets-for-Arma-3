@@ -23,7 +23,7 @@ if (_delayType == "LockRoom") then {
 };
 
 {
-    systemChat format ["type of the thing is: %1", typeOf _x];
+    //systemChat format ["type of the thing is: %1", typeOf _x];
     private _targetKind = getArray (configFile >> "CfgVehicles" >> typeOf _x >> QEGVAR(operatable,type)) select 0 select 0;
 
     if (_targetKind == "Door") then {
