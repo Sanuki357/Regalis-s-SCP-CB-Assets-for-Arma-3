@@ -65,19 +65,19 @@ if ((_operationType == "Open") || (_operationType == "Close")) then {
     };
 };
 
-systemChat format ["%1 cc", _operationType];
-systemChat format ["%1 dd", _object];
+//systemChat format ["%1 cc", _operationType];
+//systemChat format ["%1 dd", _object];
 
 switch (_operationType) do {
     case "Door1 Open": {
         _soundSet = ["SCP_CB_Door1_Open_1", "SCP_CB_Door1_Open_2", "SCP_CB_Door1_Open_3"];
         _object animateSource [_animSource, 1];
-        systemChat format ["%1 ee", _operationType];
+        //systemChat format ["%1 ee", _operationType];
     };
     case "Door1 Close": {
         _soundSet = ["SCP_CB_Door1_Close_1", "SCP_CB_Door1_Close_2", "SCP_CB_Door1_Close_3"];
         _object animateSource [_animSource, 0];
-        systemChat format ["%1 oo", _operationType];
+        //systemChat format ["%1 oo", _operationType];
     };
     case "HeavyDoor Open": {
         _soundSet = ["SCP_CB_HeavyDoor_Open_1", "SCP_CB_HeavyDoor_Open_2", "SCP_CB_HeavyDoor_Open_3"];
@@ -130,5 +130,5 @@ _randomSound = _soundSet select floor random count _soundSet;
 [_soundOrigin, _soundDuration] spawn {
     sleep (_this select 1);
     deleteVehicle (_this select 0);
-    systemChat "It is done lmao";
+    //systemChat "It is done lmao";
 };
