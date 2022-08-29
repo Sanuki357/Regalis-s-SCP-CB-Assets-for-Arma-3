@@ -528,7 +528,7 @@ class CfgVehicles
 		model = "\A3\Weapons_F\DummyItemHorizontal.p3d";
 		class TransportItems
 		{
-			class MineDetector
+			class SCP_CB_Things_Keycard_C1
 			{
 				name = "SCP_CB_Things_Keycard_C1";
 				count = 1;
@@ -541,7 +541,7 @@ class CfgVehicles
 		displayName = CSTRING(Keycard_C2);
 		class TransportItems
 		{
-			class MineDetector
+			class SCP_CB_Things_Keycard_C2
 			{
 				name = "SCP_CB_Things_Keycard_C2";
 				count = 1;
@@ -554,7 +554,7 @@ class CfgVehicles
 		displayName = CSTRING(Keycard_C3);
 		class TransportItems
 		{
-			class MineDetector
+			class SCP_CB_Things_Keycard_C3
 			{
 				name = "SCP_CB_Things_Keycard_C3";
 				count = 1;
@@ -567,7 +567,7 @@ class CfgVehicles
 		displayName = CSTRING(Keycard_C4);
 		class TransportItems
 		{
-			class MineDetector
+			class SCP_CB_Things_Keycard_C4
 			{
 				name = "SCP_CB_Things_Keycard_C4";
 				count = 1;
@@ -580,7 +580,7 @@ class CfgVehicles
 		displayName = CSTRING(Keycard_C5);
 		class TransportItems
 		{
-			class MineDetector
+			class SCP_CB_Things_Keycard_C5
 			{
 				name = "SCP_CB_Things_Keycard_C5";
 				count = 1;

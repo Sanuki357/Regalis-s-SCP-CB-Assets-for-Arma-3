@@ -29,8 +29,19 @@ class CfgPatches
             "SCP_CB_Things_OfficeSeat",
             "SCP_CB_Things_Crate1",
             "SCP_CB_Things_Crate2",
-            "SCP_CB_Things_Crate3"
+            "SCP_CB_Things_Crate3",
+            "SCP_CB_Things_Item_Keycard_C1",
+            "SCP_CB_Things_Item_Keycard_C2",
+            "SCP_CB_Things_Item_Keycard_C3",
+            "SCP_CB_Things_Item_Keycard_C4",
+            "SCP_CB_Things_Item_Keycard_C5"
         };
-        weapons[] = {};
+        weapons[] = {
+            "SCP_CB_Things_Keycard_C1",
+            "SCP_CB_Things_Keycard_C2",
+            "SCP_CB_Things_Keycard_C3",
+            "SCP_CB_Things_Keycard_C4",
+            "SCP_CB_Things_Keycard_C5"
+        };
     };
 };
