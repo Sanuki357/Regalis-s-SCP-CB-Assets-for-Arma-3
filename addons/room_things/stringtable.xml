@@ -89,8 +89,16 @@
             <English>Close</English>
             <Japanese>閉扉</Japanese> 
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_DoorHingeState_Close_tooltip">
+            <English>It will be closed when the mission starts.</English>
+            <Japanese>閉扉</Japanese> 
+        </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_DoorHingeState_Open">
             <English>Open</English>
+            <Japanese>開扉</Japanese> 
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_DoorHingeState_Open_tooltip">
+            <English>It will be opened when the mission starts.</English>
             <Japanese>開扉</Japanese> 
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_DoorLockState_displayName">
@@ -152,6 +160,10 @@
         <Key ID="STR_RegalisSCP_CB_Room_Things_Keycard_C5">
             <English>Level 5 Keycard</English>
             <Japanese>レベル５キーカード</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Keycard_C5_desc">
+            <English>A keycard with Level 5 Clearance</English>
+            <Japanese>レベル５のクリアランスを持つキーカード</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_PressExpression_displayname">
             <English>Expression</English>
