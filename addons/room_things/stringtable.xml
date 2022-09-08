@@ -53,6 +53,26 @@
             <English>Door with Card Reader</English>
             <Japanese>ドアとカードリーダー</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Door1_CardReader_Level1">
+            <English>Door with Card Reader (Level 1)</English>
+            <Japanese>ドアとカードリーダー</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Door1_CardReader_Level2">
+            <English>Door with Card Reader (Level 2)</English>
+            <Japanese>ドアとカードリーダー</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Door1_CardReader_Level3">
+            <English>Door with Card Reader (Level 3)</English>
+            <Japanese>ドアとカードリーダー</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Door1_CardReader_Level4">
+            <English>Door with Card Reader (Level 4)</English>
+            <Japanese>ドアとカードリーダー</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Door1_CardReader_Level5">
+            <English>Door with Card Reader (Level 5)</English>
+            <Japanese>ドアとカードリーダー</Japanese>
+        </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_Door1_Scanner">
             <English>Door with Fingerprint Scanner</English>
             <Japanese>ドアと指紋認証リーダー</Japanese>

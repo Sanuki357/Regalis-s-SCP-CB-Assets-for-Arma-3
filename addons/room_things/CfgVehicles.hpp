@@ -135,7 +135,7 @@ class CfgVehicles
     class SCP_CB_Things_Door1 : SCP_CB_Things_base
     {
         scope = 2;
-        curatorScope = 2;
+        scopeCurator = 2;
         displayName = CSTRING(Door1); // Name in editor
         model = QPATHTOF(data\Door1\Door1_NoButton.p3d); // Path to model
         hiddenSelections[] = {"camo_door"};
@@ -196,7 +196,6 @@ class CfgVehicles
         class Attributes
 		{
             ATTRIBUTES_DOOR_HINGE_STATE
-            ATTRIBUTES_BUTTON_EXPRESSION(_this)
         };
     };
 
@@ -271,16 +270,55 @@ class CfgVehicles
     //----------    Card Reader variants
     class SCP_CB_Things_Door1_CardReader : SCP_CB_Things_Door1
     {
+        scopeCurator = 1;
         displayName = CSTRING(Door1_CardReader);
         model = QPATHTOF(data\Door1\Door1_CardReader.p3d);
         hiddenSelections[] = {"camo_door", "camo_button"};
 
+
         class Attributes
 		{
             ATTRIBUTES_DOOR_HINGE_STATE
-            ATTRIBUTES_BUTTON_EXPRESSION(_this select 0)
             ATTRIBUTES_CARDREADER_REQUIRED_CLEARANCE_LEVEL
         };
+        
+        //See config.cpp for addAction of this object.
+    };
+
+    // Zeus only variants with pre-defined clearance level requirement for each one.
+    class SCP_CB_Things_Door1_CardReader_Level1 : SCP_CB_Things_Door1_CardReader
+    {
+        displayName = CSTRING(Door1_CardReader_Level1);
+        scope = 1;
+        scopeCurator = 2;
+
+        //See config.cpp for addAction of this object.
+    };
+
+    class SCP_CB_Things_Door1_CardReader_Level2 : SCP_CB_Things_Door1_CardReader_Level1
+    {
+        displayName = CSTRING(Door1_CardReader_Level2);
+
+        //See config.cpp for addAction of this object.
+    };
+
+    class SCP_CB_Things_Door1_CardReader_Level3 : SCP_CB_Things_Door1_CardReader_Level1
+    {
+        displayName = CSTRING(Door1_CardReader_Level3);
+        
+        //See config.cpp for addAction of this object.
+    };
+
+    class SCP_CB_Things_Door1_CardReader_Level4 : SCP_CB_Things_Door1_CardReader_Level1
+    {
+        displayName = CSTRING(Door1_CardReader_Level4);
+        
+        //See config.cpp for addAction of this object.
+    };
+
+    class SCP_CB_Things_Door1_CardReader_Level5 : SCP_CB_Things_Door1_CardReader_Level1
+    {
+        displayName = CSTRING(Door1_CardReader_Level5);
         
         //See config.cpp for addAction of this object.
     };
@@ -371,7 +409,7 @@ class CfgVehicles
     class SCP_CB_Things_Keypad_Button : SCP_CB_Things_base
     {
         scope = 2;
-        curatorScope = 2;
+        scopeCurator = 1;
         displayName = CSTRING(Keypad_Button); // Name in editor
         model = QPATHTOF(data\Keypad\Keypad_Button.p3d); // Path to model
         hiddenSelections[] = {"camo_button"};
@@ -400,7 +438,7 @@ class CfgVehicles
     class SCP_CB_Things_Keypad_CardReader : SCP_CB_Things_base
     {
         scope = 2;
-        curatorScope = 2;
+        scopeCurator = 1;
         displayName = CSTRING(Keypad_CardReader); // Name in editor
         model = QPATHTOF(data\Keypad\Keypad_CardReader.p3d); // Path to model
         hiddenSelections[] = {"camo_button"};
@@ -464,7 +502,7 @@ class CfgVehicles
     class SCP_CB_Things_FileCabinet : SCP_CB_Things_base
     {
         scope = 2;
-        curatorScope = 2;
+        scopeCurator = 2;
         displayName = CSTRING(FileCabinet); // Name in editor
         model = QPATHTOF(data\Furniture\Cabinet_a.p3d); // Path to model
         hiddenSelections[] = {"camo_cabinet"};
@@ -474,7 +512,7 @@ class CfgVehicles
     class SCP_CB_Things_OfficeSeat : SCP_CB_Things_base
     {
         scope = 2;
-        curatorScope = 2;
+        scopeCurator = 2;
         displayName = CSTRING(OfficeSeat); // Name in editor
         model = QPATHTOF(data\Furniture\Officeseat_a.p3d); // Path to model
         hiddenSelections[] = {"camo_cabinet"};
@@ -484,7 +522,7 @@ class CfgVehicles
     class SCP_CB_Things_Crate1 : ReammoBox_F
     {
         scope = 2;
-        curatorScope = 2;
+        scopeCurator = 2;
         displayName = CSTRING(Crate1); // Name in editor
         model = QPATHTOF(data\Crate\Crate1.p3d); // Path to model
         hiddenSelections[] = {"camo_crate"};
