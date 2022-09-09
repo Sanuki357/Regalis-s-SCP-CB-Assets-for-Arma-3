@@ -76,7 +76,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        identityTypes[] = {"LanguageENG_F","Head_NATO","G_NATO_default"};
+        identityTypes[] = {"NoVoice","Head_Dummy","NoGlasses"};
         displayName = CSTRING(SCP106);
         cost = 200000;
         camouflage = 1.5;
@@ -90,5 +90,14 @@ class CfgVehicles
 		attendant = 0;
 		icon = "z\RegalisSCP_CB\addons\textures\UI\SCP_iconFoundationSolid_CA.paa";
 		picture = "z\RegalisSCP_CB\addons\textures\UI\SCP_iconFoundationSolid_CA.paa";
+    };
+
+    class SCP_CB_Anomaly_SCP049 : SCP_CB_Anomaly_SCP106
+    {
+        displayName = CSTRING(SCP049);
+		model = QPATHTOF(data\SCP049\SCP049.p3d);
+		hiddenSelections[] = {"camo_cloth", "camo_mask", "camo_eye"};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\SCP049\SCP049Cloth_CO.paa), QPATHTOF(data\SCP049\SCP049Mask_CO.paa), QPATHTOF(data\SCP049\SCP049Mask_CO.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\SCP049\SCP049Cloth.rvmat), QPATHTOF(data\SCP049\SCP049Mask.rvmat), QPATHTOF(data\SCP049\SCP049Mask.rvmat)};
     };
 };

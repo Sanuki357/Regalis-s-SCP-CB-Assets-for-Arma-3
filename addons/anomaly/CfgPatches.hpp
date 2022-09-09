@@ -7,6 +7,7 @@ class CfgPatches
         requiredVersion = REQUIRED_VERSION;
         units[] =
         {
+            "SCP_CB_Anomaly_SCP049",
             "SCP_CB_Anomaly_SCP079",
             "SCP_CB_Anomaly_SCP106",
             "SCP_CB_Anomaly_SCP173_Static",
@@ -14,6 +15,7 @@ class CfgPatches
         };
         weapons[] =
         {
+            "SCP_CB_Anomaly_SCP049_U",
             "SCP_CB_Anomaly_SCP106_U"
         };
     };
