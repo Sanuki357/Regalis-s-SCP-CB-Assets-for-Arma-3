@@ -23,6 +23,55 @@ class CfgVehicles
         curatorScope = 2;
         displayName = CSTRING(Hallway_Two_1);
         model = QPATHTOF(data\Hallway_Two_1\Hallway_Two_1.p3d); // Path to model
+
+        class Hitpoints {};
+		class AnimationSources {};
+
+        aggregateReflectors[] =
+		{
+			{"Light_1", "Light_2"}
+		};
+
+        class Reflectors
+		{
+			class Light_1
+			{
+				color[]				= {1.0,1.0,1.0};
+				ambient[]			= {70,75,100};
+				intensity			= 2;
+				size				= 10;					/// size of the light point seen from distance
+				innerAngle			= 100;					/// angle of full light
+				outerAngle			= 165;					/// angle of some light
+				coneFadeCoef		= 4;					/// attenuation of light between the above angles
+
+				position			= "Light_1_pos";		/// memory point for start of the light and flare
+				direction			= "Light_1_dir";		/// memory point for the light direction
+				hitpoint			= "Light_1_hitpoint";	/// point(s) in hitpoint lod for the light (hitPoints are created by engine)
+				selection			= "Light_1_hide";		/// selection for artificial glow around the bulb, not much used any more
+
+				useFlare			= true;
+				flareSize			= 1;
+				flareMaxDistance	= 130;
+
+				class Attenuation
+				{
+					start			= 0;
+					constant		= 0;
+					linear			= 1;
+					quadratic		= 1;
+
+					hardLimitStart	= 50;
+					hardLimitEnd	= 65;
+				};
+			};
+			class Light_2: Light_1
+			{
+				position			= "Light_2_pos";
+				direction			= "Light_2_dir";
+				hitpoint			= "Light_2_hitpoint";
+				selection			= "Light_2_hide";
+			};
+        };
     };
     class SCP_CB_LCZ_Hallway_Two_2 : SCP_CB_LCZ_base
     {

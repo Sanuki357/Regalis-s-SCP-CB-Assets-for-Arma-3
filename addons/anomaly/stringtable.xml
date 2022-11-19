@@ -29,6 +29,14 @@
             <English>SCP-079 "Old AI"</English>
             <Japanese>構造物（SCP）</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP079_Face">
+            <English>SCP-079 "Old AI" (AI Face)</English>
+            <Japanese>構造物（SCP）</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP079_X">
+            <English>SCP-079 "Old AI" (ASCII Picture)</English>
+            <Japanese>構造物（SCP）</Japanese>
+        </Key>
         <Key ID="STR_RegalisSCP_CB_Anomaly_SCP106">
             <English>SCP-106 "Old Man"</English>
             <Japanese>構造物（SCP）</Japanese>

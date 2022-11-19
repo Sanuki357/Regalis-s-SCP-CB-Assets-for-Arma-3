@@ -32,6 +32,18 @@ class CfgVehicles
         editorSubcategory = "SCP_EdSubcat_Inanimate";
     };
 
+    class SCP_CB_Anomaly_SCP079_Face : SCP_CB_Anomaly_SCP079
+    {
+        displayName = CSTRING(SCP079_Face);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\SCP079\SCP079_AIface_CO.paa)};
+    };
+
+    class SCP_CB_Anomaly_SCP079_X : SCP_CB_Anomaly_SCP079
+    {
+        displayName = CSTRING(SCP079_X);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\SCP079\SCP079_AIface2_CO.paa)};
+    };
+
     class SCP_CB_Anomaly_SCP173_Static : SCP_CB_Anomaly_Object_base
     {
         scope = 2;
@@ -88,8 +100,17 @@ class CfgVehicles
         canDeactivateMines = false;
 		engineer = false;
 		attendant = 0;
-		icon = "z\RegalisSCP_CB\addons\textures\UI\SCP_iconFoundationSolid_CA.paa";
-		picture = "z\RegalisSCP_CB\addons\textures\UI\SCP_iconFoundationSolid_CA.paa";
+		icon = QPATHTOEF(textures, UI\SCP_iconFoundationSolid_CA.paa);
+		picture = QPATHTOEF(textures, UI\SCP_iconFoundationSolid_CA.paa);
+        backpack = "";	
+        weapons[] = {"", "", "Throw", "Put"};				// Which weapons the character has.
+		respawnWeapons[] = {"", "", "Throw", "Put"};		// Which weapons the character respawns with.
+		Items[] = {};				// Which items the character has.
+		RespawnItems[] = {};			// Which items the character respawns with.
+		magazines[] = {};				// What ammunition the character has.
+		respawnMagazines[] = {};		// What ammunition the character respawns with.
+		linkedItems[] = {};				// Which items the character has.
+		respawnLinkedItems[] = {};	
     };
 
     class SCP_CB_Anomaly_SCP049 : SCP_CB_Anomaly_SCP106
