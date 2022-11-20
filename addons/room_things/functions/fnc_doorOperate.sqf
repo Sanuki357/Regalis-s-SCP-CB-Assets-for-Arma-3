@@ -120,10 +120,10 @@ switch (_operationType) do {
     };
 };
 
-//Randomly selects a sound from _soundSet to play. 
+// Randomly selects a sound from _soundSet to play. 
 _randomSound = _soundSet select floor random count _soundSet;
 
-//Plays _randomSound from _object for door on every client but server.
+// Plays _randomSound from _object for door on every client but server.
 [_soundOrigin, _randomSound] remoteExec ["say3D", 0];
 
 //Removes _soundOrigin after _soundDuration seconds.

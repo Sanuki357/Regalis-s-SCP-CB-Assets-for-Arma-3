@@ -51,8 +51,12 @@ class CfgVehicles
         displayName = CSTRING(SCP173_Static);
         model = QPATHTOF(data\SCP173\SCP173.p3d); // Path to model
         hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\SCP173\SCP173_CO.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\SCP173\SCP173.rvmat)};
         editorSubcategory = "SCP_EdSubcat_Autonomous_Static";
     };
+
+
 
     class SCP_CB_Anomaly_SCP294 : SCP_CB_Anomaly_Object_base
     {
@@ -61,22 +65,10 @@ class CfgVehicles
         displayName = CSTRING(SCP294);
         model = QPATHTOF(data\SCP294\SCP294.p3d); // Path to model
         hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\SCP294\SCP294_CO.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\SCP294\SCP294.rvmat)};
         editorSubcategory = "SCP_EdSubcat_Inanimate";
     };
-
-    /*
-    class SCP_CB_Anomaly_SCP079_Active : SCP_CB_Anomaly_SCP079
-    {
-        displayName = CSTRING(SCP079_Active);
-        hiddenSelectionsTextures[] = {QPATHTOF(data\SCP079\SCP079_AIface_CO.paa)};
-    };
-
-    class SCP_CB_Anomaly_SCP079_Refuse : SCP_CB_Anomaly_SCP079
-    {
-        displayName = CSTRING(SCP079_Refuse);
-        hiddenSelectionsTextures[] = {QPATHTOF(data\SCP079\SCP079_AIface2_CO.paa)};
-    };
-    */
 
     //******************//
     // Wearable stuff  //
@@ -100,8 +92,8 @@ class CfgVehicles
         canDeactivateMines = false;
 		engineer = false;
 		attendant = 0;
-		icon = QPATHTOEF(textures, UI\SCP_iconFoundationSolid_CA.paa);
-		picture = QPATHTOEF(textures, UI\SCP_iconFoundationSolid_CA.paa);
+		icon = "z\RegalisSCP_CB\addons\textures\UI\SCP_iconFoundationSolid_CA.paa"; //QPATHTOEF(textures, UI\SCP_iconFoundationSolid_CA.paa);
+		picture = "z\RegalisSCP_CB\addons\textures\UI\SCP_iconFoundationSolid_CA.paa"; //QPATHTOEF(textures, UI\SCP_iconFoundationSolid_CA.paa);
         backpack = "";	
         weapons[] = {"", "", "Throw", "Put"};				// Which weapons the character has.
 		respawnWeapons[] = {"", "", "Throw", "Put"};		// Which weapons the character respawns with.

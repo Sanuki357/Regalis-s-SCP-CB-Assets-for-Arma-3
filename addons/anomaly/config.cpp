@@ -44,4 +44,4 @@ class CfgHeads
 			mat[] = {"A3\Characters_F\Heads\Data\m_miller.rvmat","A3\Characters_F\Heads\Data\m_miller_injury.rvmat","A3\Characters_F\Heads\Data\m_miller_injury.rvmat"};
 		};
 	};
-}
+};

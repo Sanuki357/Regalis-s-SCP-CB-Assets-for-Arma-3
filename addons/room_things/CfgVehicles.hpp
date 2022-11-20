@@ -107,7 +107,6 @@ class CfgVehicles
             }; \
         }; \
     };
-
     
     class Land_ToiletBox_F; 
     class SCP_CB_Things_base: Land_ToiletBox_F
@@ -529,9 +528,9 @@ class CfgVehicles
         editorCategory = "SCP_Facility";
         editorSubCategory = "SCP_Crates";
         maximumLoad = 800;
-        class TransportMagazines{};
-        class TransportWeapons{};
-		class TransportItems{};
+        class TransportMagazines {};
+        class TransportWeapons {};
+		class TransportItems {};
     };
 
     class SCP_CB_Things_Crate2 : SCP_CB_Things_Crate1

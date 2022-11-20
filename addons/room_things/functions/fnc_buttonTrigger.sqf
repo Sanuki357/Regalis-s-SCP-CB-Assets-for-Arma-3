@@ -28,7 +28,12 @@ if (_delayType == "LockRoom") then {
 
     if (_targetKind == "Door") then {
         private _animationSource = getArray (configFile >> "CfgVehicles" >> typeOf _x >> QEGVAR(operatable,type)) select 0 select 2;
-        if (_x animationSourcePhase _animationSource == 1) then {[_x, 'Close', 0] call SCP_fnc_doorOperate;};
-        if (_x animationSourcePhase _animationSource == 0) then {[_x, 'Open', 0] call SCP_fnc_doorOperate;};
+        if (_x animationSourcePhase _animationSource == 1) then {
+            [_x, 'Close', 0] call SCP_fnc_doorOperate;
+        };
+
+        if (_x animationSourcePhase _animationSource == 0) then {
+            [_x, 'Open', 0] call SCP_fnc_doorOperate;
+        };
     };
 } foreach _targets;
