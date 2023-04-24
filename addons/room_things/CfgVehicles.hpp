@@ -1,7 +1,7 @@
 class CfgVehicles
 {
-    class Land_ToiletBox_F; 
-    class SCP_CB_Things_base: Land_ToiletBox_F
+    class House_F;
+    class SCP_CB_Things_base: House_F
     {
         scope = 0;
         scopeCurator = 0;
@@ -10,7 +10,7 @@ class CfgVehicles
         model = "\A3\Weapons_F\empty.p3d";
         destrType = "DestructNo";
         simulation = House;
-        
+
         editorCategory = "SCP_Facility";
         mapSize = 20.27;
     };
@@ -27,7 +27,7 @@ class CfgVehicles
         model = QPATHTOF(data\Door1.p3d); // Path to model
         hiddenSelections[] = {"camo_door", "camo_button"};
         editorSubCategory = "SCP_Doors";
-        
+
         class UserActions
         {
             class Close_door_F
@@ -46,7 +46,7 @@ class CfgVehicles
                 condition = "this animationSourcePhase ""open_door"" == 0";
                 statement = "[this, ""Door1 Open"", ""open_door"", 2.5] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, ""Press"", 0.5, ""button_f""] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
             };
-            
+
             class Close_door_B
             {
                 displayNameDefault = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
@@ -57,14 +57,14 @@ class CfgVehicles
                 condition = "this animationSourcePhase ""open_door"" == 1";
                 statement = "[this, ""Door1 Close"", ""open_door"", 2.5] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, ""Press"", 0.5, ""button_b""] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
             };
-            
+
             class Open_door_B: Close_door_B
             {
                 condition = "this animationSourcePhase ""open_door"" == 0";
                 statement = "[this, ""Door1 Open"", ""open_door"", 2.5] execVM "QPATHTOF(functions\fnc_doorOperate.sqf)"; [this, ""Press"", 0.5, ""button_b""] execVM "QPATHTOF(functions\fnc_buttonSound.sqf)"";
             };
         };
-        
+
         class AnimationSources
         {
             class open_door
