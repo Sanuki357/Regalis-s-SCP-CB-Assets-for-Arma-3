@@ -1,7 +1,7 @@
 class CfgVehicles
 {
-    class Land_ToiletBox_F; 
-    class SCP_CB_LCZ_base: Land_ToiletBox_F
+    class House_F;
+    class SCP_CB_LCZ_base: House_F
     {
         scope = 0;
         scopeCurator = 0;
@@ -86,7 +86,7 @@ class CfgVehicles
         curatorScope = 2;
         displayName = CSTRING(Hallway_Two_3);
         model = QPATHTOF(data\Hallway_Two_3\Hallway_Two_3.p3d);
-        
+
         class AnimationSources
 		{
 			class Fan_source

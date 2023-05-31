@@ -108,8 +108,8 @@ class CfgVehicles
         }; \
     };
     
-    class Land_ToiletBox_F; 
-    class SCP_CB_Things_base: Land_ToiletBox_F
+    class House_F; 
+    class SCP_CB_Things_base: House_F
     {
         scope = 0;
         scopeCurator = 0;
