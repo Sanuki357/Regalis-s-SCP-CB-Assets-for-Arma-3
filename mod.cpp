@@ -1,4 +1,4 @@
-name = "SCP-Regalis's Containment Breach Assets";
+name = "SCP-Regalis's Containment Breach Assets [dev]";
 author = "Sanuki357";
 picture = "logo_RegalisSCP_CB_ca.paa"; 
 logo = "logo_RegalisSCP_CB_ca.paa";

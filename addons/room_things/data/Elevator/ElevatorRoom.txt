@@ -1,0 +1,4 @@
+1024_1	metal
+	dirtymetal
+	metal3
+	misc

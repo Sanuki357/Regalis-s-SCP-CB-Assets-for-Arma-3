@@ -15,6 +15,8 @@
     <a href="https://discord.gg/XQ24K3vxzv">
         <img src="https://img.shields.io/discord/870904834193231944?logo=discord" alt="RSCPCB Discord">
     </a>
+<br>
+    <img src="https://img.shields.io/badge/Build-Production-green" alt="production build stats">
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2560357734">
         <img src="https://img.shields.io/steam/views/2560357734?logo=steam" alt="RSCPCB Steam Views">
     </a>
@@ -27,7 +29,20 @@
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2560357734">
         <img src="https://img.shields.io/steam/downloads/2560357734?logo=steam" alt="RSCPCB Steam Downloads">
     </a>
-    
+</br>
+    <img src="https://img.shields.io/badge/Build-Development-blue" alt="development build stats">
+    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2758207071">
+        <img src="https://img.shields.io/steam/views/2758207071?logo=steam" alt="RSCPCB Dev Steam Views">
+    </a>
+     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2758207071">
+        <img src="https://img.shields.io/steam/favorites/2758207071?logo=steam" alt="RSCPCB Dev Steam Favorites">
+    </a>
+     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2758207071">
+        <img src="https://img.shields.io/steam/subscriptions/2758207071?logo=steam" alt="RSCPCB Dev Steam Subscribers">
+    </a>
+    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2758207071">
+        <img src="https://img.shields.io/steam/downloads/2758207071?logo=steam" alt="RSCPCB Dev Steam Downloads">
+    </a>
     
     
     
@@ -82,7 +97,7 @@ You can use make to manage versioning and packing up your release version.
 
 Fresh build and package it up for a release:
 ```bash
-tools/make force checkexternal release 0.4.4
+tools/make force checkexternal release 0.5.0
 ```
 
 Build just a binarized version:
@@ -101,7 +116,11 @@ You can also manage versioning through the make tool. To do this, navigate to th
 #define BUILD 0
 ```
 
-Modify the numbers in here to represent your build version. The example listed above would be: `0.4.4.1`. This version will be set in each pbo during binarizing. It will also be used in the signature file names, along the commit hash. This will make it easier to identify the exact version that is being used.
+<<<<<<< Updated upstream
+Modify the numbers in here to represent your build version. The example listed above would be: `0.5.0.24`. This version will be set in each pbo during binarizing. It will also be used in the signature file names, along the commit hash. This will make it easier to identify the exact version that is being used.
+=======
+Modify the numbers in here to represent your build version. The example listed above would be: `0.5.0.24`. This version will be set in each pbo during binarizing. It will also be used in the signature file names, along the commit hash. This will make it easier to identify the exact version that is being used.
+>>>>>>> Stashed changes
 
 
 ### Using CI

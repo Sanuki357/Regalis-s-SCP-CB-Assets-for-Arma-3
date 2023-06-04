@@ -1,7 +1,7 @@
 class CfgVehicles
 {
-    class Land_ToiletBox_F; 
-    class SCP_CB_LCZ_base: Land_ToiletBox_F
+    class House_F;
+    class SCP_CB_LCZ_base: House_F
     {
         scope = 0;
         scopeCurator = 0;
@@ -23,6 +23,55 @@ class CfgVehicles
         curatorScope = 2;
         displayName = CSTRING(Hallway_Two_1);
         model = QPATHTOF(data\Hallway_Two_1\Hallway_Two_1.p3d); // Path to model
+
+        class Hitpoints {};
+		class AnimationSources {};
+
+        aggregateReflectors[] =
+		{
+			{"Light_1", "Light_2"}
+		};
+
+        class Reflectors
+		{
+			class Light_1
+			{
+				color[]				= {1.0,1.0,1.0};
+				ambient[]			= {70,75,100};
+				intensity			= 2;
+				size				= 10;					/// size of the light point seen from distance
+				innerAngle			= 100;					/// angle of full light
+				outerAngle			= 165;					/// angle of some light
+				coneFadeCoef		= 4;					/// attenuation of light between the above angles
+
+				position			= "Light_1_pos";		/// memory point for start of the light and flare
+				direction			= "Light_1_dir";		/// memory point for the light direction
+				hitpoint			= "Light_1_hitpoint";	/// point(s) in hitpoint lod for the light (hitPoints are created by engine)
+				selection			= "Light_1_hide";		/// selection for artificial glow around the bulb, not much used any more
+
+				useFlare			= true;
+				flareSize			= 1;
+				flareMaxDistance	= 130;
+
+				class Attenuation
+				{
+					start			= 0;
+					constant		= 0;
+					linear			= 1;
+					quadratic		= 1;
+
+					hardLimitStart	= 50;
+					hardLimitEnd	= 65;
+				};
+			};
+			class Light_2: Light_1
+			{
+				position			= "Light_2_pos";
+				direction			= "Light_2_dir";
+				hitpoint			= "Light_2_hitpoint";
+				selection			= "Light_2_hide";
+			};
+        };
     };
     class SCP_CB_LCZ_Hallway_Two_2 : SCP_CB_LCZ_base
     {
@@ -37,7 +86,16 @@ class CfgVehicles
         curatorScope = 2;
         displayName = CSTRING(Hallway_Two_3);
         model = QPATHTOF(data\Hallway_Two_3\Hallway_Two_3.p3d);
-        
+
+        class AnimationSources
+		{
+			class Fan_source
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 1;
+			};
+        };
     };
     class SCP_CB_LCZ_Hallway_Two_4 : SCP_CB_LCZ_base
     {
@@ -90,6 +148,14 @@ class CfgVehicles
         displayName = CSTRING(Hallway_Corner_2);
         model = QPATHTOF(data\Hallway_Corner_2\Hallway_Corner_2.p3d);
         hiddenSelections[] = {"camo_floor", "camo_ceiling", "camo_wall", "camo_door"};
+    };
+    class SCP_CB_LCZ_Hallway_Corner_Elevator : SCP_CB_LCZ_base
+    {
+        scope = 2;
+        curatorScope = 2;
+        displayName = CSTRING(Hallway_Corner_Elevator);
+        model = QPATHTOF(data\Hallway_Corner_Elevator\Hallway_Corner_Elevator.p3d);
+        //hiddenSelections[] = {"camo_floor", "camo_ceiling", "camo_wall", "camo_door"};
     };
     class SCP_CB_LCZ_Hallway_Four_1 : SCP_CB_LCZ_base
     {
@@ -586,4 +652,68 @@ class CfgVehicles
 			};
         };
     };
+    class SCP_CB_LCZ_Hallway_Tesla : SCP_CB_LCZ_base
+    {
+        scope = 2;
+        curatorScope = 2;
+        displayName = CSTRING(Hallway_Tesla);
+        model = QPATHTOF(data\Hallway_Tesla\Hallway_Tesla.p3d);
+        hiddenSelections[] = {"camo_ceiling", "camo_floor", "camo_wall", "camo_toroid", "camo_warning_sign"};
+    };
+	class SCP_CB_LCZ_Room_Endroom : SCP_CB_LCZ_base
+    {
+        scope = 2;
+        curatorScope = 2;
+        displayName = CSTRING(Room_Endroom);
+        model = QPATHTOF(data\Room_Endroom\Room_Endroom.p3d);
+    };
+	class SCP_CB_LCZ_Room_Storeroom : SCP_CB_LCZ_base
+    {
+        scope = 2;
+        curatorScope = 2;
+        displayName = CSTRING(Room_Storeroom);
+        model = QPATHTOF(data\Room_Storeroom\Room_Storeroom.p3d);
+    };
+	class SCP_CB_LCZ_Room_Archive: SCP_CB_LCZ_base
+    {
+        scope = 2;
+        curatorScope = 2;
+        displayName = CSTRING(Room_Archive);
+        model = QPATHTOF(data\Room_Archive\Room_Archive.p3d);
+        hiddenSelections[] = {"camo_floor", "camo_wall"};
+    };
+
+//**********************//
+// Containment Chambers //
+//**********************//
+
+	class SCP_CB_LCZ_Room_372: SCP_CB_LCZ_base
+    {
+        scope = 2;
+        curatorScope = 2;
+        displayName = CSTRING(Room_372);
+        model = QPATHTOF(data\Room_372\Room_372.p3d);
+        hiddenSelections[] = {"camo_ceiling", "camo_floor", "camo_wall"};
+    };
+	class SCP_CB_LCZ_Room_1162: SCP_CB_LCZ_base
+    {
+        scope = 2;
+        curatorScope = 2;
+        displayName = CSTRING(Room_1162);
+        model = QPATHTOF(data\Room_1162\Room_1162.p3d);
+		class UserActions
+		{
+			class SCP1162
+			{
+				displayNameDefault = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
+				displayName = $STR_DN_OUT_O_DOOR;
+				position = "scp_1162";
+				radius = 2;
+				aiMaxRange = 2;
+				onlyForPlayer = 0;
+				condition = "alive this";
+				statement = (this execVM ("z\regalisscp_cb\addons\room_lcz\data\Room_1162\1162_script.sqf"));
+			};
+		};
+	};
 };

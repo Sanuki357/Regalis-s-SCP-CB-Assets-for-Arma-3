@@ -1,4 +1,4 @@
-// #include "script_component.hpp"
+#include "script_component.hpp"
 /*
  * Author: 
  * Handles deafness due to explosions going off near the player.
@@ -16,18 +16,24 @@
  * Public: No
  */
 
-params ["_object", "_soundSet", "_soundDuration", "_soundPosition"];
+params ["_object", "_soundSet", "_soundPosition"];
 _sound = "SCP_CB_Button_Press";
 
 switch (_soundSet) do {
     case "Press": {
         _sound = "SCP_CB_Button_Press";
     };
-    case "Press (Denied)": {
+    case "Press Error": {
         _sound = "SCP_CB_Button_Error";
     };
+    case "Keycard Granted": {
+        _sound = "SCP_CB_CardReader_Granted";
+    };
+    case "Keycard Denied": {
+        _sound = "SCP_CB_CardReader_Denied";
+    };
     default {
-        systemChat format ["fnc_doorOpen error: %1 is not a recognised _soundSet string."];
+        ["fnc_buttonSound error: %1 is not a recognised _soundSet string.", _soundSet] call BIS_fnc_error;
     };
 };
 
@@ -39,12 +45,7 @@ _soundOrigin attachTo [_object, [0,0,0], _soundPosition];
 [_soundOrigin, _sound] remoteExec ["say3D", 0];
 
 //Removes _soundOrigin after _soundDuration seconds.
-sleep _soundDuration;
-deleteVehicle _soundOrigin;
-
-/*
-_soundOrigin spawn {
-	sleep _soundDuration;
-	deleteVehicle _soundOrigin;
+[_soundOrigin] spawn {
+    sleep 1;
+    deleteVehicle (_this select 0);
 };
-*/

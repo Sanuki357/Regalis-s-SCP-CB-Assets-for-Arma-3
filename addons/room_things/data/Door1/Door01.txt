@@ -1,0 +1,4 @@
+1024_1	door01
+	KeyPad (Button)
+
+1024_2	KeyPad (Keycard, Scanner, Code)
