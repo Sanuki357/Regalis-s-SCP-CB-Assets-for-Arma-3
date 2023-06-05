@@ -124,7 +124,8 @@ switch (_operationType) do {
 _randomSound = _soundSet select floor random count _soundSet;
 
 // Plays _randomSound from _object for door on every client but server.
-[_soundOrigin, _randomSound] remoteExec ["say3D", 0];
+//[_soundOrigin, _randomSound] remoteExec ["say3D", 0];
+_soundOrigin say3D _randomSound;
 
 //Removes _soundOrigin after _soundDuration seconds.
 [_soundOrigin, _soundDuration] spawn {
