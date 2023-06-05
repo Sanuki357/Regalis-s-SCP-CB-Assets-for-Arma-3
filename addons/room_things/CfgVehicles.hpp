@@ -139,6 +139,7 @@ class CfgVehicles
         model = QPATHTOF(data\Door1\Door1_NoButton.p3d); // Path to model
         hiddenSelections[] = {"camo_door"};
         editorSubCategory = "SCP_Doors";
+        icon = "z\RegalisSCP_CB\addons\room_things\data\UI\iconSCPDoor_CA.paa";
         EGVAR(operatable,type)[] = {{"Door", "Door1", "Door_1_source", "door_1_trigger"}};
         
         class Attributes
@@ -369,6 +370,7 @@ class CfgVehicles
         displayName = CSTRING(ContainmentDoor); // Name in editor
         model = QPATHTOF(data\ContainmentDoor\ContainmentDoor.p3d); // Path to model
         hiddenSelections[] = {"camo_containmentdoor"};
+        icon = "z\RegalisSCP_CB\addons\room_things\data\UI\iconSCPContainmentDoor_CA.paa";
         EGVAR(operatable,type)[] = {{"Door", "ContainmentDoor", "Door_1_source", "door_1_trigger"}};
         
         class AnimationSources
@@ -388,6 +390,7 @@ class CfgVehicles
         displayName = CSTRING(ElevatorRoom_Door); // Name in editor
         model = QPATHTOF(data\Elevator\ElevatorRoom_Door.p3d); // Path to model
         hiddenSelections[] = {"camo_door", "camo_dirtymetal", "camo_metal", "camo_metal3"};
+        icon = "iconObject_1x1";
         EGVAR(operatable,type)[] = {{"Door", "Elevator", "Door_1_source", "door_1_trigger"}};
         
         class AnimationSources
@@ -413,6 +416,7 @@ class CfgVehicles
         model = QPATHTOF(data\Keypad\Keypad_Button.p3d); // Path to model
         hiddenSelections[] = {"camo_button"};
         editorSubCategory = "SCP_Keypads";
+        icon = "z\RegalisSCP_CB\addons\room_things\data\UI\iconSCPButton_CA.paa";
         
         class UserActions
         {
@@ -442,6 +446,7 @@ class CfgVehicles
         model = QPATHTOF(data\Keypad\Keypad_CardReader.p3d); // Path to model
         hiddenSelections[] = {"camo_button"};
         editorSubCategory = "SCP_Keypads";
+        icon = "z\RegalisSCP_CB\addons\room_things\data\UI\iconSCPButton_CA.paa";
 
         class Attributes
 		{
@@ -506,6 +511,7 @@ class CfgVehicles
         model = QPATHTOF(data\Furniture\Cabinet_a.p3d); // Path to model
         hiddenSelections[] = {"camo_cabinet"};
         editorSubCategory = "SCP_Furnitures";
+        icon = "iconObject_1x2";
     };
 
     class SCP_CB_Things_OfficeSeat : SCP_CB_Things_base
@@ -516,6 +522,7 @@ class CfgVehicles
         model = QPATHTOF(data\Furniture\Officeseat_a.p3d); // Path to model
         hiddenSelections[] = {"camo_cabinet"};
         editorSubCategory = "SCP_Furnitures";
+        icon = "iconObject_1x1";
     };
 
     class SCP_CB_Things_Crate1 : ReammoBox_F
@@ -527,6 +534,7 @@ class CfgVehicles
         hiddenSelections[] = {"camo_crate"};
         editorCategory = "SCP_Facility";
         editorSubCategory = "SCP_Crates";
+        icon = "iconCrate";
         maximumLoad = 800;
         class TransportMagazines {};
         class TransportWeapons {};
@@ -561,6 +569,7 @@ class CfgVehicles
 		author = "$STR_A3_Bohemia_Interactive";
 		editorCategory = "EdCat_Equipment";
 		editorSubcategory = "EdSubcat_InventoryItems";
+        icon = "iconObject_1x1";
 		vehicleClass = "Items";
 		model = "\A3\Weapons_F\DummyItemHorizontal.p3d";
 		class TransportItems
