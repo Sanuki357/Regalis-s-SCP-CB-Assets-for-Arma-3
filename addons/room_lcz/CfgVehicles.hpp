@@ -148,7 +148,7 @@ class CfgVehicles
         displayName = CSTRING(Hallway_Corner_1);
         model = QPATHTOF(data\Hallway_Corner_1\Hallway_Corner_1.p3d);
         hiddenSelections[] = {"camo_floor", "camo_ceiling", "camo_wall", "camo_door"};
-        icon = "iconObject_1x1";
+        icon = "iconObject_1x2";
     };
     class SCP_CB_LCZ_Hallway_Corner_2 : SCP_CB_LCZ_base
     {
@@ -681,7 +681,7 @@ class CfgVehicles
         curatorScope = 2;
         displayName = CSTRING(Room_Endroom);
         model = QPATHTOF(data\Room_Endroom\Room_Endroom.p3d);
-        icon = "iconObject_1x1";
+        icon = "iconObject_1x2";
     };
 	class SCP_CB_LCZ_Room_Storeroom : SCP_CB_LCZ_base
     {

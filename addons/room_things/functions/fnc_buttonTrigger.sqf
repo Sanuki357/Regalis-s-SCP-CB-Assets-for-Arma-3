@@ -16,10 +16,21 @@
  * Public: No
  */
 
-params ["_targets", "_delayType"];
+//params ["_targets", ["_delayType", false, [""]], ["_delayDur", 10, [0]], ["_memoryPoint", "button_f", [""]]];
+params ["_targets", "_placeHolder"];
 
-if (_delayType == "LockRoom") then {
-    if (this getVariable ['SCP_RequiredClearanceLevel', 0]) then {};
+// Barbaric checks for _targets.
+if ((typeName _targets != "ARRAY") && (typeName _targets != "OBJECT")) exitWith {
+    systemChat format ["SCP_fnc_buttonTrigger: ""%1"" is not an object or an array containing objects.", _targets];
+};
+
+if (typeName _targets == "ARRAY") then {
+    {
+        if ((typeName _x != "OBJECT") && (_x == objNull)) exitWith {
+            systemChat format ["SCP_fnc_buttonTrigger: ""%1"" in the array is not an object.", _x];
+            _deleted = _targets deleteAt _forEachIndex;
+        };
+    } foreach _targets;
 };
 
 {

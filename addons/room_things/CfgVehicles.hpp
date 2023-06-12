@@ -1,113 +1,7 @@
+#include "config_macros_attributes.hpp"
+
 class CfgVehicles
 {
-    #define ATTRIBUTES_DOOR_HINGE_STATE \
-    class DoorHingeState \
-    { \
-        displayName     = CSTRING(DoorHingeState_displayname); \
-        tooltip         = CSTRING(DoorHingeState_tooltip); \
-        property        = "DoorHingeState"; \
-        control         = "Combo"; \
-        expression      = "_this animateSource ['Door_1_Source', _value, true]; "; \
-        defaultValue    = 0; \
-        typeName        = "NUMBER"; \
-        class Values { \
-            class Close { \
-                name    = CSTRING(DoorHingeState_Close); \
-                tooltip = CSTRING(DoorHingeState_Close_tooltip); \
-                value   = 0; \
-                picture = QPATHTOF(data\Keycard\UI\gear_Keycard_C1_CA.paa); \
-            }; \
-            class Open { \
-                name    = CSTRING(DoorHingeState_Open); \
-                tooltip = CSTRING(DoorHingeState_Open_tooltip); \
-                value   = 1; \
-                picture = QPATHTOF(data\Keycard\UI\gear_Keycard_C2_CA.paa); \
-            }; \
-        }; \
-    };
-
-    #define ATTRIBUTES_DOOR_LOCK_STATE \
-    class DoorLockState \
-    { \
-        displayName     = CSTRING(DoorLockState_displayname); \
-        tooltip         = CSTRING(DoorLockState_tooltip); \
-        property        = "DoorLockState"; \
-        control         = "Combo"; \
-        expression      = "_this setVariable ['SCP_DoorLockState', _value]; "; \
-        defaultValue    = 0; \
-        typeName        = "NUMBER"; \
-        class Values { \
-            class Level1 { \
-                name    = CSTRING(DoorState_level1); \
-                tooltip = CSTRING(DoorState_level1_tooltip); \
-                value   = 1; \
-                picture = QPATHTOF(data\Keycard\UI\gear_Keycard_C1_CA.paa); \
-            }; \
-            class Level2 { \
-                name    = CSTRING(DoorState_level2); \
-                tooltip = CSTRING(DoorState_level2_tooltip); \
-                value = 2; \
-                picture = QPATHTOF(data\Keycard\UI\gear_Keycard_C2_CA.paa); \
-            }; \
-        }; \
-    };
-
-    #define ATTRIBUTES_BUTTON_EXPRESSION(defaultTarget) \
-    class PressExpression \
-    { \
-        displayName     = CSTRING(PressExpression_displayname); \
-        tooltip         = CSTRING(PressExpression_tooltip); \
-        property        = "PressExpression"; \
-        control         = "EditCodeMulti5"; \
-        expression      = "_this setVariable ['SCP_PressExpression', _value]"; \
-        defaultValue    = "[""[["", "#defaultTarget" , ""], 'None'] call SCP_fnc_buttonTrigger""] joinString """";"; \
-        typeName        = "STRING"; \
-    };
-
-    #define ATTRIBUTES_CARDREADER_REQUIRED_CLEARANCE_LEVEL \
-    class RequiredClearanceLevel \
-    { \
-        displayName     = CSTRING(RequiredClearanceLevel_displayname); \
-        tooltip         = CSTRING(RequiredClearanceLevel_tooltip); \
-        property        = "RequiredClearanceLevel"; \
-        control         = "Combo"; \
-        expression      = "_this setVariable ['SCP_RequiredClearanceLevel', _value]"; \
-        defaultValue    = 1; \
-        typeName        = "NUMBER"; \
-        class Values { \
-            class Level1 { \
-                name    = CSTRING(RequiredClearanceLevel_level1); \
-                tooltip = CSTRING(RequiredClearanceLevel_level1_tooltip); \
-                value   = 1; \
-                picture = QPATHTOF(data\Keycard\UI\gear_Keycard_C1_CA.paa); \
-            }; \
-            class Level2 { \
-                name    = CSTRING(RequiredClearanceLevel_level2); \
-                tooltip = CSTRING(RequiredClearanceLevel_level2_tooltip); \
-                value = 2; \
-                picture = QPATHTOF(data\Keycard\UI\gear_Keycard_C2_CA.paa); \
-            }; \
-            class Level3 { \
-                name    = CSTRING(RequiredClearanceLevel_level3); \
-                tooltip = CSTRING(RequiredClearanceLevel_level3_tooltip); \
-                value = 3; \
-                picture = QPATHTOF(data\Keycard\UI\gear_Keycard_C3_CA.paa); \
-            }; \
-            class Level4 { \
-                name    = CSTRING(RequiredClearanceLevel_level4); \
-                tooltip = CSTRING(RequiredClearanceLevel_level4_tooltip); \
-                value = 4; \
-                picture = QPATHTOF(data\Keycard\UI\gear_Keycard_C4_CA.paa); \
-            }; \
-            class Level5 { \
-                name    = CSTRING(RequiredClearanceLevel_level5); \
-                tooltip = CSTRING(RequiredClearanceLevel_level5_tooltip); \
-                value = 5; \
-                picture = QPATHTOF(data\Keycard\UI\gear_Keycard_C5_CA.paa); \
-            }; \
-        }; \
-    };
-    
     class House_F; 
     class SCP_CB_Things_base: House_F
     {
@@ -274,7 +168,7 @@ class CfgVehicles
         displayName = CSTRING(Door1_CardReader);
         model = QPATHTOF(data\Door1\Door1_CardReader.p3d);
         hiddenSelections[] = {"camo_door", "camo_button"};
-
+        EGVAR(operatable,clearanceLevel)[] = {{1}};
 
         class Attributes
 		{
@@ -291,6 +185,7 @@ class CfgVehicles
         displayName = CSTRING(Door1_CardReader_Level1);
         scope = 1;
         scopeCurator = 2;
+        EGVAR(operatable,clearanceLevel)[] = {{1}};
 
         //See config.cpp for addAction of this object.
     };
@@ -298,20 +193,22 @@ class CfgVehicles
     class SCP_CB_Things_Door1_CardReader_Level2 : SCP_CB_Things_Door1_CardReader_Level1
     {
         displayName = CSTRING(Door1_CardReader_Level2);
-
+        EGVAR(operatable,clearanceLevel)[] = {{2}};
         //See config.cpp for addAction of this object.
     };
 
     class SCP_CB_Things_Door1_CardReader_Level3 : SCP_CB_Things_Door1_CardReader_Level1
     {
         displayName = CSTRING(Door1_CardReader_Level3);
-        
+        EGVAR(operatable,clearanceLevel)[] = {{3}};
+
         //See config.cpp for addAction of this object.
     };
 
     class SCP_CB_Things_Door1_CardReader_Level4 : SCP_CB_Things_Door1_CardReader_Level1
     {
         displayName = CSTRING(Door1_CardReader_Level4);
+        EGVAR(operatable,clearanceLevel)[] = {{4}};
         
         //See config.cpp for addAction of this object.
     };
@@ -319,6 +216,7 @@ class CfgVehicles
     class SCP_CB_Things_Door1_CardReader_Level5 : SCP_CB_Things_Door1_CardReader_Level1
     {
         displayName = CSTRING(Door1_CardReader_Level5);
+        EGVAR(operatable,clearanceLevel)[] = {{5}};
         
         //See config.cpp for addAction of this object.
     };
@@ -417,24 +315,25 @@ class CfgVehicles
         hiddenSelections[] = {"camo_button"};
         editorSubCategory = "SCP_Keypads";
         icon = "z\RegalisSCP_CB\addons\room_things\data\UI\iconSCPButton_CA.paa";
+        EGVAR(operatable,expression)[] = {{""}};
         
         class UserActions
         {
             class Button_f
             {
-                displayNameDefault = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
-                displayName = CSTRING(Button_Press);
-                position = "button_f";
-                radius = 1;
-                onlyForPlayer = 0;
-                condition = "true";
-                statement = "_string = this getVariable ['SCP_PressExpression', false]; _code = compile _string; call _code; [this, 'Press', 'button_f'] call SCP_fnc_buttonSound";
+                displayNameDefault  = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
+                displayName         = CSTRING(Button_Press);
+                position            = "button_f";
+                radius              = 1;
+                onlyForPlayer       = 0;
+                condition           = "true";
+                statement           = "[this] call SCP_fnc_buttonExecExpression; [this, 'Press', 'button_f'] call SCP_fnc_buttonSound;";
             };
         };
 
         class Attributes
 		{
-            ATTRIBUTES_BUTTON_EXPRESSION(TARGETS)
+            ATTRIBUTES_BUTTON_EXPRESSION
         };
     };
 
@@ -450,7 +349,7 @@ class CfgVehicles
 
         class Attributes
 		{
-            ATTRIBUTES_BUTTON_EXPRESSION(TARGETS)
+            ATTRIBUTES_BUTTON_EXPRESSION
             ATTRIBUTES_CARDREADER_REQUIRED_CLEARANCE_LEVEL
         };
         
