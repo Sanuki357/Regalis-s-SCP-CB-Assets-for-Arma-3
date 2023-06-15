@@ -1,8 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Sanuki357
- * Handles opening a door and emit a appopriate sound effect.
- *
+ * Automatically detects the type of the door and the current animation phase and plays suitable audio and animation.
  *
  * Arguments:
  * 0: object - Object to be controled its animateSource phase and origin of sounds <OBJECT>

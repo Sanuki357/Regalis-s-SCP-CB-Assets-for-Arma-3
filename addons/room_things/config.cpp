@@ -15,8 +15,8 @@
 
 class Extended_InitPost_EventHandlers {
     class SCP_CB_Things_Door1_CardReader {
-        class SCP_CB_Things_Door1_CardReader_Front_init { init = "[_entity, 'button_f'] call SCP_fnc_addActionCardReader";};
-        class SCP_CB_Things_Door1_CardReader_Back_init { init = "[_entity, 'button_b'] call SCP_fnc_addActionCardReader";};
+        class SCP_CB_Things_Door1_CardReader_Front_init { init = "[_this select 0, 'button_f'] call SCP_fnc_addActionCardReader";};
+        class SCP_CB_Things_Door1_CardReader_Back_init { init = "[_this select 0, 'button_b'] call SCP_fnc_addActionCardReader";};
     };
 
     /*
@@ -47,6 +47,6 @@ class Extended_InitPost_EventHandlers {
     */
 
     class SCP_CB_Things_Keypad_CardReader {
-        class SCP_CB_Things_Keypad_CardReader_init { init = "[_entity, 'button_f'] call SCP_fnc_addActionCardReader";};
+        class SCP_CB_Things_Keypad_CardReader_init { init = "[_this select 0, 'button_f'] call SCP_fnc_addActionCardReader";};
     };
 };

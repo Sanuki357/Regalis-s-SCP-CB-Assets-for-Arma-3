@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Sanuki357
- * Handles deafness due to explosions going off near the player.
+ * Simillar to SCP_fnc_buttonTrigger, but this also puts scheduled delayed activation of operatables and prevents player from press while in delay.
  *
  * Arguments:
  * 0: vehicle - Object the event handler is assigned to (player) <OBJECT>

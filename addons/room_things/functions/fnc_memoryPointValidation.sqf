@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Sanuki357
- * Handles deafness due to explosions going off near the player.
+ * Returns true if this function detects a memory point in _object's P3D of same name as _memoryPoint.
  *
  * Arguments:
  * 0: vehicle - Object the event handler is assigned to (player) <OBJECT>

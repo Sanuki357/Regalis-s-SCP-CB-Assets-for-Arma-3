@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Sanuki357
- * Handles deafness due to explosions going off near the player.
+ * Executes the retrived script from SCP_CB_Operetable_PressExpression in a object.
  *
  * Arguments:
  * 0: vehicle - Object the event handler is assigned to (player) <OBJECT>

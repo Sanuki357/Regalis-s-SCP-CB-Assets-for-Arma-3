@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
- * Author: 
- * Handles deafness due to explosions going off near the player.
+ * Author: Sanuki357
+ * Adds a action to a desired object to function as a card reader.
  *
  * Arguments:
  * 0: vehicle - Object the event handler is assigned to (player) <OBJECT>

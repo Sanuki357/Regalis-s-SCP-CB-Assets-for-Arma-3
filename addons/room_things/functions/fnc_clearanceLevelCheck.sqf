@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Sanuki357
- * Handles deafness due to explosions going off near the player.
+ * Returns true or false depending on the clearance level on a key card possessed by _caller. This also plays the appropriate audio.
  *
  * Arguments:
  * 0: vehicle - Object the event handler is assigned to (player) <OBJECT>

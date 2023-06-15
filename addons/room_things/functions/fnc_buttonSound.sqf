@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Sanuki357
- * Handles deafness due to explosions going off near the player.
+ * Makes a sound defined in _soundSet from provided _memoryPoint of _object. 
  *
  * Arguments:
  * 0: vehicle - Object the event handler is assigned to (player) <OBJECT>
@@ -39,7 +39,8 @@ switch (_soundSet) do {
         _soundDur = 3;
     };
     default {
-        ["SCP_fnc_buttonSound error: %1 is not a recognised _soundSet string.", _soundSet] call BIS_fnc_error;
+        ["SCP_fnc_buttonSound error: %1 is not a recognised _soundSet string. Resorting to the default sound.", _soundSet] call BIS_fnc_error;
+        _sound = "SCP_CB_Button_Press";
     };
 };
 
