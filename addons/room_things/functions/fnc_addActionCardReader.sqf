@@ -27,7 +27,7 @@ if (!([_object, _memoryPoint] call SCP_fnc_memoryPointValidation)) exitWith {
 _object addAction [localize CSTRING(CardReader_Insert), {
     systemChat "Action is doing something";
     if ([_this select 0, _this select 1, _this select 0 getVariable ["SCP_CB_Operetable_Required_ClearanceLevel", 0], _this select 3] call SCP_fnc_clearanceLevelCheck) then {
-        
+        systemChat "Action did something";
         // TL;DR: Private variables won't work within addAction expression. Or maybe because I didn't add a bracket.
         //private _targetKind = _this select 0 getVariable [QEGVAR(operatable,type), 0] select 0 select 0;
         //_targetKind = getArray (configFile >> "CfgVehicles" >> typeOf (_this select 0) >> QEGVAR(operatable,type)) select 0 select 0;
@@ -37,8 +37,10 @@ _object addAction [localize CSTRING(CardReader_Insert), {
         // Else, assuming it's the independent variation, looks for expression and calls it.  
 
         if (getArray (configFile >> "CfgVehicles" >> typeOf (_this select 0) >> QEGVAR(operatable,type)) select 0 select 0 == "Door") then {
+            systemChat "This is door";
             [_this select 0, 'None'] call SCP_fnc_buttonTrigger;
         } else {
+            systemChat "This is button";
             [_this select 0] call SCP_fnc_buttonExpressionExecute;
         };
     };

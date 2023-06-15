@@ -2,8 +2,8 @@
 
 class CfgVehicles
 {
-    class House_F; 
-    class SCP_CB_Things_base: House_F
+    class ThingX; 
+    class SCP_CB_Things_base: ThingX
     {
         scope = 0;
         scopeCurator = 0;
@@ -57,7 +57,7 @@ class CfgVehicles
         displayName = CSTRING(Door1_Button); // Name in editor
         model = QPATHTOF(data\Door1\Door1.p3d); // Path to model
         hiddenSelections[] = {"camo_door", "camo_button"};
-        
+
         class UserActions
         {
             class Close_door_F
@@ -168,7 +168,7 @@ class CfgVehicles
         displayName = CSTRING(Door1_CardReader);
         model = QPATHTOF(data\Door1\Door1_CardReader.p3d);
         hiddenSelections[] = {"camo_door", "camo_button"};
-        EGVAR(operatable,clearanceLevel)[] = {{1}};
+        //EGVAR(operatable,clearanceLevel)[] = {{1}};
 
         class Attributes
 		{
@@ -185,7 +185,7 @@ class CfgVehicles
         displayName = CSTRING(Door1_CardReader_Level1);
         scope = 1;
         scopeCurator = 2;
-        EGVAR(operatable,clearanceLevel)[] = {{1}};
+        //EGVAR(operatable,clearanceLevel)[] = {{1}};
 
         //See config.cpp for addAction of this object.
     };
@@ -193,14 +193,14 @@ class CfgVehicles
     class SCP_CB_Things_Door1_CardReader_Level2 : SCP_CB_Things_Door1_CardReader_Level1
     {
         displayName = CSTRING(Door1_CardReader_Level2);
-        EGVAR(operatable,clearanceLevel)[] = {{2}};
+        //EGVAR(operatable,clearanceLevel)[] = {{2}};
         //See config.cpp for addAction of this object.
     };
 
     class SCP_CB_Things_Door1_CardReader_Level3 : SCP_CB_Things_Door1_CardReader_Level1
     {
         displayName = CSTRING(Door1_CardReader_Level3);
-        EGVAR(operatable,clearanceLevel)[] = {{3}};
+        //EGVAR(operatable,clearanceLevel)[] = {{3}};
 
         //See config.cpp for addAction of this object.
     };
@@ -208,7 +208,7 @@ class CfgVehicles
     class SCP_CB_Things_Door1_CardReader_Level4 : SCP_CB_Things_Door1_CardReader_Level1
     {
         displayName = CSTRING(Door1_CardReader_Level4);
-        EGVAR(operatable,clearanceLevel)[] = {{4}};
+        //EGVAR(operatable,clearanceLevel)[] = {{4}};
         
         //See config.cpp for addAction of this object.
     };
@@ -216,7 +216,7 @@ class CfgVehicles
     class SCP_CB_Things_Door1_CardReader_Level5 : SCP_CB_Things_Door1_CardReader_Level1
     {
         displayName = CSTRING(Door1_CardReader_Level5);
-        EGVAR(operatable,clearanceLevel)[] = {{5}};
+        //EGVAR(operatable,clearanceLevel)[] = {{5}};
         
         //See config.cpp for addAction of this object.
     };
@@ -316,7 +316,7 @@ class CfgVehicles
         editorSubCategory = "SCP_Keypads";
         icon = "z\RegalisSCP_CB\addons\room_things\data\UI\iconSCPButton_CA.paa";
         EGVAR(operatable,expression)[] = {{""}};
-        
+
         class UserActions
         {
             class Button_f
@@ -326,7 +326,7 @@ class CfgVehicles
                 position            = "button_f";
                 radius              = 1;
                 onlyForPlayer       = 0;
-                condition           = "true";
+                condition           = "!(this getVariable ['SCP_CB_Operetable_InteractHalt', 0])";
                 statement           = "[this] call SCP_fnc_buttonExecExpression; [this, 'Press', 'button_f'] call SCP_fnc_buttonSound;";
             };
         };
