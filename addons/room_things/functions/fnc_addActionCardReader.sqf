@@ -28,20 +28,26 @@ _object addAction [localize CSTRING(CardReader_Insert), {
     systemChat "Action is doing something";
     if ([_this select 0, _this select 1, _this select 0 getVariable ["SCP_CB_Operetable_Required_ClearanceLevel", 0], _this select 3] call SCP_fnc_clearanceLevelCheck) then {
         systemChat "Action did something";
-        // TL;DR: Private variables won't work within addAction expression. Or maybe because I didn't add a bracket.
-        //private _targetKind = _this select 0 getVariable [QEGVAR(operatable,type), 0] select 0 select 0;
-        //_targetKind = getArray (configFile >> "CfgVehicles" >> typeOf (_this select 0) >> QEGVAR(operatable,type)) select 0 select 0;
-        //systemChat format ["fnc_addActionCardReader: Type check is a success! _targetKind is %1", _targetKind];
+        
+        //_targetType = getArray (configFile >> "CfgVehicles" >> typeOf (_this select 0) >> QEGVAR(operatable,type)) select 0 select 0
+        private _targetType = (configFile >> "CfgVehicles" >> typeOf (_this select 0) >> QEGVAR(operatable,type)) call BIS_fnc_getCfgData select 0 select 0;
+        private _targetNil = false;
+        
+        if (isNil "_targetType") then {_targetNil = true};
 
         // If the object the one that comes with door, calls a buttonTrigger function to simply open the door.
-        // Else, assuming it's the independent variation, looks for expression and calls it.  
-
-        if (getArray (configFile >> "CfgVehicles" >> typeOf (_this select 0) >> QEGVAR(operatable,type)) select 0 select 0 == "Door") then {
-            systemChat "This is door";
-            [_this select 0, 'None'] call SCP_fnc_buttonTrigger;
+        // Else, assuming it's the independent variation, looks for expression and calls it.
+        if (!_targetNil) then {
+            switch (_targetType) do
+            {
+                case "Door": {
+                    systemChat "This is door";
+                    [_this select 0, 'None'] call SCP_fnc_buttonTrigger;
+                };
+            };
         } else {
             systemChat "This is button";
-            [_this select 0] call SCP_fnc_buttonExpressionExecute;
+            [_this select 0] call SCP_fnc_buttonExecExpression;
         };
     };
 }, _memoryPoint, 3, true, true, "", "true", 1, false, "", _memoryPoint];
