@@ -16,21 +16,24 @@
  */
 
 //params ["_targets", ["_delayType", false, [""]], ["_delayDur", 10, [0]], ["_memoryPoint", "button_f", [""]]];
-params ["_targets", "_placeHolder"];
+params [["_targets", objNull, [[], objNull]], "_placeHolder"];
 
 // Barbaric checks for _targets.
 if ((typeName _targets != "ARRAY") && (typeName _targets != "OBJECT")) exitWith {
     systemChat format ["SCP_fnc_buttonTrigger: ""%1"" is not an object or an array containing objects.", _targets];
 };
 
-if (typeName _targets == "ARRAY") then {
-    {
-        if ((typeName _x != "OBJECT") && (_x == objNull)) exitWith {
-            systemChat format ["SCP_fnc_buttonTrigger: ""%1"" in the array is not an object.", _x];
-            _deleted = _targets deleteAt _forEachIndex;
-        };
-    } foreach _targets;
+if (typeName _targets == "OBJECT") then {
+    _targets = [_targets];
 };
+
+{
+    if ((typeName _x != "OBJECT") && (_x == objNull)) then {
+        systemChat format ["SCP_fnc_buttonTrigger: ""%1"" in the array is not an object.", _x];
+        _deleted = _targets deleteAt _forEachIndex;
+    };
+} foreach _targets;
+
 
 {
     //systemChat format ["type of the thing is: %1", typeOf _x];
