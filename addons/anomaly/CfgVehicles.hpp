@@ -89,6 +89,8 @@ class CfgVehicles
 		model = QPATHTOF(data\SCP106\SCP106.p3d);
 		uniformClass = "U_B_soldier_new";
 		hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\SCP106\SCP106_CO.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\SCP106\SCP106.rvmat)};
         canDeactivateMines = false;
 		engineer = false;
 		attendant = 0;
