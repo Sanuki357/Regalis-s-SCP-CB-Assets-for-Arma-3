@@ -309,7 +309,7 @@ class CfgVehicles
     class SCP_CB_Things_Keypad_Button : SCP_CB_Things_base
     {
         scope = 2;
-        scopeCurator = 1;
+        scopeCurator = 2;
         displayName = CSTRING(Keypad_Button); // Name in editor
         model = QPATHTOF(data\Keypad\Keypad_Button.p3d); // Path to model
         hiddenSelections[] = {"camo_button"};
@@ -340,7 +340,7 @@ class CfgVehicles
     class SCP_CB_Things_Keypad_CardReader : SCP_CB_Things_base
     {
         scope = 2;
-        scopeCurator = 1;
+        scopeCurator = 2;
         displayName = CSTRING(Keypad_CardReader); // Name in editor
         model = QPATHTOF(data\Keypad\Keypad_CardReader.p3d); // Path to model
         hiddenSelections[] = {"camo_button"};

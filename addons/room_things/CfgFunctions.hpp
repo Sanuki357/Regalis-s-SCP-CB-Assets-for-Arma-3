@@ -9,6 +9,7 @@ class CfgFunctions {
 			class memoryPointValidation { file = QPATHTOF(functions\fnc_memoryPointValidation.sqf); };
 			class buttonExecExpression { file = QPATHTOF(functions\fnc_buttonExecExpression.sqf); };
 			class buttonTriggerDelay { file = QPATHTOF(functions\fnc_buttonTriggerDelay.sqf); };
+			class buttonTriggerNear { file = QPATHTOF(functions\fnc_buttonTriggerNear.sqf); };
 		};
 	};
 };
