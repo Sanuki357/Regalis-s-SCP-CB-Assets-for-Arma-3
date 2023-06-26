@@ -29,5 +29,7 @@ if (typeName _codeString == "STRING") then {
     //call _code;
     [_code] remoteExec ["call", 2];
 } else {
-	systemChat format ["SCP_fnc_buttonExpressionExecute: The expression in %1 is not a string.", _object];
+    _code = { [_object] call SCP_fnc_buttonTriggerNear };
+    [_code] remoteExec ["call", 2];
+	//diag_log format ["SCP_fnc_buttonExpressionExecute: The expression in %1 is not a string. Resorting to the default expression", _object];
 };
