@@ -726,13 +726,15 @@ class CfgVehicles
 			class SCP1162
 			{
 				displayNameDefault = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
-				displayName = $STR_DN_OUT_O_DOOR;
+				displayName = CSTRING(Room_1162_ReachInto);
 				position = "scp_1162";
 				radius = 2;
 				aiMaxRange = 2;
 				onlyForPlayer = 0;
 				condition = "alive this";
-				statement = (this execVM ("z\regalisscp_cb\addons\room_lcz\data\Room_1162\1162_script.sqf"));
+				//statement = (this execVM ("z\regalisscp_cb\addons\room_lcz\data\Room_1162\1162_script.sqf"));
+                statement = "[this] call SCP_fnc_1162_itemExchange;";
+                
 			};
 		};
 	};

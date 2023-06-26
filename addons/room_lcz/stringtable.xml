@@ -93,5 +93,9 @@
             <English>SCP-1162 Chamber</English>
             <Japanese>SCP-1162収容区画</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Room_1162_ReachInto">
+            <English>Reach into the hole</English>
+            <Japanese>穴の中に手を伸ばす</Japanese>
+        </Key>
     </Package>
 </Project>

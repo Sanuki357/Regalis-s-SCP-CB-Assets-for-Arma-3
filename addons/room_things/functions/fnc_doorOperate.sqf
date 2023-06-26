@@ -122,8 +122,6 @@ switch (_operationType) do {
 
 // Randomly selects a sound from _soundSet to play. 
 _randomSound = _soundSet select floor random count _soundSet;
-
-// Plays _randomSound from _object for door.
 [_soundOrigin, _randomSound] remoteExec ["say3D", 0];
 //_soundOrigin say3D _randomSound;
 
