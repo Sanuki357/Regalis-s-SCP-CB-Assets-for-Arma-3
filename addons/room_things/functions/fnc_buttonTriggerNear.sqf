@@ -15,9 +15,12 @@
  *
  * Public: No
  */
-params [["_caller", objNull, [[], objNull]], ["_radius", 5, [1]]];
+params [
+	["_caller",	objNull,	[[], objNull]],
+	["_radius",	5,			[1]]
+];
 
-_objs = _caller nearEntities ["ThingX", _radius];
+_objs = _caller nearObjects ["ThingX", _radius];
 _targets = [];
 
 { 

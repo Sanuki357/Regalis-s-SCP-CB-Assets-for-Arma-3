@@ -24,12 +24,15 @@ if (!_codeString) then {
 
 systemChat format ["SCP_fnc_buttonExecExpression: The code in _codeString is: %1", _codeString];
 
+// Help locality dosen't make sense to me help
+
 if (typeName _codeString == "STRING") then {
     _code = compile _codeString;
-    //call _code;
-    [_code] remoteExec ["call", 2];
+    call _code;
+    //[_code] remoteExec ["call", 2];
 } else {
     _code = { [_object] call SCP_fnc_buttonTriggerNear };
-    [_code] remoteExec ["call", 2];
+    call _code;
+    //[_code] remoteExec ["call", 2];
 	//diag_log format ["SCP_fnc_buttonExpressionExecute: The expression in %1 is not a string. Resorting to the default expression", _object];
 };

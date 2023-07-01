@@ -16,7 +16,11 @@
  * Public: No
  */
 
-params ["_object", "_soundSet", "_memoryPoint"];
+params [
+    ["_object",         objNull,    [objNull]],
+    ["_soundSet",       "Lockroom", [""]],
+    ["_memoryPoint",    "button_f", [""]]
+];
 _sound = "SCP_CB_Button_Press";
 
 _soundDur = 1;
@@ -44,7 +48,7 @@ switch (_soundSet) do {
     };
 };
 
-private _soundOrigin = "#particlesource" createVehicle position _object;
+private _soundOrigin = "#particlesource" createVehicle getPosASL _object;
 
 // Creates and attaches a source of where _sound will be played from, to the memory point selected with _memoryPoint.
 // If no memory point of the given _memoryPoint exists, it resorts to the position of the object.
@@ -56,10 +60,12 @@ if (([_object, _memoryPoint] call SCP_fnc_memoryPointValidation)) then {
 };
 
 //Plays _sound from _soundOrigin for button on every client but server.
+systemChat format ["SCP_fnc_buttonSound: _soundOrigin is: %1. _sound is: %2", _soundOrigin, _sound];
 [_soundOrigin, _sound] remoteExec ["say3D", 0];
 
 //Removes _soundOrigin after _soundDuration seconds.
 [_soundOrigin, _soundDur] spawn {
-    sleep (_this select 1);
-    deleteVehicle (_this select 0);
+    params ["_soundOrigin", "_soundDur"];
+    sleep _soundDur;
+    deleteVehicle _soundOrigin;
 };

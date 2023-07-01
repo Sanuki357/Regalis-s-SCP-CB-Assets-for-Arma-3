@@ -25,7 +25,7 @@ _array = (configfile >> "cfgWeapons") call BIS_fnc_getcfgsubclasses; {
     if ((getNumber (configfile >> "CfgWeapons" >> _x >> "scope") == 2)) then { 
     _weapArray pushBack _x; 
 }; 
-} forEach _array; 
+} forEach _array;
 
 _magArray = []; 
 _array1 = (configfile >> "cfgMagazines") call BIS_fnc_getcfgsubclasses;
