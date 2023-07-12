@@ -727,6 +727,7 @@ class CfgVehicles
 			{
 				displayNameDefault = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
 				displayName = CSTRING(Room_1162_ReachInto);
+                priority = 6;
 				position = "scp_1162";
 				radius = 2;
 				aiMaxRange = 2;

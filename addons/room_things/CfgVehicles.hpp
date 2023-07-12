@@ -62,13 +62,14 @@ class CfgVehicles
         {
             class Close_door_F
             {
-                displayNameDefault = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
-                displayName = CSTRING(Button_Press);
-                position = "button_f";
-                radius = 1;
-                onlyForPlayer = 0;
-                condition = "this animationSourcePhase 'Door_1_source' == 1";
-                statement = "[[this], 'None'] call SCP_fnc_buttonTrigger; [this, 'Press', 'button_f'] call SCP_fnc_buttonSound;";
+                displayNameDefault  = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
+                displayName         = CSTRING(Button_Press);
+                priority            = 6;
+                position            = "button_f";
+                radius              = 1;
+                onlyForPlayer       = 0;
+                condition           = "this animationSourcePhase 'Door_1_source' == 1";
+                statement           = "[[this], 'None'] call SCP_fnc_buttonTrigger; [this, 'Press', 'button_f'] call SCP_fnc_buttonSound;";
             };
             class Open_door_F: Close_door_F
             {
@@ -107,13 +108,14 @@ class CfgVehicles
         {
             class Error_door_F
             {
-                displayNameDefault = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
-                displayName = CSTRING(Button_Press);
-                position = "button_f";
-                radius = 1;
-                onlyForPlayer = 0;
-                condition = "this animationSourcePhase 'Door_1_source' == 0";
-                statement = "[this, 'Press Error', 'button_f'] call SCP_fnc_buttonSound";
+                displayNameDefault  = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
+                displayName         = CSTRING(Button_Press);
+                priority            = 6;
+                position            = "button_f";
+                radius              = 1;
+                onlyForPlayer       = 0;
+                condition           = "this animationSourcePhase 'Door_1_source' == 0";
+                statement           = "[this, 'Press Error', 'button_f'] call SCP_fnc_buttonSound";
             };
 
             class Error_door_B: Error_door_F
@@ -138,13 +140,14 @@ class CfgVehicles
         {
             class NoResponse_door_F
             {
-                displayNameDefault = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
-                displayName = CSTRING(Button_Press);
-                position = "button_f";
-                radius = 1;
-                onlyForPlayer = 0;
-                condition = "this animationSourcePhase 'Door_1_source' == 0";
-                statement = "[this, 'Press', 'button_f'] call SCP_fnc_buttonSound";
+                displayNameDefault  = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
+                displayName         = CSTRING(Button_Press);
+                priority            = 6;
+                position            = "button_f";
+                radius              = 1;
+                onlyForPlayer       = 0;
+                condition           = "this animationSourcePhase 'Door_1_source' == 0";
+                statement           = "[this, 'Press', 'button_f'] call SCP_fnc_buttonSound";
             };
 
             class NoResponse_door_B: NoResponse_door_F
@@ -323,6 +326,7 @@ class CfgVehicles
             {
                 displayNameDefault  = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
                 displayName         = CSTRING(Button_Press);
+                priority            = 6;
                 position            = "button_f";
                 radius              = 1;
                 onlyForPlayer       = 0;
@@ -366,13 +370,14 @@ class CfgVehicles
         {
             class Button_f
             {
-                displayNameDefault = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
-                displayName = CSTRING(Button_Press);
-                position = "button_f";
-                radius = 1;
-                onlyForPlayer = 0;
-                condition = "true";
-                statement = "[this, 'Press', 'button_f'] call SCP_fnc_buttonSound";
+                displayNameDefault  = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
+                displayName         = CSTRING(Button_Press);
+                priority            = 6;
+                position            = "button_f";
+                radius              = 1;
+                onlyForPlayer       = 0;
+                condition           = "true";
+                statement           = "[this, 'Press', 'button_f'] call SCP_fnc_buttonSound";
             };
         };
     };
@@ -387,13 +392,14 @@ class CfgVehicles
         {
             class Button_f
             {
-                displayNameDefault = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
-                displayName = CSTRING(Button_Press);
-                position = "button_f";
-                radius = 1;
-                onlyForPlayer = 0;
-                condition = "true";
-                statement = "[this, 'Press', 'button_f'] call SCP_fnc_buttonSound";
+                displayNameDefault  = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
+                displayName         = CSTRING(Button_Press);
+                priority            = 6;
+                position            = "button_f";
+                radius              = 1;
+                onlyForPlayer       = 0;
+                condition           = "true";
+                statement           = "[this, 'Press', 'button_f'] call SCP_fnc_buttonSound";
             };
         };
     };
