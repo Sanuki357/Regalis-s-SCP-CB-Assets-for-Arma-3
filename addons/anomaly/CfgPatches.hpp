@@ -3,7 +3,7 @@ class CfgPatches
     class ADDON
     {
         name= COMPONENT_NAME;
-        requiredAddons[] = {"A3_Structures_F", "RegalisSCP_CB_main"};
+        requiredAddons[] = {"A3_Characters_F", "A3_Structures_F", "RegalisSCP_CB_main"};
         requiredVersion = REQUIRED_VERSION;
         units[] =
         {

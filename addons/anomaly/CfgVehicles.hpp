@@ -87,7 +87,7 @@ class CfgVehicles
 		sensitivity = 2.5;
 		threat[] = {1, 1, 0.8};
 		model = QPATHTOF(data\SCP106\SCP106.p3d);
-		uniformClass = "U_B_soldier_new";
+		uniformClass = "SCP_CB_Anomaly_SCP106_U";
 		hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\SCP106\SCP106_CO.paa)};
         hiddenSelectionsMaterials[] = {QPATHTOF(data\SCP106\SCP106.rvmat)};
@@ -97,8 +97,8 @@ class CfgVehicles
 		icon = "z\RegalisSCP_CB\addons\textures\UI\SCP_iconFoundationSolid_CA.paa"; //QPATHTOEF(textures, UI\SCP_iconFoundationSolid_CA.paa);
 		picture = "z\RegalisSCP_CB\addons\textures\UI\SCP_iconFoundationSolid_CA.paa"; //QPATHTOEF(textures, UI\SCP_iconFoundationSolid_CA.paa);
         backpack = "";	
-        weapons[] = {"", "", "Throw", "Put"};				// Which weapons the character has.
-		respawnWeapons[] = {"", "", "Throw", "Put"};		// Which weapons the character respawns with.
+        weapons[] = {"Throw", "Put"};				// Which weapons the character has.
+		respawnWeapons[] = {"Throw", "Put"};		// Which weapons the character respawns with.
 		Items[] = {};				// Which items the character has.
 		RespawnItems[] = {};			// Which items the character respawns with.
 		magazines[] = {};				// What ammunition the character has.
@@ -111,6 +111,7 @@ class CfgVehicles
     {
         displayName = CSTRING(SCP049);
 		model = QPATHTOF(data\SCP049\SCP049.p3d);
+        uniformClass = "SCP_CB_Anomaly_SCP049_U";
 		hiddenSelections[] = {"camo_cloth", "camo_mask", "camo_eye"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\SCP049\SCP049Cloth_CO.paa), QPATHTOF(data\SCP049\SCP049Mask_CO.paa), QPATHTOF(data\SCP049\SCP049Mask_CO.paa)};
         hiddenSelectionsMaterials[] = {QPATHTOF(data\SCP049\SCP049Cloth.rvmat), QPATHTOF(data\SCP049\SCP049Mask.rvmat), QPATHTOF(data\SCP049\SCP049Mask.rvmat)};
