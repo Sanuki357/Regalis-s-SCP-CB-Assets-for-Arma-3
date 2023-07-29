@@ -739,4 +739,59 @@ class CfgVehicles
 			};
 		};
 	};
+//******************//
+// Hallways & Rooms //
+//******************//
+    class SCP_CB_LCZ_Piece_WhiteWall: SCP_CB_LCZ_base
+    {
+        scope = 2;
+        curatorScope = 2;
+        displayName = CSTRING(Piece_WhiteWall);
+        model = QPATHTOF(data\Piece_WhiteWall\Piece_WhiteWall.p3d);
+        hiddenSelections[] = {"camo_wall"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,whitewall_CO.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\Piece_WhiteWall\whitewall.rvmat)};
+        icon = "iconObject_1x3";
+        editorSubcategory = "SCP_LCZ_Pieces";
+	};
+
+    class SCP_CB_LCZ_Piece_WhiteWall_Wide: SCP_CB_LCZ_Piece_WhiteWall
+    {
+        displayName = CSTRING(Piece_WhiteWall_Wide);
+        model = QPATHTOF(data\Piece_WhiteWall_Wide\Piece_WhiteWall_Wide.p3d);
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\Piece_WhiteWall_Wide\whitewall.rvmat)};
+        icon = "iconObject_1x2";
+	};
+
+    class SCP_CB_LCZ_Piece_WhiteWall_Concave: SCP_CB_LCZ_Piece_WhiteWall
+    {
+        displayName = CSTRING(Piece_WhiteWall_Concave);
+        model = QPATHTOF(data\Piece_WhiteWall_Concave\Piece_WhiteWall_Concave.p3d);
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\Piece_WhiteWall_Concave\whitewall.rvmat)};
+        icon = "iconObject_1x3";
+	};
+
+    class SCP_CB_LCZ_Piece_WhiteWall_Floorlight: SCP_CB_LCZ_Piece_WhiteWall
+    {
+        displayName = CSTRING(Piece_WhiteWall_Floorlight);
+        model = QPATHTOF(data\Piece_WhiteWall_Floorlight\Piece_WhiteWall_Floorlight.p3d);
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\Piece_WhiteWall_Floorlight\whitewall.rvmat)};
+        icon = "iconObject_1x3";
+	};
+
+    class SCP_CB_LCZ_Piece_WhiteWall_Doorway: SCP_CB_LCZ_Piece_WhiteWall
+    {
+        displayName = CSTRING(Piece_WhiteWall_Doorway);
+        model = QPATHTOF(data\Piece_WhiteWall_Doorway\Piece_WhiteWall_Doorway.p3d);
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\Piece_WhiteWall_Doorway\whitewall.rvmat)};
+        icon = "iconObject_1x3";
+	};
+
+    class SCP_CB_LCZ_Piece_WhiteWall_Gateway: SCP_CB_LCZ_Piece_WhiteWall
+    {
+        displayName = CSTRING(Piece_WhiteWall_Gateway);
+        model = QPATHTOF(data\Piece_WhiteWall_Gateway\Piece_WhiteWall_Gateway.p3d);
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\Piece_WhiteWall_Gateway\whitewall.rvmat)};
+        icon = "iconObject_1x3";
+	};
 };

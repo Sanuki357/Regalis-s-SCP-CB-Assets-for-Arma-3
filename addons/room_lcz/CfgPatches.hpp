@@ -26,7 +26,13 @@ class CfgPatches
 			"SCP_CB_LCZ_Room_Endroom",
 			"SCP_CB_LCZ_Room_Storeroom",
 			"SCP_CB_LCZ_Room_327",
-			"SCP_CB_LCZ_Room_1162"
+			"SCP_CB_LCZ_Room_1162",
+            "SCP_CB_LCZ_Piece_WhiteWall",
+            "SCP_CB_LCZ_Piece_WhiteWall_Wide",
+            "SCP_CB_LCZ_Piece_WhiteWall_Concave",
+            "SCP_CB_LCZ_Piece_WhiteWall_Floorlight",
+            "SCP_CB_LCZ_Piece_WhiteWall_Doorway",
+            "SCP_CB_LCZ_Piece_WhiteWall_Gateway"
         };
         weapons[] = {};
     };

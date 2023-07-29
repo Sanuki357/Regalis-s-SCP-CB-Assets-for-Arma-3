@@ -9,6 +9,10 @@
             <English>Light Containment Zone</English>
             <Japanese>軽収容区域</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_LCZ_Pieces">
+            <English>Light Containment Zone (Pieces)</English>
+            <Japanese>軽収容区域（部品）</Japanese>
+        </Key>
         <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Corner_1">
             <English>Corner Hallway (Iron Bars)</English>
             <Japanese>曲がり廊下 (鉄格子)</Japanese>
@@ -96,6 +100,30 @@
         <Key ID="STR_RegalisSCP_CB_Room_LCZ_Room_1162_ReachInto">
             <English>Reach into the hole</English>
             <Japanese>穴の中に手を伸ばす</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Piece_WhiteWall">
+            <English>White Wall</English>
+            <Japanese>白い壁</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Piece_WhiteWall_Wide">
+            <English>White Wall (Wide)</English>
+            <Japanese>白い壁（幅広）</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Piece_WhiteWall_Concave">
+            <English>White Wall (Concave)</English>
+            <Japanese>白い壁（凹）</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Piece_WhiteWall_Floorlight">
+            <English>White Wall (Floorlight)</English>
+            <Japanese>白い壁（床照明）</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Piece_WhiteWall_Doorway">
+            <English>White Wall (Doorway)</English>
+            <Japanese>白い壁（戸口）</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Piece_WhiteWall_Gateway">
+            <English>White Wall (Gateway)</English>
+            <Japanese>白い壁（門口）</Japanese>
         </Key>
     </Package>
 </Project>

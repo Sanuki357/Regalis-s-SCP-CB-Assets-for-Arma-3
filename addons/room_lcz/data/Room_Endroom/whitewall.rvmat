@@ -47,7 +47,7 @@ class Stage4 {
 	};
 };
 class Stage5 {
-	texture = "#(argb,8,8,3)color(1,1,1,1,SMDI)";
+	texture = "#(argb,8,8,3)color(0,0,0,1,SMDI)";
 	uvSource = "tex";
 	class uvTransform {
 		aside[] = { 1, 0, 0 };

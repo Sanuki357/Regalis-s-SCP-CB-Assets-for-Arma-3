@@ -10,4 +10,9 @@ class CfgEditorSubcategories {
         // displayName = "Light Containment Zone";
         displayName = CSTRING(LCZ);
     };
+
+    class SCP_LCZ_Pieces {
+        // displayName = "Light Containment Zone";
+        displayName = CSTRING(LCZ_Pieces);
+    };
 };
