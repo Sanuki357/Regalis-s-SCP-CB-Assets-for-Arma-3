@@ -32,7 +32,7 @@ if (_delayType == "Lockroom") then {
     _handle = [_targets, _caller, _delayDur, _memoryPoint, _cooldownDur] spawn {
         params ["_targets", "_caller", "_delayDur", "_memoryPoint", "_cooldownDur"];
         sleep _delayDur;
-        systemChat format ["SCP_fnc_buttonTriggerDelay: _targets is: %1. _memoryPoint is: %2", _targets, _memoryPoint];
+        //systemChat format ["SCP_fnc_buttonTriggerDelay: _targets is: %1. _memoryPoint is: %2", _targets, _memoryPoint];
         [_caller, "Lockroom Alarm", _memoryPoint] call SCP_fnc_buttonSound;
         sleep 3;
         //systemChat format ["SCP_fnc_buttonTriggerDelay: _target in spawn is: %1", (_this select 0)];

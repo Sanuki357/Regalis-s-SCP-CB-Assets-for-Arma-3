@@ -60,7 +60,7 @@ if (([_object, _memoryPoint] call SCP_fnc_memoryPointValidation)) then {
 };
 
 //Plays _sound from _soundOrigin for button on every client but server.
-systemChat format ["SCP_fnc_buttonSound: _soundOrigin is: %1. _sound is: %2", _soundOrigin, _sound];
+//systemChat format ["SCP_fnc_buttonSound: _soundOrigin is: %1. _sound is: %2", _soundOrigin, _sound];
 [_soundOrigin, _sound] remoteExec ["say3D", 0];
 
 //Removes _soundOrigin after _soundDuration seconds.

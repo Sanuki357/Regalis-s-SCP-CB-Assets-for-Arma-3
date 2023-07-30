@@ -125,5 +125,21 @@
             <English>White Wall (Gateway)</English>
             <Japanese>白い壁（門口）</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Piece_Floor_Concrete">
+            <English>Concrete Floor</English>
+            <Japanese>コンクリートの床</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Piece_Floor_Concrete_Big">
+            <English>Concrete Floor (Big)</English>
+            <Japanese>コンクリートの床（広）</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Piece_Floor_Tile">
+            <English>Tiled Floor</English>
+            <Japanese>タイルの床</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Piece_Floor_Tile_Big">
+            <English>Tiled Floor (Big)</English>
+            <Japanese>タイルの床（広）</Japanese>
+        </Key>
     </Package>
 </Project>

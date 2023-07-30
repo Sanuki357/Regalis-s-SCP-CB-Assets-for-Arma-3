@@ -22,7 +22,7 @@ if (!_codeString) then {
     _codeString = _object getVariable ["SCP_CB_Operetable_PressExpression", false];
 };
 
-systemChat format ["SCP_fnc_buttonExecExpression: The code in _codeString is: %1", _codeString];
+//systemChat format ["SCP_fnc_buttonExecExpression: The code in _codeString is: %1", _codeString];
 
 // Help locality dosen't make sense to me help
 

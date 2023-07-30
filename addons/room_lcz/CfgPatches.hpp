@@ -32,7 +32,11 @@ class CfgPatches
             "SCP_CB_LCZ_Piece_WhiteWall_Concave",
             "SCP_CB_LCZ_Piece_WhiteWall_Floorlight",
             "SCP_CB_LCZ_Piece_WhiteWall_Doorway",
-            "SCP_CB_LCZ_Piece_WhiteWall_Gateway"
+            "SCP_CB_LCZ_Piece_WhiteWall_Gateway",
+            "SCP_CB_LCZ_Piece_Floor_Concrete",
+            "SCP_CB_LCZ_Piece_Floor_Concrete_Big",
+            "SCP_CB_LCZ_Piece_Floor_Tile",
+            "SCP_CB_LCZ_Piece_Floor_Tile_Big"
         };
         weapons[] = {};
     };
