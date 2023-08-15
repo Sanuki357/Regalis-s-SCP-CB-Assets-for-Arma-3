@@ -23,7 +23,7 @@ class CfgVehicles
     class SCP_CB_Anomaly_SCP079 : SCP_CB_Anomaly_Object_base
     {
         scope = 2;
-        curatorScope = 2;
+        scopeCurator = 2;
         displayName = CSTRING(SCP079);
         model = QPATHTOF(data\SCP079\SCP079.p3d); // Path to model
         hiddenSelections[] = {"camo_monitor_screen"};
@@ -47,7 +47,7 @@ class CfgVehicles
     class SCP_CB_Anomaly_SCP173_Static : SCP_CB_Anomaly_Object_base
     {
         scope = 2;
-        curatorScope = 2;
+        scopeCurator = 2;
         displayName = CSTRING(SCP173_Static);
         model = QPATHTOF(data\SCP173\SCP173.p3d); // Path to model
         hiddenSelections[] = {"camo"};
@@ -59,7 +59,7 @@ class CfgVehicles
     class SCP_CB_Anomaly_SCP294 : SCP_CB_Anomaly_Object_base
     {
         scope = 2;
-        curatorScope = 2;
+        scopeCurator = 2;
         displayName = CSTRING(SCP294);
         model = QPATHTOF(data\SCP294\SCP294.p3d); // Path to model
         hiddenSelections[] = {"camo"};
@@ -71,7 +71,7 @@ class CfgVehicles
     class SCP_CB_Anomaly_SCP1162 : SCP_CB_Anomaly_Object_base
     {
         scope = 2;
-        curatorScope = 2;
+        scopeCurator = 2;
         displayName = CSTRING(SCP1162);
         model = QPATHTOF(data\SCP1162\SCP1162.p3d); // Path to model
         hiddenSelections[] = {"camo"};
