@@ -5,7 +5,6 @@
 #include "CfgEditorCategories.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgSounds.hpp"
-#include "CfgFunctions.hpp"
 
 //***************//
 // Ambient Noise //

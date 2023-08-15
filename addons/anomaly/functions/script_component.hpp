@@ -1,0 +1,1 @@
+#include "\z\RegalisSCP_CB\addons\room_lcz\script_component.hpp"

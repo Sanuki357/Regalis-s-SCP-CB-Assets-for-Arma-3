@@ -1,4 +1,3 @@
-
 #include "script_component.hpp"
 
 #include "CfgPatches.hpp"
@@ -6,6 +5,7 @@
 #include "CfgVehicles.hpp"
 #include "CfgSounds.hpp"
 #include "CfgWeapons.hpp"
+#include "CfgFunctions.hpp"
 
 class UniformSlotInfo;
 

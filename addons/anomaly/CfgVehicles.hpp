@@ -56,8 +56,6 @@ class CfgVehicles
         editorSubcategory = "SCP_EdSubcat_Autonomous_Static";
     };
 
-
-
     class SCP_CB_Anomaly_SCP294 : SCP_CB_Anomaly_Object_base
     {
         scope = 2;
@@ -68,6 +66,33 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {QPATHTOF(data\SCP294\SCP294_CO.paa)};
         hiddenSelectionsMaterials[] = {QPATHTOF(data\SCP294\SCP294.rvmat)};
         editorSubcategory = "SCP_EdSubcat_Inanimate";
+    };
+
+    class SCP_CB_Anomaly_SCP1162 : SCP_CB_Anomaly_Object_base
+    {
+        scope = 2;
+        curatorScope = 2;
+        displayName = CSTRING(SCP1162);
+        model = QPATHTOF(data\SCP1162\SCP1162.p3d); // Path to model
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\SCP1162\SCP1162_CA.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\SCP1162\SCP1162.rvmat)};
+        editorSubcategory = "SCP_EdSubcat_Inanimate";
+        class UserActions
+		{
+			class SCP1162
+			{
+				displayNameDefault = "<img image='z\RegalisSCP_CB\addons\textures\handsymbol.paa' size='2.5' />";
+				displayName = CSTRING(SCP1162_ReachInto);
+                priority = 6;
+				position = "Action_1162";
+				radius = 2;
+				aiMaxRange = 2;
+				onlyForPlayer = 0;
+				condition = "alive this";
+                statement = "[this] call SCP_fnc_1162_itemExchange;";
+			};
+		};
     };
 
     //******************//
