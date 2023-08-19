@@ -51,11 +51,11 @@ import traceback
 import time
 import timeit
 import re
-import fileinput
+from tempfile import mkstemp
 
 if sys.platform == "win32":
     import winreg
-
+    
 ######## GLOBALS #########
 project = "@RegalisSCP_CB"
 project_version = "3.0.0"
