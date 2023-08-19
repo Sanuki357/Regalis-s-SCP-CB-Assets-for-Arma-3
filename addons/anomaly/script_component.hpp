@@ -7,12 +7,12 @@
 // #define CBA_DEBUG_SYNCHRONOUS
 // #define ENABLE_PERFORMANCE_COUNTERS
 
-#ifdef DEBUG_ENABLED_ROOM_LCZ
+#ifdef DEBUG_ENABLED_ANOMALY
     #define DEBUG_MODE_FULL
 #endif
 
-#ifdef DEBUG_SETTINGS_ROOM_LCZ
-    #define DEBUG_SETTINGS DEBUG_SETTINGS_ROOM_LCZ
+#ifdef DEBUG_SETTINGS_ANOMALY
+    #define DEBUG_SETTINGS DEBUG_SETTINGS_ANOMALY
 #endif
 
 #include "\z\RegalisSCP_CB\addons\main\script_macros.hpp"

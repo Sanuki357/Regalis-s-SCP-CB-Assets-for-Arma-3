@@ -1,1 +1,1 @@
-#include "\z\RegalisSCP_CB\addons\room_lcz\script_component.hpp"
+#include "\z\RegalisSCP_CB\addons\anomaly\script_component.hpp"

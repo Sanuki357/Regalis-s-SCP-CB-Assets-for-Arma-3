@@ -44,7 +44,7 @@ class Stage3
 };
 class Stage4
 {
-	texture = "z\RegalisSCP_CB\addons\room_lcz\textures\BasicShadow_512_ADSHQ.paa";
+	texture = "z\RegalisSCP_CB\addons\anomaly\data\SCP1162\BasicShadow_512_ADSHQ.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
