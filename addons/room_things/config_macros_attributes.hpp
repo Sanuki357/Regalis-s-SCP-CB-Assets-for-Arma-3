@@ -31,7 +31,7 @@ class DoorLockState \
 	tooltip         = CSTRING(DoorLockState_tooltip); \
 	property        = "DoorLockState"; \
 	control         = "Combo"; \
-	expression      = "_this setVariable ['SCP_CB_Operetable_DoorLockState', _value];"; \
+	expression      = "_this setVariable ['SCP_CB_Operetable_DoorLockState', _value, true];"; \
 	defaultValue    = 0; \
 	typeName        = "NUMBER"; \
 	class Values { \
@@ -57,7 +57,7 @@ class PressExpression \
 	tooltip         = CSTRING(PressExpression_tooltip); \
 	property        = "PressExpression"; \
 	control         = "EditCodeMulti5"; \
-	expression      = "_this setVariable ['SCP_CB_Operetable_PressExpression', _value];"; \
+	expression      = "_this setVariable ['SCP_CB_Operetable_PressExpression', _value, true];"; \
 	defaultValue    = """[[myDoor0, myDoor1], 'None'] call SCP_fnc_buttonTrigger;"""; \
 	typeName        = "STRING"; \
 };
@@ -69,7 +69,7 @@ class RequiredClearanceLevel \
 	tooltip         = CSTRING(RequiredClearanceLevel_tooltip); \
 	property        = "RequiredClearanceLevel"; \
 	control         = "Combo"; \
-	expression      = "_this setVariable ['SCP_CB_Operetable_Required_ClearanceLevel', _value];"; \
+	expression      = "_this setVariable ['SCP_CB_Operetable_Required_ClearanceLevel', _value, true];"; \
 	defaultValue    = 1; \
 	typeName        = "NUMBER"; \
 	class Values { \
