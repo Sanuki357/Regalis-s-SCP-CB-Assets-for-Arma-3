@@ -30,6 +30,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(Door1); // Name in editor
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Door1.jpg);
         model = QPATHTOF(data\Door1\Door1_NoButton.p3d); // Path to model
         hiddenSelections[] = {"camo_door"};
         editorSubCategory = "SCP_Doors";
@@ -55,6 +56,7 @@ class CfgVehicles
     class SCP_CB_Things_Door1_Button : SCP_CB_Things_Door1
     {
         displayName = CSTRING(Door1_Button); // Name in editor
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Door1_Button.jpg);
         model = QPATHTOF(data\Door1\Door1.p3d); // Path to model
         hiddenSelections[] = {"camo_door", "camo_button"};
 
@@ -97,12 +99,14 @@ class CfgVehicles
     class SCP_CB_Things_Door1_Button_Inverted : SCP_CB_Things_Door1_Button
     {
         displayName = CSTRING(Door1_Button_Inverted);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Door1_Button_Inverted.jpg);
         model = QPATHTOF(data\Door1\Door1_Inverted.p3d);
     };
 
     class SCP_CB_Things_Door1_Button_Error : SCP_CB_Things_Door1_Button
     {
         displayName = CSTRING(Door1_Button_Error); // Name in editor
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Door1_Button_Error.jpg);
 
         class UserActions
         {
@@ -129,12 +133,15 @@ class CfgVehicles
     class SCP_CB_Things_Door1_Button_Error_Inverted : SCP_CB_Things_Door1_Button_Error
     {
         displayName = CSTRING(Door1_Button_Error_Inverted);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Door1_Button_Error_Inverted.jpg);
         model = QPATHTOF(data\Door1\Door1_Inverted.p3d);
     };
 
     class SCP_CB_Things_Door1_Button_NoRespose : SCP_CB_Things_Door1_Button
     {
         displayName = CSTRING(Door1_Button_NoResponse); // Name in editor
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Door1_Button_NoRespose.jpg);
+        
 
         class UserActions
         {
@@ -161,6 +168,7 @@ class CfgVehicles
     class SCP_CB_Things_Door1_Button_NoRespose_Inverted : SCP_CB_Things_Door1_Button_NoRespose
     {
         displayName = CSTRING(Door1_Button_NoResponse_Inverted);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Door1_Button_NoRespose_Inverted.jpg);
         model = QPATHTOF(data\Door1\Door1_Inverted.p3d);
     };
 
@@ -169,6 +177,7 @@ class CfgVehicles
     {
         scopeCurator = 1;
         displayName = CSTRING(Door1_CardReader);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Door1_CardReader.jpg);
         model = QPATHTOF(data\Door1\Door1_CardReader.p3d);
         hiddenSelections[] = {"camo_door", "camo_button"};
         //EGVAR(operatable,clearanceLevel)[] = {{1}};
@@ -228,6 +237,7 @@ class CfgVehicles
     class SCP_CB_Things_Door1_Scanner : SCP_CB_Things_Door1_Button
     {
         displayName = CSTRING(Door1_Scanner);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Door1_Scanner.jpg);
         model = QPATHTOF(data\Door1\Door1_Scanner.p3d);
     };
 
@@ -235,6 +245,7 @@ class CfgVehicles
     class SCP_CB_Things_Door1_Numpad : SCP_CB_Things_Door1_Button
     {
         displayName = CSTRING(Door1_Numpad);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Door1_Numpad.jpg);
         model = QPATHTOF(data\Door1\Door1_Numpad.p3d);
     };
 
@@ -242,6 +253,7 @@ class CfgVehicles
     class SCP_CB_Things_HeavyDoor : SCP_CB_Things_Door1
     {
         displayName = CSTRING(HeavyDoor); // Name in editor
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_HeavyDoor.jpg);
         model = QPATHTOF(data\HeavyDoor\HeavyDoor.p3d); // Path to model
         hiddenSelections[] = {"camo_door", "camo_containmentdoor"};
         EGVAR(operatable,type)[] = {{"Door", "HeavyDoor", "Door_1_source", "door_1_trigger"}};
@@ -260,6 +272,7 @@ class CfgVehicles
     class SCP_CB_Things_HeavyDoor_Button : SCP_CB_Things_Door1_Button
     {
         displayName = CSTRING(HeavyDoor_Button); // Name in editor
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_HeavyDoor_Button.jpg);
         model = QPATHTOF(data\HeavyDoor\HeavyDoor_Button.p3d); // Path to model
         hiddenSelections[] = {"camo_door", "camo_containmentdoor", "camo_button"};
         EGVAR(operatable,type)[] = {{"Door", "HeavyDoor", "Door_1_source", "door_1_trigger"}};
@@ -269,6 +282,7 @@ class CfgVehicles
     class SCP_CB_Things_ContainmentDoor : SCP_CB_Things_Door1
     {
         displayName = CSTRING(ContainmentDoor); // Name in editor
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_ContainmentDoor.jpg);
         model = QPATHTOF(data\ContainmentDoor\ContainmentDoor.p3d); // Path to model
         hiddenSelections[] = {"camo_containmentdoor"};
         icon = "z\RegalisSCP_CB\addons\room_things\data\UI\iconSCPContainmentDoor_CA.paa";
@@ -289,6 +303,7 @@ class CfgVehicles
     class SCP_CB_Things_ElevatorRoom_Door : SCP_CB_Things_Door1
     {
         displayName = CSTRING(ElevatorRoom_Door); // Name in editor
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_ElevatorRoom_Door.jpg);
         model = QPATHTOF(data\Elevator\ElevatorRoom_Door.p3d); // Path to model
         hiddenSelections[] = {"camo_door", "camo_dirtymetal", "camo_metal", "camo_metal3"};
         icon = "iconObject_1x1";
@@ -314,6 +329,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(Keypad_Button); // Name in editor
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Keypad_Button.jpg);
         model = QPATHTOF(data\Keypad\Keypad_Button.p3d); // Path to model
         hiddenSelections[] = {"camo_button"};
         editorSubCategory = "SCP_Keypads";
@@ -346,6 +362,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(Keypad_CardReader); // Name in editor
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Keypad_CardReader.jpg);
         model = QPATHTOF(data\Keypad\Keypad_CardReader.p3d); // Path to model
         hiddenSelections[] = {"camo_button"};
         editorSubCategory = "SCP_Keypads";
@@ -363,6 +380,7 @@ class CfgVehicles
     class SCP_CB_Things_Keypad_Code : SCP_CB_Things_Keypad_Button
     {
         displayName = CSTRING(Keypad_Code); // Name in editor
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Keypad_Code.jpg);
         model = QPATHTOF(data\Keypad\Keypad_Code.p3d); // Path to model
         hiddenSelections[] = {"camo_button"};
         
@@ -385,6 +403,7 @@ class CfgVehicles
     class SCP_CB_Things_Keypad_Scanner : SCP_CB_Things_Keypad_Button
     {
         displayName = CSTRING(Keypad_Scanner); // Name in editor
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Keypad_Scanner.jpg);
         model = QPATHTOF(data\Keypad\Keypad_Scanner.p3d); // Path to model
         hiddenSelections[] = {"camo_button"};
         
@@ -413,6 +432,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(FileCabinet); // Name in editor
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_FileCabinet.jpg);
         model = QPATHTOF(data\Furniture\Cabinet_a.p3d); // Path to model
         hiddenSelections[] = {"camo_cabinet"};
         editorSubCategory = "SCP_Furnitures";
@@ -424,6 +444,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(OfficeSeat); // Name in editor
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_OfficeSeat.jpg);
         model = QPATHTOF(data\Furniture\Officeseat_a.p3d); // Path to model
         hiddenSelections[] = {"camo_cabinet"};
         editorSubCategory = "SCP_Furnitures";
@@ -435,6 +456,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(Crate1); // Name in editor
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Crate1.jpg);
         model = QPATHTOF(data\Crate\Crate1.p3d); // Path to model
         hiddenSelections[] = {"camo_crate"};
         editorCategory = "SCP_Facility";
@@ -449,6 +471,7 @@ class CfgVehicles
     class SCP_CB_Things_Crate2 : SCP_CB_Things_Crate1
     {
         displayName = CSTRING(Crate2); // Name in editor
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Crate2.jpg);
         model = QPATHTOF(data\Crate\Crate2.p3d); // Path to model
         hiddenSelections[] = {"camo_crate"};
         maximumLoad = 600;
@@ -457,6 +480,7 @@ class CfgVehicles
     class SCP_CB_Things_Crate3 : SCP_CB_Things_Crate1
     {
         displayName = CSTRING(Crate3); // Name in editor
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Crate3.jpg);
         model = QPATHTOF(data\Crate\Crate3.p3d); // Path to model
         hiddenSelections[] = {"camo_crate"};
         maximumLoad = 800;

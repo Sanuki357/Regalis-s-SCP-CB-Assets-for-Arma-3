@@ -25,6 +25,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(SCP079);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP079.jpg);
         model = QPATHTOF(data\SCP079\SCP079.p3d); // Path to model
         hiddenSelections[] = {"camo_monitor_screen"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\SCP079\SCP079_monitor_screen_CO.paa)};
@@ -49,6 +50,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(SCP173_Static);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP173_Static.jpg);
         model = QPATHTOF(data\SCP173\SCP173.p3d); // Path to model
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\SCP173\SCP173_CO.paa)};
@@ -61,6 +63,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(SCP294);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP294.jpg);
         model = QPATHTOF(data\SCP294\SCP294.p3d); // Path to model
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\SCP294\SCP294_CO.paa)};
@@ -73,6 +76,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(SCP1162);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP1162.jpg);
         model = QPATHTOF(data\SCP1162\SCP1162.p3d); // Path to model
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\SCP1162\SCP1162_CA.paa)};
@@ -111,7 +115,8 @@ class CfgVehicles
         camouflage = 1.5;
 		sensitivity = 2.5;
 		threat[] = {1, 1, 0.8};
-		model = QPATHTOF(data\SCP106\SCP106.p3d);
+		editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP106.jpg);
+        model = QPATHTOF(data\SCP106\SCP106.p3d);
 		uniformClass = "SCP_CB_Anomaly_SCP106_U";
 		hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\SCP106\SCP106_CO.paa)};
@@ -135,7 +140,8 @@ class CfgVehicles
     class SCP_CB_Anomaly_SCP049 : SCP_CB_Anomaly_SCP106
     {
         displayName = CSTRING(SCP049);
-		model = QPATHTOF(data\SCP049\SCP049.p3d);
+		editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP049.jpg);
+        model = QPATHTOF(data\SCP049\SCP049.p3d);
         uniformClass = "SCP_CB_Anomaly_SCP049_U";
 		hiddenSelections[] = {"camo_cloth", "camo_mask", "camo_eye"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\SCP049\SCP049Cloth_CO.paa), QPATHTOF(data\SCP049\SCP049Mask_CO.paa), QPATHTOF(data\SCP049\SCP049Mask_CO.paa)};
