@@ -809,6 +809,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(Piece_Floor_Concrete);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Piece_Floor_Concrete.jpg);
         model = QPATHTOF(data\Piece_Floor\Piece_ConcreteFloor.p3d);
         hiddenSelections[] = {"camo_floor"};
         hiddenSelectionsTextures[] = {QPATHTOEF(textures,concretefloor.paa)};
@@ -820,12 +821,14 @@ class CfgVehicles
     class SCP_CB_LCZ_Piece_Floor_Concrete_Big: SCP_CB_LCZ_Piece_Floor_Concrete
     {
         displayName = CSTRING(Piece_Floor_Concrete_Big);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Piece_Floor_Concrete_Big.jpg);
         model = QPATHTOF(data\Piece_Floor\Piece_ConcreteFloor_Big.p3d);
 	};
 
     class SCP_CB_LCZ_Piece_Floor_Tile: SCP_CB_LCZ_Piece_Floor_Concrete
     {
         displayName = CSTRING(Piece_Floor_Tile);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Piece_Floor_Tile.jpg);
         model = QPATHTOF(data\Piece_Floor\Piece_TileFloor.p3d);
         hiddenSelectionsTextures[] = {QPATHTOEF(textures,tilefloor.paa)};
         hiddenSelectionsMaterials[] = {QPATHTOF(data\Piece_Floor\tilefloor.rvmat)};
@@ -834,6 +837,7 @@ class CfgVehicles
     class SCP_CB_LCZ_Piece_Floor_Tile_Big: SCP_CB_LCZ_Piece_Floor_Tile
     {
         displayName = CSTRING(Piece_Floor_Tile_Big);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Piece_Floor_Tile_Big.jpg);
         model = QPATHTOF(data\Piece_Floor\Piece_TileFloor_Big.p3d);
 	};
 };
