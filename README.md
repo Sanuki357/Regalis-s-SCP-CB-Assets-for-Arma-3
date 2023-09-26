@@ -117,9 +117,15 @@ You can also manage versioning through the make tool. To do this, navigate to th
 ```
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Modify the numbers in here to represent your build version. The example listed above would be: `0.5.0.24`. This version will be set in each pbo during binarizing. It will also be used in the signature file names, along the commit hash. This will make it easier to identify the exact version that is being used.
 =======
 Modify the numbers in here to represent your build version. The example listed above would be: `0.5.0.24`. This version will be set in each pbo during binarizing. It will also be used in the signature file names, along the commit hash. This will make it easier to identify the exact version that is being used.
+=======
+Modify the numbers in here to represent your build version. The example listed above would be: `0.5.2.56`. This version will be set in each pbo during binarizing. It will also be used in the signature file names, along the commit hash. This will make it easier to identify the exact version that is being used.
+=======
+Modify the numbers in here to represent your build version. The example listed above would be: `0.5.2.56`. This version will be set in each pbo during binarizing. It will also be used in the signature file names, along the commit hash. This will make it easier to identify the exact version that is being used.
+>>>>>>> Stashed changes
 >>>>>>> Stashed changes
 
 
