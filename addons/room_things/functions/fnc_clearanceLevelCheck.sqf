@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
- * Author: 
- * Handles deafness due to explosions going off near the player.
+ * Author: Sanuki357
+ * Returns true or false depending on the clearance level on a key card possessed by _caller. This also plays the appropriate audio.
  *
  * Arguments:
  * 0: vehicle - Object the event handler is assigned to (player) <OBJECT>
@@ -16,7 +16,7 @@
  * Public: No
  */
 
-params ["_object", "_caller", "_requiredLvl", "_soundPosition"];
+params ["_object", "_caller", "_requiredLvl", "_memoryPoint"];
 
 _idCardLvl = 0;
 
@@ -39,12 +39,12 @@ if (_idCardLvl >= _requiredLvl) exitWith {
         [synchronizedObjects _object select _i, 'Door1 Close', 'Door_1_source'] call SCP_fnc_doorOperate;
     };
     */
-    [_object, 'Keycard Granted', _soundPosition] call SCP_fnc_buttonSound;
+    [_object, 'Keycard Granted', _memoryPoint] call SCP_fnc_buttonSound;
     true
 };
 
 if (_idCardLvl < _requiredLvl) exitWith {
-    [_object, 'Keycard Denied', _soundPosition] call SCP_fnc_buttonSound;
+    [_object, 'Keycard Denied', _memoryPoint] call SCP_fnc_buttonSound;
     false
 };
 

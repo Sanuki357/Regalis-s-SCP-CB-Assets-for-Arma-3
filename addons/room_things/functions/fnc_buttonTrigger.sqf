@@ -1,8 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Sanuki357
- * Handles opening a door and emit a appopriate sound effect.
- *
+ * Automatically detects the type of the door and the current animation phase and plays suitable audio and animation.
  *
  * Arguments:
  * 0: object - Object to be controled its animateSource phase and origin of sounds <OBJECT>
@@ -16,11 +15,25 @@
  * Public: No
  */
 
-params ["_targets", "_delayType"];
+//params ["_targets", ["_delayType", false, [""]], ["_delayDur", 10, [0]], ["_memoryPoint", "button_f", [""]]];
+params [["_targets", objNull, [[], objNull]], "_placeHolder"];
 
-if (_delayType == "LockRoom") then {
-    if (this getVariable ['SCP_RequiredClearanceLevel', 0]) then {};
+// Barbaric checks for _targets.
+if ((typeName _targets != "ARRAY") && (typeName _targets != "OBJECT")) exitWith {
+    systemChat format ["SCP_fnc_buttonTrigger: ""%1"" is not an object or an array containing objects.", _targets];
 };
+
+if (typeName _targets == "OBJECT") then {
+    _targets = [_targets];
+};
+
+{
+    if ((typeName _x != "OBJECT") && (_x == objNull)) then {
+        systemChat format ["SCP_fnc_buttonTrigger: ""%1"" in the array is not an object.", _x];
+        _deleted = _targets deleteAt _forEachIndex;
+    };
+} foreach _targets;
+
 
 {
     //systemChat format ["type of the thing is: %1", typeOf _x];

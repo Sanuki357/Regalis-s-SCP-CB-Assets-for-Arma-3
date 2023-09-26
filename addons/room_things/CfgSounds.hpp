@@ -20,6 +20,12 @@ class CfgSounds {
         sound[] = {QPATHTOF(data\Keypad\KeycardUse2.ogg), 1, 1};
         titles[] = {};
     };
+
+    //----------    Lockroom Alarm
+    class SCP_CB_Lockroom_Alarm {
+        sound[] = {QPATHTOF(data\Keypad\LockroomSiren.ogg), 1, 1};
+        titles[] = {};
+    };
     
     //----------    Opening and Closing of Door1
     class SCP_CB_Door1_Open_1 {

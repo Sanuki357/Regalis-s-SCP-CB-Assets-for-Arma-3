@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="#(argb,8,8,3)color(0,0,1,1,SMDI)";
+	texture="z\RegalisSCP_CB\addons\anomaly\data\SCP106\SCP106_SMDI.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -77,8 +77,8 @@ class Stage6
 };
 class Stage7
 {
-	texture="a3\data_f\env_co.paa";
-	useWorldEnvMap="true";
+	texture="a3\data_f\env_bathroom_co.paa";
+	useWorldEnvMap="false";
 	uvSource="tex";
 	class uvTransform
 	{

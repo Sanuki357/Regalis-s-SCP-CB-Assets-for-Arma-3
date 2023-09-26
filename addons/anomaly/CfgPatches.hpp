@@ -3,7 +3,7 @@ class CfgPatches
     class ADDON
     {
         name= COMPONENT_NAME;
-        requiredAddons[] = {"A3_Structures_F", "RegalisSCP_CB_main"};
+        requiredAddons[] = {"A3_Characters_F", "A3_Structures_F", "RegalisSCP_CB_main"};
         requiredVersion = REQUIRED_VERSION;
         units[] =
         {
@@ -13,7 +13,8 @@ class CfgPatches
             "SCP_CB_Anomaly_SCP079_X",
             "SCP_CB_Anomaly_SCP106",
             "SCP_CB_Anomaly_SCP173_Static",
-            "SCP_CB_Anomaly_SCP294"
+            "SCP_CB_Anomaly_SCP294",
+            "SCP_CB_Anomaly_SCP1162"
         };
         weapons[] =
         {

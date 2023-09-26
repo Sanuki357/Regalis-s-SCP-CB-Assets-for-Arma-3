@@ -6,6 +6,7 @@ class CfgEditorCategories
         displayName = CSTRING(Facility);
     };
 };
+
 class CfgEditorSubcategories
 {
     class SCP_Doors

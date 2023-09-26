@@ -32,8 +32,9 @@ private _type           = getArray (configFile >> "CfgVehicles" >> typeOf _objec
 private _animSource     = getArray (configFile >> "CfgVehicles" >> typeOf _object >> QEGVAR(operatable,type)) select _index select 2;
 private _soundPosition  = getArray (configFile >> "CfgVehicles" >> typeOf _object >> QEGVAR(operatable,type)) select _index select 3;
 
-//Creates and attaches a source of where _inputSound will be played from, to the memory point selected with _inputSoundPosition.
-private _soundOrigin = "#particlesource" createVehicleLocal ASLToAGL getPosWorld _object;
+// Creates and attaches a source of where _inputSound will be played from, to the memory point selected with _inputSoundPosition.
+//private _soundOrigin = "#particlesource" createVehicleLocal ASLToAGL getPosWorld _object;
+private _soundOrigin = "#particlesource" createVehicle getPosASL _object;
 _soundOrigin attachTo [_object, [0,0,0], _soundPosition];
 private _soundSet = ["SCP_CB_Door1_Open_1"]; //Place holder string
 private _soundDuration = 2.5;
@@ -122,10 +123,8 @@ switch (_operationType) do {
 
 // Randomly selects a sound from _soundSet to play. 
 _randomSound = _soundSet select floor random count _soundSet;
-
-// Plays _randomSound from _object for door on every client but server.
-//[_soundOrigin, _randomSound] remoteExec ["say3D", 0];
-_soundOrigin say3D _randomSound;
+[_soundOrigin, _randomSound] remoteExec ["say3D", 0];
+//_soundOrigin say3D _randomSound;
 
 //Removes _soundOrigin after _soundDuration seconds.
 [_soundOrigin, _soundDuration] spawn {
