@@ -1,4 +1,4 @@
-name = "SCP-Regalis's Containment Breach Assets [dev]";
+name = "SCP - Regalis's Containment Breach Assets [DEV]";
 author = "Sanuki357";
 picture = "logo_RegalisSCP_CB_ca.paa"; 
 logo = "logo_RegalisSCP_CB_ca.paa";
@@ -7,6 +7,6 @@ logoOver = "SCP_CB_LogoGlow.paa";
 action = "https://github.com/Sanuki357/Regalis-s-SCP-CB-Assets-for-Arma-3";
 tooltipOwned = "SCP-CB";
 dlcColor[] = {	0.5, 0.5, 0.5, 1};
-overview = "Adds stuff";
+overview = "Adds assets from SCP: Containment Breach";
 hideName = 0;
 hidePicture = 0;
