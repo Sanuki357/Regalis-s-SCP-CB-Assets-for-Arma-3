@@ -56,6 +56,10 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {QPATHTOF(data\SCP173\SCP173_CO.paa)};
         hiddenSelectionsMaterials[] = {QPATHTOF(data\SCP173\SCP173.rvmat)};
         editorSubcategory = "SCP_EdSubcat_Autonomous_Static";
+        class EventHandlers
+        {
+            init = "_this spawn SCP_fnc_173_init";
+        };
     };
 
     class SCP_CB_Anomaly_SCP294 : SCP_CB_Anomaly_Object_base
