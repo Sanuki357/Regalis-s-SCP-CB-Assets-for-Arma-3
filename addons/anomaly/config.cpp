@@ -31,6 +31,7 @@ class CfgPatches
 #include "CfgSounds.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgFunctions.hpp"
+#include "CfgEventHandlers.hpp"
 
 class UniformSlotInfo;
 
