@@ -25,6 +25,7 @@ class CfgPatches
 			"SCP_CB_LCZ_Room_Archive",
 			"SCP_CB_LCZ_Room_Endroom",
 			"SCP_CB_LCZ_Room_Storeroom",
+            "SCP_CB_LCZ_Room_IntroOffice",
 			"SCP_CB_LCZ_Room_327",
 			"SCP_CB_LCZ_Room_1162",
             "SCP_CB_LCZ_Piece_WhiteWall",

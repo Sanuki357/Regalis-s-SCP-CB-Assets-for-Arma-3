@@ -85,6 +85,10 @@
             <English>Store Room</English>
             <Japanese>物置部屋</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Room_IntroOffice">
+            <English>Intro Office</English>
+            <Japanese>イントロ事務室</Japanese>
+        </Key>
 		<Key ID="STR_RegalisSCP_CB_Room_LCZ_Room_372">
             <English>SCP-372 Containment Chamber</English>
             <Japanese>SCP-372収容区画</Japanese>

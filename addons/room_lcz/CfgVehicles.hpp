@@ -718,6 +718,16 @@ class CfgVehicles
         hiddenSelections[] = {"camo_floor", "camo_wall"};
         icon = "iconObject_1x2";
     };
+    class SCP_CB_LCZ_Room_IntroOffice: SCP_CB_LCZ_base
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(Room_IntroOffice);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Room_Archive.jpg);
+        model = QPATHTOF(data\Room_IntroOffice\Room_IntroOffice.p3d);
+        hiddenSelections[] = {"camo_floor", "camo_ceiling", "camo_white", "camo_wall", "camo_scplogo"};
+        icon = "iconObject_1x1";
+    };
 
 //**********************//
 // Containment Chambers //
@@ -742,9 +752,9 @@ class CfgVehicles
         model = QPATHTOF(data\Room_1162\Room_1162.p3d);
         icon = "iconObject_1x1";
 	};
-//******************//
-// Hallways & Rooms //
-//******************//
+//********//
+// Pieces //
+//********//
     class SCP_CB_LCZ_Piece_WhiteWall: SCP_CB_LCZ_base
     {
         scope = 2;
