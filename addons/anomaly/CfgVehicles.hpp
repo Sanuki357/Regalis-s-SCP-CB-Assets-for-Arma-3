@@ -45,6 +45,24 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {QPATHTOF(data\SCP079\SCP079_AIface2_CO.paa)};
     };
 
+    class SCP_CB_Anomaly_SCP173 : SCP_CB_Anomaly_Object_base
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(SCP173);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP173_Static.jpg);
+        model = QPATHTOF(data\SCP173\SCP173.p3d); // Path to model
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\SCP173\SCP173_CO.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\SCP173\SCP173.rvmat)};
+        editorSubcategory = "SCP_EdSubcat_Autonomous";
+        simulation = "thingX";
+        class EventHandlers
+        {
+	        init = "_this spawn SCP_fnc_173_init;";
+        };
+    };
+
     class SCP_CB_Anomaly_SCP173_Static : SCP_CB_Anomaly_Object_base
     {
         scope = 2;
@@ -56,11 +74,6 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {QPATHTOF(data\SCP173\SCP173_CO.paa)};
         hiddenSelectionsMaterials[] = {QPATHTOF(data\SCP173\SCP173.rvmat)};
         editorSubcategory = "SCP_EdSubcat_Autonomous_Static";
-        simulation = "thingX";
-        class EventHandlers
-        {
-	        init = "_this spawn SCP_fnc_173_init;";
-        };
     };
 
     class SCP_CB_Anomaly_SCP294 : SCP_CB_Anomaly_Object_base
