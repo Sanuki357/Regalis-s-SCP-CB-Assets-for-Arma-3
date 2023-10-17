@@ -752,6 +752,24 @@ class CfgVehicles
         model = QPATHTOF(data\Room_1162\Room_1162.p3d);
         icon = "iconObject_1x1";
 	};
+    class SCP_CB_LCZ_Room_173: SCP_CB_LCZ_base
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(Room_173);
+        //editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Room_173.jpg);
+        model = QPATHTOF(data\Room_173\Room_173.p3d);
+        hiddenSelections[] = {"camo_label173", "camo_scplogo"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOEF(textures,label173_CO.paa),
+            QPATHTOEF(textures,scplogo.paa)
+        };
+        hiddenSelectionsMaterials[] = {
+            QPATHTOF(data\Room_173\label173.rvmat),
+            QPATHTOF(data\Room_173\scplogo.rvmat)
+        };
+        icon = "iconObject_1x1";
+	};
 //********//
 // Pieces //
 //********//

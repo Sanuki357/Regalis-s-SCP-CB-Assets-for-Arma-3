@@ -105,6 +105,10 @@
             <English>Reach into the hole</English>
             <Japanese>穴の中に手を伸ばす</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Room_173">
+            <English>SCP-173 Chamber</English>
+            <Japanese>SCP-173収容区画</Japanese>
+        </Key>
         <Key ID="STR_RegalisSCP_CB_Room_LCZ_Piece_WhiteWall">
             <English>White Wall</English>
             <Japanese>白い壁</Japanese>

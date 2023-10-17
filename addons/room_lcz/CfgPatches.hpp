@@ -28,6 +28,7 @@ class CfgPatches
             "SCP_CB_LCZ_Room_IntroOffice",
 			"SCP_CB_LCZ_Room_327",
 			"SCP_CB_LCZ_Room_1162",
+            "SCP_CB_LCZ_Room_173",
             "SCP_CB_LCZ_Piece_WhiteWall",
             "SCP_CB_LCZ_Piece_WhiteWall_Wide",
             "SCP_CB_LCZ_Piece_WhiteWall_Concave",

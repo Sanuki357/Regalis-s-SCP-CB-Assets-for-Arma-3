@@ -1,0 +1,22 @@
+Light1_1024	tilefloor
+		whitewall
+		white
+		concretefloor
+		scplogo
+		ceiling
+
+Light1_512	metal
+		controlpanel
+		metal3
+		metalpanels2_1
+		misc
+		vent
+		label173
+
+Light2_512	dirtymetal
+
+None		2_office_lamps_dif
+		glass
+		metalpanels2_2
+
+
