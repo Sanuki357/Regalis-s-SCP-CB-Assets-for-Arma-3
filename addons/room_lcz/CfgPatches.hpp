@@ -38,7 +38,8 @@ class CfgPatches
             "SCP_CB_LCZ_Piece_Floor_Concrete",
             "SCP_CB_LCZ_Piece_Floor_Concrete_Big",
             "SCP_CB_LCZ_Piece_Floor_Tile",
-            "SCP_CB_LCZ_Piece_Floor_Tile_Big"
+            "SCP_CB_LCZ_Piece_Floor_Tile_Big",
+            "SCP_CB_LCZ_Piece_Staircase_Tile"
         };
         weapons[] = {};
     };

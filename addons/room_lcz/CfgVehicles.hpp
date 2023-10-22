@@ -868,4 +868,24 @@ class CfgVehicles
         editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Piece_Floor_Tile_Big.jpg);
         model = QPATHTOF(data\Piece_Floor\Piece_TileFloor_Big.p3d);
 	};
+
+    class SCP_CB_LCZ_Piece_Staircase_Tile: SCP_CB_LCZ_Piece_Floor_Tile
+    {
+        displayName = CSTRING(Piece_Staircase_Tile);
+        //editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Piece_Staircase_Tile.jpg);
+        model = QPATHTOF(data\Piece_Stairs\Piece_TileStaircase.p3d);
+        hiddenSelections[] = {"camo_dirtymetal", "camo_metalpanels2", "camo_tilefloor", "camo_whitewall"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOEF(textures,dirtymetal.paa),
+            QPATHTOEF(textures,metalpanels2.paa),
+            QPATHTOEF(textures,tilefloor.paa),
+            QPATHTOEF(textures,whitewall.paa)
+        };
+        hiddenSelectionsMaterials[] = {
+            QPATHTOF(data\Piece_Stairs\piece_tilestaircase_dirtymetal.rvmat),
+            QPATHTOF(data\Piece_Stairs\piece_tilestaircase_metalpanels2.rvmat),
+            QPATHTOF(data\Piece_Stairs\piece_tilestaircase_tilefloor.rvmat),
+            QPATHTOF(data\Piece_Stairs\piece_tilestaircase_whitewall.rvmat)
+        };
+	};
 };
