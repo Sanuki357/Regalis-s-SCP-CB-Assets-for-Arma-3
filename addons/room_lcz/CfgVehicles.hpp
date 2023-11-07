@@ -743,19 +743,14 @@ class CfgVehicles
         hiddenSelections[] = {"camo_ceiling", "camo_floor", "camo_wall"};
         icon = "iconObject_1x1";
     };
-	class SCP_CB_LCZ_Room_1162: SCP_CB_LCZ_base
+	class SCP_CB_LCZ_Room_1162: SCP_CB_LCZ_Room_372
     {
-        scope = 2;
-        scopeCurator = 2;
         displayName = CSTRING(Room_1162);
         editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Room_1162.jpg);
         model = QPATHTOF(data\Room_1162\Room_1162.p3d);
-        icon = "iconObject_1x1";
 	};
-    class SCP_CB_LCZ_Room_173: SCP_CB_LCZ_base
+    class SCP_CB_LCZ_Room_173: SCP_CB_LCZ_Room_372
     {
-        scope = 2;
-        scopeCurator = 2;
         displayName = CSTRING(Room_173);
         //editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Room_173.jpg);
         model = QPATHTOF(data\Room_173\Room_173.p3d);
@@ -768,7 +763,15 @@ class CfgVehicles
             QPATHTOF(data\Room_173\label173.rvmat),
             QPATHTOF(data\Room_173\scplogo.rvmat)
         };
-        icon = "iconObject_1x1";
+	};
+    class SCP_CB_LCZ_Room_205: SCP_CB_LCZ_Room_372
+    {
+        displayName = CSTRING(Room_205);
+        //editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Room_173.jpg);
+        model = QPATHTOF(data\Room_205\Room_205.p3d);
+        hiddenSelections[] = {"camo_label205"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,label205_CO.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\Room_205\label205.rvmat)};
 	};
 //********//
 // Pieces //
