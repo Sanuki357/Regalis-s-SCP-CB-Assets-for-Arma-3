@@ -113,6 +113,10 @@
             <English>SCP-205 Chamber</English>
             <Japanese>SCP-205収容区画</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Room_Checkpoint_LtH">
+            <English>Checkpoint (Light to Heavy)</English>
+            <Japanese>チェックポイント (軽収容区域-重収容区域)</Japanese>
+        </Key>
         <Key ID="STR_RegalisSCP_CB_Room_LCZ_Piece_WhiteWall">
             <English>White Wall</English>
             <Japanese>白い壁</Japanese>

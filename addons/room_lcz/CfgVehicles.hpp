@@ -728,6 +728,26 @@ class CfgVehicles
         hiddenSelections[] = {"camo_floor", "camo_ceiling", "camo_white", "camo_wall", "camo_scplogo"};
         icon = "iconObject_1x1";
     };
+    class SCP_CB_LCZ_Room_Checkpoint_LtH: SCP_CB_LCZ_base
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(Room_Checkpoint_LtH);
+        //editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Room_Archive.jpg);
+        model = QPATHTOF(data\Room_Checkpoint_LtH\Room_Checkpoint_LtH.p3d);
+        hiddenSelections[] = {"camo_sign", "camo_concretefloor", "camo_tilefloor"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOEF(textures,miscsigns.paa),
+            QPATHTOEF(textures,concretefloor.paa),
+            QPATHTOEF(textures,tilefloor.paa)
+        };
+        hiddenSelectionsMaterials[] = {
+            QPATHTOF(data\Room_Checkpoint_LtH\miscsigns.rvmat),
+            QPATHTOF(data\Room_Checkpoint_LtH\concretefloor.rvmat),
+            QPATHTOF(data\Room_Checkpoint_LtH\tilefloor.rvmat)
+        };
+        icon = "iconObject_1x1";
+    };
 
 //**********************//
 // Containment Chambers //

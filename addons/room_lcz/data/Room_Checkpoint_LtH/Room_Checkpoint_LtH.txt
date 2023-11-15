@@ -1,0 +1,17 @@
+Light1_1024	tilefloor
+		whitewall
+		white
+		concretefloor
+		concretewall
+
+Light1_512	metal
+		controlpanel
+		dirtymetal
+		metal
+		metalpanels2
+		misc
+		miscsigns
+
+None		glass
+
+
