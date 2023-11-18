@@ -538,6 +538,28 @@ class CfgVehicles
         icon = "iconObject_2x1";
     };
 
+    class SCP_CB_Things_Toilet : SCP_CB_Things_FileCabinet
+    {
+        displayName = CSTRING(Toilet);
+        //editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_FileCabinet.jpg);
+        model = QPATHTOF(data\Furniture\Toilet.p3d);
+        hiddenSelections[] = {"camo_metal", "camo_dirtymetal"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,metal.paa), QPATHTOEF(textures,dirtymetal.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\furniture\Toilet_metal.rvmat), QPATHTOF(data\furniture\Toilet_dirtymetal.rvmat)};
+        icon = "iconObject_1x2";
+    };
+
+    class SCP_CB_Things_Toilet_Open : SCP_CB_Things_FileCabinet
+    {
+        displayName = CSTRING(Toilet_Open);
+        //editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_FileCabinet.jpg);
+        model = QPATHTOF(data\Furniture\Toilet_Open.p3d);
+        hiddenSelections[] = {"camo_metal", "camo_dirtymetal"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,metal.paa), QPATHTOEF(textures,dirtymetal.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\furniture\Toilet_metal.rvmat), QPATHTOF(data\furniture\Toilet_dirtymetal.rvmat)};
+        icon = "iconObject_1x2";
+    };
+
     class SCP_CB_Things_Crate1 : ReammoBox_F
     {
         scope = 2;

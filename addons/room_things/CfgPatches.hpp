@@ -39,6 +39,8 @@ class CfgPatches
             "SCP_CB_Things_ControlPanel_Rack",
             "SCP_CB_Things_ControlPanel_Box",
             "SCP_CB_Things_SCPsign",
+            "SCP_CB_Things_Toilet",
+            "SCP_CB_Things_Toilet_Open",
             "SCP_CB_Things_Crate1",
             "SCP_CB_Things_Crate2",
             "SCP_CB_Things_Crate3",

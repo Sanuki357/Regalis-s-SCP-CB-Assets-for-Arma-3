@@ -289,6 +289,14 @@
             <English>Sign (SCP Foundation)</English>
             <Japanese>看板 (SCP財団)</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Toilet">
+            <English>Toilet</English>
+            <Japanese>便器</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Toilet_Open">
+            <English>Toilet (Open)</English>
+            <Japanese>便器 (開)</Japanese>
+        </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_Crate1">
             <English>BEV Crate</English>
             <Japanese>BEVクレート</Japanese>
