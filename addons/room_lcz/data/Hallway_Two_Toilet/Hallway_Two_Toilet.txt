@@ -1,0 +1,11 @@
+1024_1	concretefloor
+	tilefloor
+	white
+	whitewall
+
+512_1	dirtymetal
+	metal
+	misc
+	miscsigns
+	whitewall2
+	

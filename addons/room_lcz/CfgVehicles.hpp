@@ -121,6 +121,26 @@ class CfgVehicles
         model = QPATHTOF(data\Hallway_Two_5\Hallway_Two_5.p3d);
         icon = "iconObject_1x3";
     };
+    class SCP_CB_LCZ_Hallway_Two_Toilet : SCP_CB_LCZ_base
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(Hallway_Two_Toilet);
+        //editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Hallway_Two_Toilet.jpg);
+        model = QPATHTOF(data\Hallway_Two_Toilet\Hallway_Two_Toilet.p3d);
+        hiddenSelections[] = {"camo_miscsign", "camo_concretefloor", "camo_tilefloor"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOEF(textures,miscsigns.paa),
+            QPATHTOEF(textures,concretefloor.paa),
+            QPATHTOEF(textures,tilefloor.paa)
+        };
+        hiddenSelectionsMaterials[] = {
+            QPATHTOF(data\Hallway_Two_Toilet\miscsigns.rvmat),
+            QPATHTOF(data\Hallway_Two_Toilet\concretefloor.rvmat),
+            QPATHTOF(data\Hallway_Two_Toilet\tilefloor.rvmat)
+        };
+        icon = "iconObject_1x3";
+    };
     class SCP_CB_LCZ_Hallway_Three_1 : SCP_CB_LCZ_base
     {
         scope = 2;
@@ -690,6 +710,7 @@ class CfgVehicles
         hiddenSelections[] = {"camo_ceiling", "camo_floor", "camo_wall", "camo_toroid", "camo_warning_sign"};
         icon = "iconObject_1x3";
     };
+
 	class SCP_CB_LCZ_Room_Endroom : SCP_CB_LCZ_base
     {
         scope = 2;

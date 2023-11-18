@@ -69,6 +69,10 @@
             <English>Two-Way Hallway (Indented)</English>
             <Japanese>廊下（湾入）</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Two_Toilet">
+            <English>Two-Way Hallway (Toilet)</English>
+            <Japanese>廊下（トイレ）</Japanese>
+        </Key>
         <Key ID="STR_RegalisSCP_CB_Room_LCZ_Hallway_Tesla">
             <English>Tesla Coil Hallway</English>
             <Japanese>テスラコイル廊下</Japanese>
