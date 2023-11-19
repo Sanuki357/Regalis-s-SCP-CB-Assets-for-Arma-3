@@ -560,6 +560,31 @@ class CfgVehicles
         icon = "iconObject_1x2";
     };
 
+    class SCP_CB_Things_ZoneSign_Light : SCP_CB_Things_FileCabinet
+    {
+        displayName = CSTRING(ZoneSign_Light);
+        //editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_FileCabinet.jpg);
+        model = QPATHTOF(data\Furniture\ZoneSign_Light.p3d);
+        hiddenSelections[] = {"camo_miscsigns"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,miscsigns.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\furniture\ZoneSign_miscsigns.rvmat)};
+        icon = "iconObject_2x1";
+    };
+
+    class SCP_CB_Things_ZoneSign_Heavy : SCP_CB_Things_ZoneSign_Light
+    {
+        displayName = CSTRING(ZoneSign_Heavy);
+        //editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_FileCabinet.jpg);
+        model = QPATHTOF(data\Furniture\ZoneSign_Heavy.p3d);
+    };
+
+    class SCP_CB_Things_ZoneSign_Entrance : SCP_CB_Things_ZoneSign_Light
+    {
+        displayName = CSTRING(ZoneSign_Entrance);
+        //editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_FileCabinet.jpg);
+        model = QPATHTOF(data\Furniture\ZoneSign_Entrance.p3d);
+    };
+
     class SCP_CB_Things_Crate1 : ReammoBox_F
     {
         scope = 2;

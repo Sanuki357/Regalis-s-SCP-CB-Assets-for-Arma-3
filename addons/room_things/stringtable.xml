@@ -297,6 +297,18 @@
             <English>Toilet (Open)</English>
             <Japanese>便器 (開)</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_ZoneSign_Light">
+            <English>Zone Sign (Light Containment)</English>
+            <Japanese>区画看板 (Light Containment)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_ZoneSign_Heavy">
+            <English>Zone Sign (Heavy Containment)</English>
+            <Japanese>区画看板 (Heavy Containment)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_ZoneSign_Entrance">
+            <English>Zone Sign (Entrance)</English>
+            <Japanese>区画看板 (Entrance)</Japanese>
+        </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_Crate1">
             <English>BEV Crate</English>
             <Japanese>BEVクレート</Japanese>
