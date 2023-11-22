@@ -37,9 +37,10 @@ class CfgVehicles
     {
         displayName = CSTRING(SCP079_Face);
         hiddenSelectionsTextures[] = {QPATHTOF(data\SCP079\SCP079_AIface_CO.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\SCP079\SCP079_monitor_screen_lit.rvmat)};
     };
 
-    class SCP_CB_Anomaly_SCP079_X : SCP_CB_Anomaly_SCP079
+    class SCP_CB_Anomaly_SCP079_X : SCP_CB_Anomaly_SCP079_Face
     {
         displayName = CSTRING(SCP079_X);
         hiddenSelectionsTextures[] = {QPATHTOF(data\SCP079\SCP079_AIface2_CO.paa)};
