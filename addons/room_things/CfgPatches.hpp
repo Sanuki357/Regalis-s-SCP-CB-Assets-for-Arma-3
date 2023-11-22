@@ -44,6 +44,8 @@ class CfgPatches
             "SCP_CB_Things_ZoneSign_Light",
             "SCP_CB_Things_ZoneSign_Heavy",
             "SCP_CB_Things_ZoneSign_Entrance",
+            "SCP_CB_Things_Monitor_Blank",
+            "SCP_CB_Things_Monitor_Lockdown",
             "SCP_CB_Things_Crate1",
             "SCP_CB_Things_Crate2",
             "SCP_CB_Things_Crate3",

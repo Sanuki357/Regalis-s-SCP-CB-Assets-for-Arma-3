@@ -585,6 +585,25 @@ class CfgVehicles
         model = QPATHTOF(data\Furniture\ZoneSign_Entrance.p3d);
     };
 
+    class SCP_CB_Things_Monitor_Blank : SCP_CB_Things_FileCabinet
+    {
+        displayName = CSTRING(Monitor_Blank);
+        //editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_FileCabinet.jpg);
+        model = QPATHTOF(data\Monitor\Monitor.p3d);
+        hiddenSelections[] = {"camo_screen", "camo_monitor"};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\Monitor\Screen_Blank_CO.paa), QPATHTOF(data\Monitor\MonitorTexture_CO.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\Monitor\ScreenTexture_Blank.rvmat), QPATHTOF(data\Monitor\MonitorTexture.rvmat)};
+        icon = "iconObject_2x1";
+    };
+
+    class SCP_CB_Things_Monitor_Lockdown : SCP_CB_Things_Monitor_Blank
+    {
+        displayName = CSTRING(Monitor_Lockdown);
+        //editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_FileCabinet.jpg);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\Monitor\Screen_Lockdown_CO.paa), QPATHTOF(data\Monitor\MonitorTexture_CO.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\Monitor\ScreenTexture_Lit.rvmat), QPATHTOF(data\Monitor\MonitorTexture.rvmat)};
+    };
+
     class SCP_CB_Things_Crate1 : ReammoBox_F
     {
         scope = 2;

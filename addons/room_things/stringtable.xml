@@ -309,6 +309,14 @@
             <English>Zone Sign (Entrance)</English>
             <Japanese>区画看板 (Entrance)</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Monitor_Blank">
+            <English>Monitor</English>
+            <Japanese>モニター</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Monitor_Lockdown">
+            <English>Monitor (Lockdown)</English>
+            <Japanese>モニター (ロックダウン)</Japanese>
+        </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_Crate1">
             <English>BEV Crate</English>
             <Japanese>BEVクレート</Japanese>
