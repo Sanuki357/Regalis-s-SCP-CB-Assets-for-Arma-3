@@ -769,6 +769,28 @@ class CfgVehicles
         };
         icon = "iconObject_1x1";
     };
+    class SCP_CB_LCZ_Room_DClassCells_Lite: SCP_CB_LCZ_base
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(Room_DClassCells_Lite);
+        //editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Room_Archive.jpg);
+        model = QPATHTOF(data\Room_DClassCells_Lite\Room_DClassCells_Lite.p3d);
+        hiddenSelections[] = {"camo_door1", "camo_door2", "camo_floor", "camo_ceiling"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOEF(textures,door01.paa),
+            QPATHTOEF(textures,door02_co.paa),
+            QPATHTOEF(textures,tilefloor.paa),
+            QPATHTOEF(textures,ceiling.paa)
+        };
+        hiddenSelectionsMaterials[] = {
+            QPATHTOF(data\Room_DClassCells_Lite\door01.rvmat),
+            QPATHTOF(data\Room_DClassCells_Lite\door02.rvmat),
+            QPATHTOF(data\Room_DClassCells_Lite\tilefloor.rvmat),
+            QPATHTOF(data\Room_DClassCells_Lite\ceiling.rvmat)
+        };
+        icon = "iconObject_1x1";
+    };
 
 //**********************//
 // Containment Chambers //
