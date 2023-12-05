@@ -22,6 +22,8 @@ class CfgPatches
             "SCP_CB_Things_Door1_CardReader_Level5",
             "SCP_CB_Things_Door1_Scanner",
             "SCP_CB_Things_Door1_Numpad",
+            "SCP_CB_Things_Door2",
+            "SCP_CB_Things_Door2_Button",
             "SCP_CB_Things_HeavyDoor",
             "SCP_CB_Things_HeavyDoor_Button",
             "SCP_CB_Things_ContainmentDoor",

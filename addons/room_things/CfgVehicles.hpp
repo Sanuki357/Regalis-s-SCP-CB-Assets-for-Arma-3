@@ -252,6 +252,21 @@ class CfgVehicles
         model = QPATHTOF(data\Door1\Door1_Numpad.p3d);
     };
 
+    //----------    Door02
+    class SCP_CB_Things_Door2 : SCP_CB_Things_Door1
+    {
+        displayName = CSTRING(Door2); // Name in editor
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Door1_Button.jpg);
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,door02_CO.paa)};
+    };
+
+    class SCP_CB_Things_Door2_Button : SCP_CB_Things_Door1_Button
+    {
+        displayName = CSTRING(Door2_Button); // Name in editor
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Door1_Button.jpg);
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,door02_CO.paa), QPATHTOEF(textures,keypad_co.paa)};
+    };
+
     //----------    HeavyDoor
     class SCP_CB_Things_HeavyDoor : SCP_CB_Things_Door1
     {

@@ -81,6 +81,14 @@
             <English>Door with Numpad</English>
             <Japanese>ドアとテンキー</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Door2">
+            <English>Cell Door</English>
+            <Japanese>居房ドア</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Door2_Button">
+            <English>Cell Door with Button</English>
+            <Japanese>居房ドアとボタン</Japanese>
+        </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_HeavyDoor">
             <English>Heavy Door</English>
             <Japanese>重厚ドア</Japanese>
