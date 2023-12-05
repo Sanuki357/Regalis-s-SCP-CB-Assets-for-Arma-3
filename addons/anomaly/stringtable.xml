@@ -53,9 +53,25 @@
             <English>SCP-173 "The Sculpture"</English>
             <Japanese>SCP-173 "彫刻"</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP173_Spooky">
+            <English>SCP-173 "The Sculpture (Spooky)"</English>
+            <Japanese>SCP-173 "彫刻" (Spooky)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP173_Skibidi">
+            <English>SCP-173 "The Sculpture" (Unspeakable Horror)</English>
+            <Japanese>SCP-173 "彫刻" (名伏し難い)</Japanese>
+        </Key>
         <Key ID="STR_RegalisSCP_CB_Anomaly_SCP173_Static">
             <English>SCP-173 "The Sculpture"</English>
             <Japanese>SCP-173 "彫刻"</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP173_Spooky_Static">
+            <English>SCP-173 "The Sculpture" (Spooky)</English>
+            <Japanese>SCP-173 "彫刻" (Spooky)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP173_Skibidi_Static">
+            <English>SCP-173 "The Sculpture" (Unspeakable Horror)</English>
+            <Japanese>SCP-173 "彫刻" (名伏し難い)</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Anomaly_SCP294">
             <English>SCP-294 "The Coffee Machine"</English>

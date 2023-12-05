@@ -64,6 +64,20 @@ class CfgVehicles
         };
     };
 
+    class SCP_CB_Anomaly_SCP173_Spooky : SCP_CB_Anomaly_SCP173
+    {
+        displayName = CSTRING(SCP173_Spooky);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP173_Static.jpg);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\SCP173\SCP173_Spooky_CO.paa)};
+    };
+
+    class SCP_CB_Anomaly_SCP173_Skibidi : SCP_CB_Anomaly_SCP173
+    {
+        displayName = CSTRING(SCP173_Skibidi);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP173_Static.jpg);
+        model = QPATHTOF(data\SCP173\SCP173_Skibidi.p3d);
+    };
+
     class SCP_CB_Anomaly_SCP173_Static : SCP_CB_Anomaly_Object_base
     {
         scope = 2;
@@ -75,6 +89,20 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {QPATHTOF(data\SCP173\SCP173_CO.paa)};
         hiddenSelectionsMaterials[] = {QPATHTOF(data\SCP173\SCP173.rvmat)};
         editorSubcategory = "SCP_EdSubcat_Autonomous_Static";
+    };
+
+    class SCP_CB_Anomaly_SCP173_Spooky_Static : SCP_CB_Anomaly_SCP173_Static
+    {
+        displayName = CSTRING(SCP173_Spooky_Static);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP173_Static.jpg);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\SCP173\SCP173_Spooky_CO.paa)};
+    };
+
+    class SCP_CB_Anomaly_SCP173_Skibidi_Static : SCP_CB_Anomaly_SCP173_Static
+    {
+        displayName = CSTRING(SCP173_Skibidi_Static);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP173_Static.jpg);
+        model = QPATHTOF(data\SCP173\SCP173_Skibidi.p3d);
     };
 
     class SCP_CB_Anomaly_SCP294 : SCP_CB_Anomaly_Object_base
