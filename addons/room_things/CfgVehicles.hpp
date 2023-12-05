@@ -33,6 +33,8 @@ class CfgVehicles
         editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Door1.jpg);
         model = QPATHTOF(data\Door1\Door1_NoButton.p3d); // Path to model
         hiddenSelections[] = {"camo_door"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,door01.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\door1\door01.rvmat)};
         editorSubCategory = "SCP_Doors";
         icon = "z\RegalisSCP_CB\addons\room_things\data\UI\iconSCPDoor_CA.paa";
         EGVAR(operatable,type)[] = {{"Door", "Door1", "Door_1_source", "door_1_trigger"}};
@@ -59,6 +61,8 @@ class CfgVehicles
         editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Door1_Button.jpg);
         model = QPATHTOF(data\Door1\Door1.p3d); // Path to model
         hiddenSelections[] = {"camo_door", "camo_button"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,door01.paa), QPATHTOEF(textures,keypad_co.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\door1\door01.rvmat), QPATHTOF(data\door1\keypad.rvmat)};
 
         class UserActions
         {
@@ -179,7 +183,6 @@ class CfgVehicles
         displayName = CSTRING(Door1_CardReader);
         editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Door1_CardReader.jpg);
         model = QPATHTOF(data\Door1\Door1_CardReader.p3d);
-        hiddenSelections[] = {"camo_door", "camo_button"};
         //EGVAR(operatable,clearanceLevel)[] = {{1}};
 
         class Attributes
@@ -256,6 +259,8 @@ class CfgVehicles
         editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_HeavyDoor.jpg);
         model = QPATHTOF(data\HeavyDoor\HeavyDoor.p3d); // Path to model
         hiddenSelections[] = {"camo_door", "camo_containmentdoor"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,door01.paa), QPATHTOEF(textures,containmentdoor\containment_doors_co.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\heavydoor\door01.rvmat), QPATHTOF(data\heavydoor\containment_doors.rvmat)};
         EGVAR(operatable,type)[] = {{"Door", "HeavyDoor", "Door_1_source", "door_1_trigger"}};
         
         class AnimationSources
@@ -275,6 +280,8 @@ class CfgVehicles
         editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_HeavyDoor_Button.jpg);
         model = QPATHTOF(data\HeavyDoor\HeavyDoor_Button.p3d); // Path to model
         hiddenSelections[] = {"camo_door", "camo_containmentdoor", "camo_button"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,door01.paa), QPATHTOEF(textures,containmentdoor\containment_doors_co.paa), QPATHTOEF(textures,keypad_co.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\heavydoor\door01.rvmat), QPATHTOF(data\heavydoor\containment_doors.rvmat), QPATHTOF(data\keypad\keypad.rvmat)};
         EGVAR(operatable,type)[] = {{"Door", "HeavyDoor", "Door_1_source", "door_1_trigger"}};
     };
 
@@ -285,6 +292,8 @@ class CfgVehicles
         editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_ContainmentDoor.jpg);
         model = QPATHTOF(data\ContainmentDoor\ContainmentDoor.p3d); // Path to model
         hiddenSelections[] = {"camo_containmentdoor"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,containmentdoor\containment_doors_co.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\containmentdoor\containment_doors.rvmat)};
         icon = "z\RegalisSCP_CB\addons\room_things\data\UI\iconSCPContainmentDoor_CA.paa";
         EGVAR(operatable,type)[] = {{"Door", "ContainmentDoor", "Door_1_source", "door_1_trigger"}};
         
@@ -305,7 +314,9 @@ class CfgVehicles
         displayName = CSTRING(ElevatorRoom_Door); // Name in editor
         editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_ElevatorRoom_Door.jpg);
         model = QPATHTOF(data\Elevator\ElevatorRoom_Door.p3d); // Path to model
-        hiddenSelections[] = {"camo_door", "camo_dirtymetal", "camo_metal", "camo_metal3"};
+        hiddenSelections[] = {"camo_door"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,door01.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\elevator\elevatordoor\door01.rvmat)};
         icon = "iconObject_1x1";
         EGVAR(operatable,type)[] = {{"Door", "Elevator", "Door_1_source", "door_1_trigger"}};
         
@@ -332,6 +343,8 @@ class CfgVehicles
         editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Keypad_Button.jpg);
         model = QPATHTOF(data\Keypad\Keypad_Button.p3d); // Path to model
         hiddenSelections[] = {"camo_button"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,keypad_co.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\keypad\keypad.rvmat)};
         editorSubCategory = "SCP_Keypads";
         icon = "z\RegalisSCP_CB\addons\room_things\data\UI\iconSCPButton_CA.paa";
         EGVAR(operatable,expression)[] = {{""}};
@@ -365,6 +378,8 @@ class CfgVehicles
         editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Keypad_CardReader.jpg);
         model = QPATHTOF(data\Keypad\Keypad_CardReader.p3d); // Path to model
         hiddenSelections[] = {"camo_button"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,keypad_co.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\keypad\keypad_2.rvmat)};
         editorSubCategory = "SCP_Keypads";
         icon = "z\RegalisSCP_CB\addons\room_things\data\UI\iconSCPButton_CA.paa";
 
@@ -383,6 +398,8 @@ class CfgVehicles
         editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Keypad_Code.jpg);
         model = QPATHTOF(data\Keypad\Keypad_Code.p3d); // Path to model
         hiddenSelections[] = {"camo_button"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,keypad_co.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\keypad\keypad_2.rvmat)};
         
         class UserActions
         {
@@ -406,6 +423,8 @@ class CfgVehicles
         editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Keypad_Scanner.jpg);
         model = QPATHTOF(data\Keypad\Keypad_Scanner.p3d); // Path to model
         hiddenSelections[] = {"camo_button"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,keypad_co.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\keypad\keypad_2.rvmat)};
         
         class UserActions
         {
