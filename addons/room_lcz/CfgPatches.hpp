@@ -32,6 +32,7 @@ class CfgPatches
             "SCP_CB_LCZ_Room_173",
             "SCP_CB_LCZ_Room_205",
             "SCP_CB_LCZ_Room_Checkpoint_LtH",
+            "SCP_CB_LCZ_Room_DClassCells",
             "SCP_CB_LCZ_Room_DClassCells_Lite",
             "SCP_CB_LCZ_Piece_WhiteWall",
             "SCP_CB_LCZ_Piece_WhiteWall_Wide",

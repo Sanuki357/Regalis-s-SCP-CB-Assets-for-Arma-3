@@ -769,6 +769,24 @@ class CfgVehicles
         };
         icon = "iconObject_1x1";
     };
+    class SCP_CB_LCZ_Room_DClassCells: SCP_CB_LCZ_base
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(Room_DClassCells);
+        //editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Room_Archive.jpg);
+        model = QPATHTOF(data\Room_DClassCells\Room_DClassCells.p3d);
+        hiddenSelections[] = {"camo_floor", "camo_ceiling"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOEF(textures,tilefloor.paa),
+            QPATHTOEF(textures,ceiling.paa)
+        };
+        hiddenSelectionsMaterials[] = {
+            QPATHTOF(data\Room_DClassCells\tilefloor.rvmat),
+            QPATHTOF(data\Room_DClassCells\ceiling.rvmat)
+        };
+        icon = "iconObject_2x1";
+    };
     class SCP_CB_LCZ_Room_DClassCells_Lite: SCP_CB_LCZ_base
     {
         scope = 2;
@@ -789,7 +807,7 @@ class CfgVehicles
             QPATHTOF(data\Room_DClassCells_Lite\tilefloor.rvmat),
             QPATHTOF(data\Room_DClassCells_Lite\ceiling.rvmat)
         };
-        icon = "iconObject_1x1";
+        icon = "iconObject_2x1";
     };
 
 //**********************//

@@ -121,6 +121,10 @@
             <English>Checkpoint (Light to Heavy)</English>
             <Japanese>チェックポイント (軽収容区域-重収容区域)</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_LCZ_Room_DClassCells">
+            <English>D-Class Cells</English>
+            <Japanese>D-クラス居房</Japanese>
+        </Key>
         <Key ID="STR_RegalisSCP_CB_Room_LCZ_Room_DClassCells_Lite">
             <English>D-Class Cells (Lite)</English>
             <Japanese>D-クラス居房 (Lite)</Japanese>
