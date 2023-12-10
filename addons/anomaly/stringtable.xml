@@ -105,9 +105,21 @@
             <English>SCP-294 "The Coffee Machine"</English>
             <Japanese>SCP-294 "コーヒー自動販売機"</Japanese>
         </Key>
-        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP1162">
-            <English>SCP-1162 "A Hole in the Wall"</English>
-            <Japanese>SCP-1162 "壁の穴"</Japanese>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP294">
+            <English>SCP-294 "The Coffee Machine"</English>
+            <Japanese>SCP-294 "コーヒー自動販売機"</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP1048_Static">
+            <English>SCP-1048 "Builder Bear"</English>
+            <Japanese>SCP-1048 "ビルダー・ベア"</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP1048_Waving_Static">
+            <English>SCP-1048 "Builder Bear" (Waving)</English>
+            <Japanese>SCP-1048 "ビルダー・ベア" (手振り)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP1048_A_Static">
+            <English>SCP-1048-A "Ears Bear"</English>
+            <Japanese>SCP-1048-A "耳・ベア"</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Anomaly_SCP1162_ReachInto">
             <English>Reach into the hole</English>

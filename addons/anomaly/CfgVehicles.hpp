@@ -173,6 +173,30 @@ class CfgVehicles
         editorSubcategory = "SCP_EdSubcat_Inanimate";
     };
 
+    class SCP_CB_Anomaly_SCP1048_Static : SCP_CB_Anomaly_Object_base
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(SCP1048_Static);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP079.jpg);
+        model = QPATHTOF(data\SCP1048\SCP1048.p3d); // Path to model
+        editorSubcategory = "SCP_EdSubcat_Autonomous_Static";
+    };
+
+    class SCP_CB_Anomaly_SCP1048_Waving_Static : SCP_CB_Anomaly_SCP1048_Static
+    {
+        displayName = CSTRING(SCP1048_Waving_Static);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP079.jpg);
+        model = QPATHTOF(data\SCP1048\SCP1048_Waving.p3d); // Path to model
+    };
+
+    class SCP_CB_Anomaly_SCP1048_A : SCP_CB_Anomaly_SCP1048_Static
+    {
+        displayName = CSTRING(SCP1048_A_Static);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP079.jpg);
+        model = QPATHTOF(data\SCP1048\SCP1048_A.p3d); // Path to model
+    };
+
     class SCP_CB_Anomaly_SCP1162 : SCP_CB_Anomaly_Object_base
     {
         scope = 2;

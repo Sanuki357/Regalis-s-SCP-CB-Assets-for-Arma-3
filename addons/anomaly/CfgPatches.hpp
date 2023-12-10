@@ -26,6 +26,9 @@ class CfgPatches
             "SCP_CB_Anomaly_SCP173_Spooky_Static",
             "SCP_CB_Anomaly_SCP173_Skibidi_Static",
             "SCP_CB_Anomaly_SCP294",
+            "SCP_CB_Anomaly_SCP1048_Static",
+            "SCP_CB_Anomaly_SCP1048_Waving_Static",
+            "SCP_CB_Anomaly_SCP1048_A",
             "SCP_CB_Anomaly_SCP1162"
         };
         weapons[] =
