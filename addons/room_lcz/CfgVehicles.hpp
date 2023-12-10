@@ -126,7 +126,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(Hallway_Two_Toilet);
-        //editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Hallway_Two_Toilet.jpg);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Hallway_Two_Toilet.jpg);
         model = QPATHTOF(data\Hallway_Two_Toilet\Hallway_Two_Toilet.p3d);
         hiddenSelections[] = {"camo_miscsign", "camo_concretefloor", "camo_tilefloor"};
         hiddenSelectionsTextures[] = {
@@ -744,7 +744,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(Room_IntroOffice);
-        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Room_Archive.jpg);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Room_IntroOffice.jpg);
         model = QPATHTOF(data\Room_IntroOffice\Room_IntroOffice.p3d);
         hiddenSelections[] = {"camo_floor", "camo_ceiling", "camo_white", "camo_wall", "camo_scplogo"};
         icon = "iconObject_1x1";
@@ -754,7 +754,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(Room_Checkpoint_LtH);
-        //editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Room_Archive.jpg);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Room_Checkpoint_LtH.jpg);
         model = QPATHTOF(data\Room_Checkpoint_LtH\Room_Checkpoint_LtH.p3d);
         hiddenSelections[] = {"camo_sign", "camo_concretefloor", "camo_tilefloor"};
         hiddenSelectionsTextures[] = {
@@ -774,7 +774,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(Room_DClassCells);
-        //editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Room_Archive.jpg);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Room_DClassCells.jpg);
         model = QPATHTOF(data\Room_DClassCells\Room_DClassCells.p3d);
         hiddenSelections[] = {"camo_floor", "camo_ceiling"};
         hiddenSelectionsTextures[] = {
@@ -792,7 +792,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(Room_DClassCells_Lite);
-        //editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Room_Archive.jpg);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Room_DClassCells_Lite.jpg);
         model = QPATHTOF(data\Room_DClassCells_Lite\Room_DClassCells_Lite.p3d);
         hiddenSelections[] = {"camo_door1", "camo_door2", "camo_floor", "camo_ceiling"};
         hiddenSelectionsTextures[] = {
@@ -833,7 +833,7 @@ class CfgVehicles
     class SCP_CB_LCZ_Room_173: SCP_CB_LCZ_Room_372
     {
         displayName = CSTRING(Room_173);
-        //editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Room_173.jpg);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Room_173.jpg);
         model = QPATHTOF(data\Room_173\Room_173.p3d);
         hiddenSelections[] = {"camo_label173", "camo_scplogo"};
         hiddenSelectionsTextures[] = {
@@ -848,7 +848,7 @@ class CfgVehicles
     class SCP_CB_LCZ_Room_205: SCP_CB_LCZ_Room_372
     {
         displayName = CSTRING(Room_205);
-        //editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Room_173.jpg);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Room_205.jpg);
         model = QPATHTOF(data\Room_205\Room_205.p3d);
         hiddenSelections[] = {"camo_label205"};
         hiddenSelectionsTextures[] = {QPATHTOEF(textures,label205_CO.paa)};
@@ -956,7 +956,7 @@ class CfgVehicles
     class SCP_CB_LCZ_Piece_Staircase_Tile: SCP_CB_LCZ_Piece_Floor_Tile
     {
         displayName = CSTRING(Piece_Staircase_Tile);
-        //editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Piece_Staircase_Tile.jpg);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Piece_Staircase_Tile.jpg);
         model = QPATHTOF(data\Piece_Stairs\Piece_TileStaircase.p3d);
         hiddenSelections[] = {"camo_dirtymetal", "camo_metalpanels2", "camo_tilefloor", "camo_whitewall"};
         hiddenSelectionsTextures[] = {

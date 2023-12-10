@@ -121,6 +121,10 @@
             <English>SCP-1048-A "Ears Bear"</English>
             <Japanese>SCP-1048-A "耳・ベア"</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP1162">
+            <English>SCP-1048 "A Hole in the Wall"</English>
+            <Japanese>SCP-1162 "壁の穴"</Japanese>
+        </Key>
         <Key ID="STR_RegalisSCP_CB_Anomaly_SCP1162_ReachInto">
             <English>Reach into the hole</English>
             <Japanese>穴の中に手を伸ばす</Japanese>
