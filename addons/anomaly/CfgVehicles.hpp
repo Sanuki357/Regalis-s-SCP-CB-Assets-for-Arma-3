@@ -46,6 +46,51 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {QPATHTOF(data\SCP079\SCP079_AIface2_CO.paa)};
     };
 
+    class SCP_CB_Anomaly_SCP096_Static_Pose1 : SCP_CB_Anomaly_Object_base
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(SCP096_Static_Pose1);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP079.jpg);
+        model = QPATHTOF(data\SCP096\Poses\SCP096_Pose1.p3d); // Path to model
+        editorSubcategory = "SCP_EdSubcat_Autonomous_Static";
+    };
+
+    class SCP_CB_Anomaly_SCP096_Static_Pose2 : SCP_CB_Anomaly_SCP096_Static_Pose1
+    {
+        displayName = CSTRING(SCP096_Static_Pose2);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP079.jpg);
+        model = QPATHTOF(data\SCP096\Poses\SCP096_Pose2.p3d); // Path to model
+    };
+
+    class SCP_CB_Anomaly_SCP096_Static_Pose3 : SCP_CB_Anomaly_SCP096_Static_Pose1
+    {
+        displayName = CSTRING(SCP096_Static_Pose3);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP079.jpg);
+        model = QPATHTOF(data\SCP096\Poses\SCP096_Pose3.p3d); // Path to model
+    };
+
+    class SCP_CB_Anomaly_SCP096_Static_Pose4 : SCP_CB_Anomaly_SCP096_Static_Pose1
+    {
+        displayName = CSTRING(SCP096_Static_Pose4);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP079.jpg);
+        model = QPATHTOF(data\SCP096\Poses\SCP096_Pose4.p3d); // Path to model
+    };
+
+    class SCP_CB_Anomaly_SCP096_Static_Pose5 : SCP_CB_Anomaly_SCP096_Static_Pose1
+    {
+        displayName = CSTRING(SCP096_Static_Pose5);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP079.jpg);
+        model = QPATHTOF(data\SCP096\Poses\SCP096_Pose5.p3d); // Path to model
+    };
+
+    class SCP_CB_Anomaly_SCP096_Static_Pose6 : SCP_CB_Anomaly_SCP096_Static_Pose1
+    {
+        displayName = CSTRING(SCP096_Static_Pose6);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP079.jpg);
+        model = QPATHTOF(data\SCP096\Poses\SCP096_Pose6.p3d); // Path to model
+    };
+
     class SCP_CB_Anomaly_SCP173 : SCP_CB_Anomaly_Object_base
     {
         scope = 2;

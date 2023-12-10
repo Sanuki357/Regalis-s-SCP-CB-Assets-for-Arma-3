@@ -41,6 +41,30 @@
             <English>SCP-079 "Old AI" (ASCII Picture)</English>
             <Japanese>SCP-079 "オールドAI" (ASCII Picture)</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP096_Static_Pose1">
+            <English>SCP-096 "The Shy Guy" (Pose 1)</English>
+            <Japanese>SCP-096 "シャイガイ" (Pose 1)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP096_Static_Pose2">
+            <English>SCP-096 "The Shy Guy" (Pose 2)</English>
+            <Japanese>SCP-096 "シャイガイ" (Pose 2)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP096_Static_Pose3">
+            <English>SCP-096 "The Shy Guy" (Pose 3)</English>
+            <Japanese>SCP-096 "シャイガイ" (Pose 3)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP096_Static_Pose4">
+            <English>SCP-096 "The Shy Guy" (Pose 4)</English>
+            <Japanese>SCP-096 "シャイガイ" (Pose 4)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP096_Static_Pose5">
+            <English>SCP-096 "The Shy Guy" (Pose 5)</English>
+            <Japanese>SCP-096 "シャイガイ" (Pose 5)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP096_Static_Pose6">
+            <English>SCP-096 "The Shy Guy" (Pose 6)</English>
+            <Japanese>SCP-096 "シャイガイ" (Pose 6)</Japanese>
+        </Key>
         <Key ID="STR_RegalisSCP_CB_Anomaly_SCP106">
             <English>SCP-106 "Old Man"</English>
             <Japanese>SCP-106 "オールドマン"</Japanese>
