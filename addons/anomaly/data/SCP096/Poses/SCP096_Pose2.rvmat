@@ -37,8 +37,8 @@ class Stage3 {
 	};
 };
 class Stage4 {
-	texture = "C:\Arma3Work\z\RegalisSCP_CB\addons\textures\ADSHQ\BasicShadow_Bright_512_ADSHQ.paa"
-	uvSource = "tex1";
+	texture = "C:\Arma3Work\z\RegalisSCP_CB\addons\textures\ADSHQ\BasicShadow_Bright_512_ADSHQ.paa";
+	uvSource = "tex";
 	class uvTransform {
 		aside[] = { 1, 0, 0 };
 		up[] = { 0, 1, 0 };
