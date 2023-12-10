@@ -81,6 +81,14 @@
             <English>Door with Numpad</English>
             <Japanese>ドアとテンキー</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Door2">
+            <English>Cell Door</English>
+            <Japanese>居房ドア</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Door2_Button">
+            <English>Cell Door with Button</English>
+            <Japanese>居房ドアとボタン</Japanese>
+        </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_HeavyDoor">
             <English>Heavy Door</English>
             <Japanese>重厚ドア</Japanese>
@@ -253,9 +261,69 @@
             <English>File Cabinet</English>
             <Japanese>ファイルキャビネット</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_MetalShelf">
+            <English>Metal Shelf</English>
+            <Japanese>金属の棚</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_MetalTable">
+            <English>Metal Table</English>
+            <Japanese>金属の机</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_MetalTable_Divider">
+            <English>Metal Table (Divider)</English>
+            <Japanese>金属の机 (仕切板)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_AcousticScreen">
+            <English>Acoustic Screen</English>
+            <Japanese>遮蔽幕</Japanese>
+        </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_OfficeSeat">
             <English>Office Chair</English>
             <Japanese>事務椅子</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_ControlPanel_Box">
+            <English>Control Panel (Box)</English>
+            <Japanese>コントールパネル (ボックス)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_ControlPanel_Desk">
+            <English>Control Panel (Desk)</English>
+            <Japanese>コントールパネル (デスク)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_ControlPanel_Rack">
+            <English>Control Panel (Rack)</English>
+            <Japanese>コントールパネル (ラック)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_SCPsign">
+            <English>Sign (SCP Foundation)</English>
+            <Japanese>看板 (SCP財団)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Toilet">
+            <English>Toilet</English>
+            <Japanese>便器</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Toilet_Open">
+            <English>Toilet (Open)</English>
+            <Japanese>便器 (開)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_ZoneSign_Light">
+            <English>Zone Sign (Light Containment)</English>
+            <Japanese>区画看板 (Light Containment)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_ZoneSign_Heavy">
+            <English>Zone Sign (Heavy Containment)</English>
+            <Japanese>区画看板 (Heavy Containment)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_ZoneSign_Entrance">
+            <English>Zone Sign (Entrance)</English>
+            <Japanese>区画看板 (Entrance)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Monitor_Blank">
+            <English>Monitor</English>
+            <Japanese>モニター</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Room_Things_Monitor_Lockdown">
+            <English>Monitor (Lockdown)</English>
+            <Japanese>モニター (ロックダウン)</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Room_Things_Crate1">
             <English>BEV Crate</English>

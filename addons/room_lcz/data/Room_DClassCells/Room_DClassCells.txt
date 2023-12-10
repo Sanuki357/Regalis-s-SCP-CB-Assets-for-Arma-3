@@ -1,0 +1,13 @@
+Light1_512	concretefloor
+		metal
+		misc2
+		white2
+
+Each cells shares the same ADSHQ
+Light1_512	ceiling
+		misc
+		tilefloor
+		white
+
+None		2_office_lamps_dif
+

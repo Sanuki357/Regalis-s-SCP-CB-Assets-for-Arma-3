@@ -3,59 +3,127 @@
     <Package name="Room_Anomaly">
         <Key ID="STR_RegalisSCP_CB_Anomaly_EdCat_Anomalies">
             <English>Anomalies</English>
-            <Japanese>構造物（SCP）</Japanese>
+            <Japanese>異常物品</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_EdSubcat_Autonomous">
+            <English>Autonomous</English>
+            <Japanese>自律</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Anomaly_EdSubcat_Autonomous_Static">
             <English>Autonomous (Static)</English>
-            <Japanese>構造物（SCP）</Japanese>
+            <Japanese>自律（静止）</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Anomaly_EdSubcat_Inanimate">
             <English>Inanimate</English>
-            <Japanese>構造物（SCP）</Japanese>
+            <Japanese>無生物</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Anomaly_DummyHead">
             <English>Dummy Head</English>
-            <Japanese>構造物（SCP）</Japanese>
+            <Japanese>ニセ頭部</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Anomaly_SCP049">
             <English>SCP-049 "Plague Doctor"</English>
-            <Japanese>構造物（SCP）</Japanese>
+            <Japanese>SCP-049 "ペスト医師"</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Anomaly_SCP049_Skin">
             <English>SCP-049 "Plague Doctor" Skin</English>
-            <Japanese>構造物（SCP）</Japanese>
+            <Japanese>SCP-049 "ペスト医師" Skin</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Anomaly_SCP079">
             <English>SCP-079 "Old AI"</English>
-            <Japanese>構造物（SCP）</Japanese>
+            <Japanese>SCP-079 "Old AI"</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Anomaly_SCP079_Face">
             <English>SCP-079 "Old AI" (AI Face)</English>
-            <Japanese>構造物（SCP）</Japanese>
+            <Japanese>SCP-079 "オールドAI" (AI Face)</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Anomaly_SCP079_X">
             <English>SCP-079 "Old AI" (ASCII Picture)</English>
-            <Japanese>構造物（SCP）</Japanese>
+            <Japanese>SCP-079 "オールドAI" (ASCII Picture)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP066_Static">
+            <English>SCP-066 "Eric's Toy"</English>
+            <Japanese>SCP-066 "エリックだけのおもちゃ"</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP096_Static_Pose1">
+            <English>SCP-096 "The Shy Guy" (Pose 1)</English>
+            <Japanese>SCP-096 "シャイガイ" (Pose 1)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP096_Static_Pose2">
+            <English>SCP-096 "The Shy Guy" (Pose 2)</English>
+            <Japanese>SCP-096 "シャイガイ" (Pose 2)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP096_Static_Pose3">
+            <English>SCP-096 "The Shy Guy" (Pose 3)</English>
+            <Japanese>SCP-096 "シャイガイ" (Pose 3)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP096_Static_Pose4">
+            <English>SCP-096 "The Shy Guy" (Pose 4)</English>
+            <Japanese>SCP-096 "シャイガイ" (Pose 4)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP096_Static_Pose5">
+            <English>SCP-096 "The Shy Guy" (Pose 5)</English>
+            <Japanese>SCP-096 "シャイガイ" (Pose 5)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP096_Static_Pose6">
+            <English>SCP-096 "The Shy Guy" (Pose 6)</English>
+            <Japanese>SCP-096 "シャイガイ" (Pose 6)</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Anomaly_SCP106">
             <English>SCP-106 "Old Man"</English>
-            <Japanese>構造物（SCP）</Japanese>
+            <Japanese>SCP-106 "オールドマン"</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Anomaly_SCP106_Skin">
             <English>SCP-106 "Old Man" Skin</English>
-            <Japanese>構造物（SCP）</Japanese>
+            <Japanese>SCP-106 "Old Man" Skin</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP173">
+            <English>SCP-173 "The Sculpture"</English>
+            <Japanese>SCP-173 "彫刻"</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP173_Spooky">
+            <English>SCP-173 "The Sculpture (Spooky)"</English>
+            <Japanese>SCP-173 "彫刻" (Spooky)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP173_Skibidi">
+            <English>SCP-173 "The Sculpture" (Unspeakable Horror)</English>
+            <Japanese>SCP-173 "彫刻" (名伏し難い)</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Anomaly_SCP173_Static">
             <English>SCP-173 "The Sculpture"</English>
-            <Japanese>構造物（SCP）</Japanese>
+            <Japanese>SCP-173 "彫刻"</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP173_Spooky_Static">
+            <English>SCP-173 "The Sculpture" (Spooky)</English>
+            <Japanese>SCP-173 "彫刻" (Spooky)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP173_Skibidi_Static">
+            <English>SCP-173 "The Sculpture" (Unspeakable Horror)</English>
+            <Japanese>SCP-173 "彫刻" (名伏し難い)</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Anomaly_SCP294">
             <English>SCP-294 "The Coffee Machine"</English>
-            <Japanese>構造物（SCP）</Japanese>
+            <Japanese>SCP-294 "コーヒー自動販売機"</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP294">
+            <English>SCP-294 "The Coffee Machine"</English>
+            <Japanese>SCP-294 "コーヒー自動販売機"</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP1048_Static">
+            <English>SCP-1048 "Builder Bear"</English>
+            <Japanese>SCP-1048 "ビルダー・ベア"</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP1048_Waving_Static">
+            <English>SCP-1048 "Builder Bear" (Waving)</English>
+            <Japanese>SCP-1048 "ビルダー・ベア" (手振り)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP1048_A_Static">
+            <English>SCP-1048-A "Ears Bear"</English>
+            <Japanese>SCP-1048-A "耳・ベア"</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Anomaly_SCP1162">
-            <English>SCP-1162 "A Hole in the Wall"</English>
-            <Japanese>構造物（SCP）</Japanese>
+            <English>SCP-1048 "A Hole in the Wall"</English>
+            <Japanese>SCP-1162 "壁の穴"</Japanese>
         </Key>
         <Key ID="STR_RegalisSCP_CB_Anomaly_SCP1162_ReachInto">
             <English>Reach into the hole</English>

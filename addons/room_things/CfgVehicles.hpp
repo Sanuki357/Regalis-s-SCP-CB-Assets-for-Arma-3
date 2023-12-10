@@ -33,6 +33,8 @@ class CfgVehicles
         editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Door1.jpg);
         model = QPATHTOF(data\Door1\Door1_NoButton.p3d); // Path to model
         hiddenSelections[] = {"camo_door"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,door01.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\door1\door01.rvmat)};
         editorSubCategory = "SCP_Doors";
         icon = "z\RegalisSCP_CB\addons\room_things\data\UI\iconSCPDoor_CA.paa";
         EGVAR(operatable,type)[] = {{"Door", "Door1", "Door_1_source", "door_1_trigger"}};
@@ -59,6 +61,8 @@ class CfgVehicles
         editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Door1_Button.jpg);
         model = QPATHTOF(data\Door1\Door1.p3d); // Path to model
         hiddenSelections[] = {"camo_door", "camo_button"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,door01.paa), QPATHTOEF(textures,keypad_co.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\door1\door01.rvmat), QPATHTOF(data\door1\keypad.rvmat)};
 
         class UserActions
         {
@@ -179,7 +183,6 @@ class CfgVehicles
         displayName = CSTRING(Door1_CardReader);
         editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Door1_CardReader.jpg);
         model = QPATHTOF(data\Door1\Door1_CardReader.p3d);
-        hiddenSelections[] = {"camo_door", "camo_button"};
         //EGVAR(operatable,clearanceLevel)[] = {{1}};
 
         class Attributes
@@ -249,6 +252,21 @@ class CfgVehicles
         model = QPATHTOF(data\Door1\Door1_Numpad.p3d);
     };
 
+    //----------    Door02
+    class SCP_CB_Things_Door2 : SCP_CB_Things_Door1
+    {
+        displayName = CSTRING(Door2); // Name in editor
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Door2.jpg);
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,door02_CO.paa)};
+    };
+
+    class SCP_CB_Things_Door2_Button : SCP_CB_Things_Door1_Button
+    {
+        displayName = CSTRING(Door2_Button); // Name in editor
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Door2_Button.jpg);
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,door02_CO.paa), QPATHTOEF(textures,keypad_co.paa)};
+    };
+
     //----------    HeavyDoor
     class SCP_CB_Things_HeavyDoor : SCP_CB_Things_Door1
     {
@@ -256,6 +274,8 @@ class CfgVehicles
         editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_HeavyDoor.jpg);
         model = QPATHTOF(data\HeavyDoor\HeavyDoor.p3d); // Path to model
         hiddenSelections[] = {"camo_door", "camo_containmentdoor"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,door01.paa), QPATHTOEF(textures,containmentdoor\containment_doors_co.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\heavydoor\door01.rvmat), QPATHTOF(data\heavydoor\containment_doors.rvmat)};
         EGVAR(operatable,type)[] = {{"Door", "HeavyDoor", "Door_1_source", "door_1_trigger"}};
         
         class AnimationSources
@@ -275,6 +295,8 @@ class CfgVehicles
         editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_HeavyDoor_Button.jpg);
         model = QPATHTOF(data\HeavyDoor\HeavyDoor_Button.p3d); // Path to model
         hiddenSelections[] = {"camo_door", "camo_containmentdoor", "camo_button"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,door01.paa), QPATHTOEF(textures,containmentdoor\containment_doors_co.paa), QPATHTOEF(textures,keypad_co.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\heavydoor\door01.rvmat), QPATHTOF(data\heavydoor\containment_doors.rvmat), QPATHTOF(data\keypad\keypad.rvmat)};
         EGVAR(operatable,type)[] = {{"Door", "HeavyDoor", "Door_1_source", "door_1_trigger"}};
     };
 
@@ -285,6 +307,8 @@ class CfgVehicles
         editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_ContainmentDoor.jpg);
         model = QPATHTOF(data\ContainmentDoor\ContainmentDoor.p3d); // Path to model
         hiddenSelections[] = {"camo_containmentdoor"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,containmentdoor\containment_doors_co.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\containmentdoor\containment_doors.rvmat)};
         icon = "z\RegalisSCP_CB\addons\room_things\data\UI\iconSCPContainmentDoor_CA.paa";
         EGVAR(operatable,type)[] = {{"Door", "ContainmentDoor", "Door_1_source", "door_1_trigger"}};
         
@@ -305,7 +329,9 @@ class CfgVehicles
         displayName = CSTRING(ElevatorRoom_Door); // Name in editor
         editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_ElevatorRoom_Door.jpg);
         model = QPATHTOF(data\Elevator\ElevatorRoom_Door.p3d); // Path to model
-        hiddenSelections[] = {"camo_door", "camo_dirtymetal", "camo_metal", "camo_metal3"};
+        hiddenSelections[] = {"camo_door"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,door01.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\elevator\elevatordoor\door01.rvmat)};
         icon = "iconObject_1x1";
         EGVAR(operatable,type)[] = {{"Door", "Elevator", "Door_1_source", "door_1_trigger"}};
         
@@ -332,6 +358,8 @@ class CfgVehicles
         editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Keypad_Button.jpg);
         model = QPATHTOF(data\Keypad\Keypad_Button.p3d); // Path to model
         hiddenSelections[] = {"camo_button"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,keypad_co.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\keypad\keypad.rvmat)};
         editorSubCategory = "SCP_Keypads";
         icon = "z\RegalisSCP_CB\addons\room_things\data\UI\iconSCPButton_CA.paa";
         EGVAR(operatable,expression)[] = {{""}};
@@ -365,6 +393,8 @@ class CfgVehicles
         editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Keypad_CardReader.jpg);
         model = QPATHTOF(data\Keypad\Keypad_CardReader.p3d); // Path to model
         hiddenSelections[] = {"camo_button"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,keypad_co.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\keypad\keypad_2.rvmat)};
         editorSubCategory = "SCP_Keypads";
         icon = "z\RegalisSCP_CB\addons\room_things\data\UI\iconSCPButton_CA.paa";
 
@@ -383,6 +413,8 @@ class CfgVehicles
         editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Keypad_Code.jpg);
         model = QPATHTOF(data\Keypad\Keypad_Code.p3d); // Path to model
         hiddenSelections[] = {"camo_button"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,keypad_co.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\keypad\keypad_2.rvmat)};
         
         class UserActions
         {
@@ -406,6 +438,8 @@ class CfgVehicles
         editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Keypad_Scanner.jpg);
         model = QPATHTOF(data\Keypad\Keypad_Scanner.p3d); // Path to model
         hiddenSelections[] = {"camo_button"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,keypad_co.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\keypad\keypad_2.rvmat)};
         
         class UserActions
         {
@@ -431,24 +465,177 @@ class CfgVehicles
     {
         scope = 2;
         scopeCurator = 2;
-        displayName = CSTRING(FileCabinet); // Name in editor
+        displayName = CSTRING(FileCabinet);
         editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_FileCabinet.jpg);
-        model = QPATHTOF(data\Furniture\Cabinet_a.p3d); // Path to model
+        model = QPATHTOF(data\Furniture\Cabinet_a.p3d);
         hiddenSelections[] = {"camo_cabinet"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,cabinet\cabinet_a_co.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\furniture\cabinet_a.rvmat)};
         editorSubCategory = "SCP_Furnitures";
         icon = "iconObject_1x2";
     };
 
-    class SCP_CB_Things_OfficeSeat : SCP_CB_Things_base
+    class SCP_CB_Things_MetalShelf : SCP_CB_Things_FileCabinet
     {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = CSTRING(OfficeSeat); // Name in editor
-        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_OfficeSeat.jpg);
-        model = QPATHTOF(data\Furniture\Officeseat_a.p3d); // Path to model
-        hiddenSelections[] = {"camo_cabinet"};
-        editorSubCategory = "SCP_Furnitures";
+        displayName = CSTRING(MetalShelf);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_MetalShelf.jpg);
+        model = QPATHTOF(data\Furniture\MetalShelf.p3d);
+        hiddenSelections[] = {"camo_dirtymetal", "camo_metal"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,dirtymetal.paa), QPATHTOEF(textures,metal.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\furniture\metalshelf_dirtymetal.rvmat), QPATHTOF(data\furniture\metalshelf_metal.rvmat)};
+        icon = "iconObject_1x2";
+    };
+
+    class SCP_CB_Things_MetalTable : SCP_CB_Things_FileCabinet
+    {
+        displayName = CSTRING(MetalTable);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_MetalTable.jpg);
+        model = QPATHTOF(data\Furniture\MetalTable.p3d);
+        hiddenSelections[] = {"camo_dirtymetal", "camo_metal"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,dirtymetal.paa), QPATHTOEF(textures,metal.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\furniture\metaltable_dirtymetal.rvmat), QPATHTOF(data\furniture\metaltable_metal.rvmat)};
+        icon = "iconObject_2x1";
+    };
+
+    class SCP_CB_Things_MetalTable_Divider : SCP_CB_Things_FileCabinet
+    {
+        displayName = CSTRING(MetalTable_Divider);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_MetalTable_Divider.jpg);
+        model = QPATHTOF(data\Furniture\MetalTable_Divider.p3d);
+        hiddenSelections[] = {"camo_dirtymetal", "camo_metal"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,dirtymetal.paa), QPATHTOEF(textures,metal.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\furniture\metaltable_divider_dirtymetal.rvmat), QPATHTOF(data\furniture\metaltable_divider_metal.rvmat)};
         icon = "iconObject_1x1";
+    };
+
+    class SCP_CB_Things_AcousticScreen : SCP_CB_Things_FileCabinet
+    {
+        displayName = CSTRING(AcousticScreen);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_AcousticScreen.jpg);
+        model = QPATHTOF(data\Furniture\AcousticScreen.p3d);
+        hiddenSelections[] = {"camo_dirtymetal", "camo_metal", "camo_glass"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOEF(textures,dirtymetal.paa),
+            QPATHTOEF(textures,metal.paa),
+            QPATHTOEF(textures,glass_CO.paa)
+        };
+        hiddenSelectionsMaterials[] = {
+            QPATHTOF(data\furniture\AcousticScreen_dirtymetal.rvmat),
+            QPATHTOF(data\furniture\AcousticScreen_metal.rvmat),
+            QPATHTOF(data\furniture\AcousticScreen_glass.rvmat)
+        };
+        icon = "iconObject_1x2";
+    };
+
+    class SCP_CB_Things_OfficeSeat : SCP_CB_Things_FileCabinet
+    {
+        displayName = CSTRING(OfficeSeat);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_OfficeSeat.jpg);
+        model = QPATHTOF(data\Furniture\Officeseat_a.p3d);
+        hiddenSelections[] = {"camo_officeseat"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,officeseat\officeseat_a_co.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\furniture\officeseat_a.rvmat)};
+        icon = "iconObject_1x1";
+    };
+
+    class SCP_CB_Things_ControlPanel_Box : SCP_CB_Things_FileCabinet
+    {
+        displayName = CSTRING(ControlPanel_Box);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_ControlPanel_Box.jpg);
+        model = QPATHTOF(data\ControlPanel\ControlPanel_Box.p3d);
+        icon = "iconObject_1x1";
+    };
+
+    class SCP_CB_Things_ControlPanel_Desk : SCP_CB_Things_ControlPanel_Box
+    {
+        displayName = CSTRING(ControlPanel_Desk);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_ControlPanel_Desk.jpg);
+        model = QPATHTOF(data\ControlPanel\ControlPanel_Desk.p3d);
+    };
+
+    class SCP_CB_Things_ControlPanel_Rack : SCP_CB_Things_ControlPanel_Box
+    {
+        displayName = CSTRING(ControlPanel_Rack);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_ControlPanel_Rack.jpg);
+        model = QPATHTOF(data\ControlPanel\ControlPanel_Rack.p3d);
+        icon = "iconObject_1x2";
+    };
+
+    class SCP_CB_Things_SCPsign : SCP_CB_Things_FileCabinet
+    {
+        displayName = CSTRING(SCPsign);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_SCPsign.jpg);
+        model = QPATHTOF(data\Furniture\SCPsign.p3d);
+        hiddenSelections[] = {"camo_metal", "camo_scplogo"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,metal.paa), QPATHTOEF(textures,scplogo.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\furniture\scpsign_metal.rvmat), QPATHTOF(data\furniture\scpsign_scplogo.rvmat)};
+        icon = "iconObject_2x1";
+    };
+
+    class SCP_CB_Things_Toilet : SCP_CB_Things_FileCabinet
+    {
+        displayName = CSTRING(Toilet);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Toilet.jpg);
+        model = QPATHTOF(data\Furniture\Toilet.p3d);
+        hiddenSelections[] = {"camo_metal", "camo_dirtymetal"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,metal.paa), QPATHTOEF(textures,dirtymetal.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\furniture\Toilet_metal.rvmat), QPATHTOF(data\furniture\Toilet_dirtymetal.rvmat)};
+        icon = "iconObject_1x2";
+    };
+
+    class SCP_CB_Things_Toilet_Open : SCP_CB_Things_FileCabinet
+    {
+        displayName = CSTRING(Toilet_Open);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Toilet_Open.jpg);
+        model = QPATHTOF(data\Furniture\Toilet_Open.p3d);
+        hiddenSelections[] = {"camo_metal", "camo_dirtymetal"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,metal.paa), QPATHTOEF(textures,dirtymetal.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\furniture\Toilet_metal.rvmat), QPATHTOF(data\furniture\Toilet_dirtymetal.rvmat)};
+        icon = "iconObject_1x2";
+    };
+
+    class SCP_CB_Things_ZoneSign_Light : SCP_CB_Things_FileCabinet
+    {
+        displayName = CSTRING(ZoneSign_Light);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_ZoneSign_Light.jpg);
+        model = QPATHTOF(data\Furniture\ZoneSign_Light.p3d);
+        hiddenSelections[] = {"camo_miscsigns"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,miscsigns.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\furniture\ZoneSign_miscsigns.rvmat)};
+        icon = "iconObject_2x1";
+    };
+
+    class SCP_CB_Things_ZoneSign_Heavy : SCP_CB_Things_ZoneSign_Light
+    {
+        displayName = CSTRING(ZoneSign_Heavy);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_ZoneSign_Heavy.jpg);
+        model = QPATHTOF(data\Furniture\ZoneSign_Heavy.p3d);
+    };
+
+    class SCP_CB_Things_ZoneSign_Entrance : SCP_CB_Things_ZoneSign_Light
+    {
+        displayName = CSTRING(ZoneSign_Entrance);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_ZoneSign_Entrance.jpg);
+        model = QPATHTOF(data\Furniture\ZoneSign_Entrance.p3d);
+    };
+
+    class SCP_CB_Things_Monitor_Blank : SCP_CB_Things_FileCabinet
+    {
+        displayName = CSTRING(Monitor_Blank);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Monitor_Blank.jpg);
+        model = QPATHTOF(data\Monitor\Monitor.p3d);
+        hiddenSelections[] = {"camo_screen", "camo_monitor"};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\Monitor\Screen_Blank_CO.paa), QPATHTOF(data\Monitor\MonitorTexture_CO.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\Monitor\ScreenTexture_Blank.rvmat), QPATHTOF(data\Monitor\MonitorTexture.rvmat)};
+        icon = "iconObject_2x1";
+    };
+
+    class SCP_CB_Things_Monitor_Lockdown : SCP_CB_Things_Monitor_Blank
+    {
+        displayName = CSTRING(Monitor_Lockdown);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Things_Monitor_Lockdown.jpg);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\Monitor\Screen_Lockdown_CO.paa), QPATHTOF(data\Monitor\MonitorTexture_CO.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\Monitor\ScreenTexture_Lit.rvmat), QPATHTOF(data\Monitor\MonitorTexture.rvmat)};
     };
 
     class SCP_CB_Things_Crate1 : ReammoBox_F

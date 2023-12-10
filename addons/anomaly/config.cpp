@@ -14,6 +14,7 @@ class CfgPatches
             "SCP_CB_Anomaly_SCP079_Face",
             "SCP_CB_Anomaly_SCP079_X",
             "SCP_CB_Anomaly_SCP106",
+			"SCP_CB_Anomaly_SCP173",
             "SCP_CB_Anomaly_SCP173_Static",
             "SCP_CB_Anomaly_SCP294",
             "SCP_CB_Anomaly_SCP1162"
@@ -31,6 +32,7 @@ class CfgPatches
 #include "CfgSounds.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgFunctions.hpp"
+#include "CfgEventHandlers.hpp"
 
 class UniformSlotInfo;
 

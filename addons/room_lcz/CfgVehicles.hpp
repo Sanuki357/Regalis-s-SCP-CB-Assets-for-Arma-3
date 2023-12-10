@@ -121,6 +121,26 @@ class CfgVehicles
         model = QPATHTOF(data\Hallway_Two_5\Hallway_Two_5.p3d);
         icon = "iconObject_1x3";
     };
+    class SCP_CB_LCZ_Hallway_Two_Toilet : SCP_CB_LCZ_base
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(Hallway_Two_Toilet);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Hallway_Two_Toilet.jpg);
+        model = QPATHTOF(data\Hallway_Two_Toilet\Hallway_Two_Toilet.p3d);
+        hiddenSelections[] = {"camo_miscsign", "camo_concretefloor", "camo_tilefloor"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOEF(textures,miscsigns.paa),
+            QPATHTOEF(textures,concretefloor.paa),
+            QPATHTOEF(textures,tilefloor.paa)
+        };
+        hiddenSelectionsMaterials[] = {
+            QPATHTOF(data\Hallway_Two_Toilet\miscsigns.rvmat),
+            QPATHTOF(data\Hallway_Two_Toilet\concretefloor.rvmat),
+            QPATHTOF(data\Hallway_Two_Toilet\tilefloor.rvmat)
+        };
+        icon = "iconObject_1x3";
+    };
     class SCP_CB_LCZ_Hallway_Three_1 : SCP_CB_LCZ_base
     {
         scope = 2;
@@ -690,6 +710,7 @@ class CfgVehicles
         hiddenSelections[] = {"camo_ceiling", "camo_floor", "camo_wall", "camo_toroid", "camo_warning_sign"};
         icon = "iconObject_1x3";
     };
+
 	class SCP_CB_LCZ_Room_Endroom : SCP_CB_LCZ_base
     {
         scope = 2;
@@ -718,6 +739,76 @@ class CfgVehicles
         hiddenSelections[] = {"camo_floor", "camo_wall"};
         icon = "iconObject_1x2";
     };
+    class SCP_CB_LCZ_Room_IntroOffice: SCP_CB_LCZ_base
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(Room_IntroOffice);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Room_IntroOffice.jpg);
+        model = QPATHTOF(data\Room_IntroOffice\Room_IntroOffice.p3d);
+        hiddenSelections[] = {"camo_floor", "camo_ceiling", "camo_white", "camo_wall", "camo_scplogo"};
+        icon = "iconObject_1x1";
+    };
+    class SCP_CB_LCZ_Room_Checkpoint_LtH: SCP_CB_LCZ_base
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(Room_Checkpoint_LtH);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Room_Checkpoint_LtH.jpg);
+        model = QPATHTOF(data\Room_Checkpoint_LtH\Room_Checkpoint_LtH.p3d);
+        hiddenSelections[] = {"camo_sign", "camo_concretefloor", "camo_tilefloor"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOEF(textures,miscsigns.paa),
+            QPATHTOEF(textures,concretefloor.paa),
+            QPATHTOEF(textures,tilefloor.paa)
+        };
+        hiddenSelectionsMaterials[] = {
+            QPATHTOF(data\Room_Checkpoint_LtH\miscsigns.rvmat),
+            QPATHTOF(data\Room_Checkpoint_LtH\concretefloor.rvmat),
+            QPATHTOF(data\Room_Checkpoint_LtH\tilefloor.rvmat)
+        };
+        icon = "iconObject_1x1";
+    };
+    class SCP_CB_LCZ_Room_DClassCells: SCP_CB_LCZ_base
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(Room_DClassCells);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Room_DClassCells.jpg);
+        model = QPATHTOF(data\Room_DClassCells\Room_DClassCells.p3d);
+        hiddenSelections[] = {"camo_floor", "camo_ceiling"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOEF(textures,tilefloor.paa),
+            QPATHTOEF(textures,ceiling.paa)
+        };
+        hiddenSelectionsMaterials[] = {
+            QPATHTOF(data\Room_DClassCells\tilefloor.rvmat),
+            QPATHTOF(data\Room_DClassCells\ceiling.rvmat)
+        };
+        icon = "iconObject_2x1";
+    };
+    class SCP_CB_LCZ_Room_DClassCells_Lite: SCP_CB_LCZ_base
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(Room_DClassCells_Lite);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Room_DClassCells_Lite.jpg);
+        model = QPATHTOF(data\Room_DClassCells_Lite\Room_DClassCells_Lite.p3d);
+        hiddenSelections[] = {"camo_door1", "camo_door2", "camo_floor", "camo_ceiling"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOEF(textures,door01.paa),
+            QPATHTOEF(textures,door02_co.paa),
+            QPATHTOEF(textures,tilefloor.paa),
+            QPATHTOEF(textures,ceiling.paa)
+        };
+        hiddenSelectionsMaterials[] = {
+            QPATHTOF(data\Room_DClassCells_Lite\door01.rvmat),
+            QPATHTOF(data\Room_DClassCells_Lite\door02.rvmat),
+            QPATHTOF(data\Room_DClassCells_Lite\tilefloor.rvmat),
+            QPATHTOF(data\Room_DClassCells_Lite\ceiling.rvmat)
+        };
+        icon = "iconObject_2x1";
+    };
 
 //**********************//
 // Containment Chambers //
@@ -733,18 +824,39 @@ class CfgVehicles
         hiddenSelections[] = {"camo_ceiling", "camo_floor", "camo_wall"};
         icon = "iconObject_1x1";
     };
-	class SCP_CB_LCZ_Room_1162: SCP_CB_LCZ_base
+	class SCP_CB_LCZ_Room_1162: SCP_CB_LCZ_Room_372
     {
-        scope = 2;
-        scopeCurator = 2;
         displayName = CSTRING(Room_1162);
         editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Room_1162.jpg);
         model = QPATHTOF(data\Room_1162\Room_1162.p3d);
-        icon = "iconObject_1x1";
 	};
-//******************//
-// Hallways & Rooms //
-//******************//
+    class SCP_CB_LCZ_Room_173: SCP_CB_LCZ_Room_372
+    {
+        displayName = CSTRING(Room_173);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Room_173.jpg);
+        model = QPATHTOF(data\Room_173\Room_173.p3d);
+        hiddenSelections[] = {"camo_label173", "camo_scplogo"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOEF(textures,label173_CO.paa),
+            QPATHTOEF(textures,scplogo.paa)
+        };
+        hiddenSelectionsMaterials[] = {
+            QPATHTOF(data\Room_173\label173.rvmat),
+            QPATHTOF(data\Room_173\scplogo.rvmat)
+        };
+	};
+    class SCP_CB_LCZ_Room_205: SCP_CB_LCZ_Room_372
+    {
+        displayName = CSTRING(Room_205);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Room_205.jpg);
+        model = QPATHTOF(data\Room_205\Room_205.p3d);
+        hiddenSelections[] = {"camo_label205"};
+        hiddenSelectionsTextures[] = {QPATHTOEF(textures,label205_CO.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\Room_205\label205.rvmat)};
+	};
+//********//
+// Pieces //
+//********//
     class SCP_CB_LCZ_Piece_WhiteWall: SCP_CB_LCZ_base
     {
         scope = 2;
@@ -839,5 +951,25 @@ class CfgVehicles
         displayName = CSTRING(Piece_Floor_Tile_Big);
         editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Piece_Floor_Tile_Big.jpg);
         model = QPATHTOF(data\Piece_Floor\Piece_TileFloor_Big.p3d);
+	};
+
+    class SCP_CB_LCZ_Piece_Staircase_Tile: SCP_CB_LCZ_Piece_Floor_Tile
+    {
+        displayName = CSTRING(Piece_Staircase_Tile);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_LCZ_Piece_Staircase_Tile.jpg);
+        model = QPATHTOF(data\Piece_Stairs\Piece_TileStaircase.p3d);
+        hiddenSelections[] = {"camo_dirtymetal", "camo_metalpanels2", "camo_tilefloor", "camo_whitewall"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOEF(textures,dirtymetal.paa),
+            QPATHTOEF(textures,metalpanels2.paa),
+            QPATHTOEF(textures,tilefloor.paa),
+            QPATHTOEF(textures,whitewall.paa)
+        };
+        hiddenSelectionsMaterials[] = {
+            QPATHTOF(data\Piece_Stairs\piece_tilestaircase_dirtymetal.rvmat),
+            QPATHTOF(data\Piece_Stairs\piece_tilestaircase_metalpanels2.rvmat),
+            QPATHTOF(data\Piece_Stairs\piece_tilestaircase_tilefloor.rvmat),
+            QPATHTOF(data\Piece_Stairs\piece_tilestaircase_whitewall.rvmat)
+        };
 	};
 };

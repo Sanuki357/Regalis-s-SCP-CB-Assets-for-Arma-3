@@ -1,11 +1,5 @@
-class Extended_PreStart_EventHandlers {
-    class ADDON {
-        init = QUOTE(call COMPILE_SCRIPT(XEH_preStart));
-    };
-};
-
-class Extended_PreInit_EventHandlers {
-    class ADDON {
-        init = QUOTE(call COMPILE_SCRIPT(XEH_preInit));
-    };
+class Extended_PostInit_EventHandlers {
+	class SCP_CB_EntityCreated {
+		init = "addMissionEventHandler [""EntityCreated"", { _this call SCP_fnc_entityCreate }];";
+	};
 };

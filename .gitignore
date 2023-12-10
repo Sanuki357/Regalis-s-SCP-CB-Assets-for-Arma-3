@@ -3,7 +3,8 @@ bin-debug/
 bin-release/
 [Oo]bj/
 [Bb]in/
-
+# build.py PBOs
+addons/*.pbo
 
 release
 *.biprivatekey

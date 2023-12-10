@@ -12,6 +12,7 @@ class CfgPatches
             "SCP_CB_LCZ_Hallway_Two_3",
             "SCP_CB_LCZ_Hallway_Two_4",
             "SCP_CB_LCZ_Hallway_Two_5",
+            "SCP_CB_LCZ_Hallway_Two_Toilet",
             "SCP_CB_LCZ_Hallway_Three_1",
             "SCP_CB_LCZ_Hallway_Three_2",
             "SCP_CB_LCZ_Hallway_Three_3",
@@ -25,8 +26,14 @@ class CfgPatches
 			"SCP_CB_LCZ_Room_Archive",
 			"SCP_CB_LCZ_Room_Endroom",
 			"SCP_CB_LCZ_Room_Storeroom",
+            "SCP_CB_LCZ_Room_IntroOffice",
 			"SCP_CB_LCZ_Room_327",
 			"SCP_CB_LCZ_Room_1162",
+            "SCP_CB_LCZ_Room_173",
+            "SCP_CB_LCZ_Room_205",
+            "SCP_CB_LCZ_Room_Checkpoint_LtH",
+            "SCP_CB_LCZ_Room_DClassCells",
+            "SCP_CB_LCZ_Room_DClassCells_Lite",
             "SCP_CB_LCZ_Piece_WhiteWall",
             "SCP_CB_LCZ_Piece_WhiteWall_Wide",
             "SCP_CB_LCZ_Piece_WhiteWall_Concave",
@@ -36,7 +43,8 @@ class CfgPatches
             "SCP_CB_LCZ_Piece_Floor_Concrete",
             "SCP_CB_LCZ_Piece_Floor_Concrete_Big",
             "SCP_CB_LCZ_Piece_Floor_Tile",
-            "SCP_CB_LCZ_Piece_Floor_Tile_Big"
+            "SCP_CB_LCZ_Piece_Floor_Tile_Big",
+            "SCP_CB_LCZ_Piece_Staircase_Tile"
         };
         weapons[] = {};
     };

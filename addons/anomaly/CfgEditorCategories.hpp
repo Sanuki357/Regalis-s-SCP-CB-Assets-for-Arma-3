@@ -6,6 +6,10 @@ class CfgEditorCategories {
 };
 
 class CfgEditorSubcategories {
+    class SCP_EdSubcat_Autonomous {
+        displayName = CSTRING(EdSubcat_Autonomous);
+    };
+
     class SCP_EdSubcat_Autonomous_Static {
         displayName = CSTRING(EdSubcat_Autonomous_Static);
     };

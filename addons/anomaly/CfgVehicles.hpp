@@ -36,13 +36,103 @@ class CfgVehicles
     class SCP_CB_Anomaly_SCP079_Face : SCP_CB_Anomaly_SCP079
     {
         displayName = CSTRING(SCP079_Face);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP079_Face.jpg);
         hiddenSelectionsTextures[] = {QPATHTOF(data\SCP079\SCP079_AIface_CO.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\SCP079\SCP079_monitor_screen_lit.rvmat)};
     };
 
-    class SCP_CB_Anomaly_SCP079_X : SCP_CB_Anomaly_SCP079
+    class SCP_CB_Anomaly_SCP079_X : SCP_CB_Anomaly_SCP079_Face
     {
         displayName = CSTRING(SCP079_X);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP079_X.jpg);
         hiddenSelectionsTextures[] = {QPATHTOF(data\SCP079\SCP079_AIface2_CO.paa)};
+    };
+
+    class SCP_CB_Anomaly_SCP066_Static : SCP_CB_Anomaly_Object_base
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(SCP066_Static);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP066_Static.jpg);
+        model = QPATHTOF(data\SCP066\SCP066.p3d); // Path to model
+        editorSubcategory = "SCP_EdSubcat_Autonomous_Static";
+    };
+
+    class SCP_CB_Anomaly_SCP096_Static_Pose1 : SCP_CB_Anomaly_Object_base
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(SCP096_Static_Pose1);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP096_Static_Pose1.jpg);
+        model = QPATHTOF(data\SCP096\Poses\SCP096_Pose1.p3d); // Path to model
+        editorSubcategory = "SCP_EdSubcat_Autonomous_Static";
+    };
+
+    class SCP_CB_Anomaly_SCP096_Static_Pose2 : SCP_CB_Anomaly_SCP096_Static_Pose1
+    {
+        displayName = CSTRING(SCP096_Static_Pose2);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP096_Static_Pose2.jpg);
+        model = QPATHTOF(data\SCP096\Poses\SCP096_Pose2.p3d); // Path to model
+    };
+
+    class SCP_CB_Anomaly_SCP096_Static_Pose3 : SCP_CB_Anomaly_SCP096_Static_Pose1
+    {
+        displayName = CSTRING(SCP096_Static_Pose3);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP096_Static_Pose3.jpg);
+        model = QPATHTOF(data\SCP096\Poses\SCP096_Pose3.p3d); // Path to model
+    };
+
+    class SCP_CB_Anomaly_SCP096_Static_Pose4 : SCP_CB_Anomaly_SCP096_Static_Pose1
+    {
+        displayName = CSTRING(SCP096_Static_Pose4);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP096_Static_Pose4.jpg);
+        model = QPATHTOF(data\SCP096\Poses\SCP096_Pose4.p3d); // Path to model
+    };
+
+    class SCP_CB_Anomaly_SCP096_Static_Pose5 : SCP_CB_Anomaly_SCP096_Static_Pose1
+    {
+        displayName = CSTRING(SCP096_Static_Pose5);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP096_Static_Pose5.jpg);
+        model = QPATHTOF(data\SCP096\Poses\SCP096_Pose5.p3d); // Path to model
+    };
+
+    class SCP_CB_Anomaly_SCP096_Static_Pose6 : SCP_CB_Anomaly_SCP096_Static_Pose1
+    {
+        displayName = CSTRING(SCP096_Static_Pose6);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP096_Static_Pose6.jpg);
+        model = QPATHTOF(data\SCP096\Poses\SCP096_Pose6.p3d); // Path to model
+    };
+
+    class SCP_CB_Anomaly_SCP173 : SCP_CB_Anomaly_Object_base
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(SCP173);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP173.jpg);
+        model = QPATHTOF(data\SCP173\SCP173.p3d); // Path to model
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\SCP173\SCP173_CO.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\SCP173\SCP173.rvmat)};
+        editorSubcategory = "SCP_EdSubcat_Autonomous";
+        simulation = "thingX";
+        class EventHandlers
+        {
+	        init = "_this spawn SCP_fnc_173_init;";
+        };
+    };
+
+    class SCP_CB_Anomaly_SCP173_Spooky : SCP_CB_Anomaly_SCP173
+    {
+        displayName = CSTRING(SCP173_Spooky);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP173_Spooky.jpg);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\SCP173\SCP173_Spooky_CO.paa)};
+    };
+
+    class SCP_CB_Anomaly_SCP173_Skibidi : SCP_CB_Anomaly_SCP173
+    {
+        displayName = CSTRING(SCP173_Skibidi);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP173_Skibidi.jpg);
+        model = QPATHTOF(data\SCP173\SCP173_Skibidi.p3d);
     };
 
     class SCP_CB_Anomaly_SCP173_Static : SCP_CB_Anomaly_Object_base
@@ -50,12 +140,26 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(SCP173_Static);
-        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP173_Static.jpg);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP173.jpg);
         model = QPATHTOF(data\SCP173\SCP173.p3d); // Path to model
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\SCP173\SCP173_CO.paa)};
         hiddenSelectionsMaterials[] = {QPATHTOF(data\SCP173\SCP173.rvmat)};
         editorSubcategory = "SCP_EdSubcat_Autonomous_Static";
+    };
+
+    class SCP_CB_Anomaly_SCP173_Spooky_Static : SCP_CB_Anomaly_SCP173_Static
+    {
+        displayName = CSTRING(SCP173_Spooky_Static);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP173_Spooky.jpg);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\SCP173\SCP173_Spooky_CO.paa)};
+    };
+
+    class SCP_CB_Anomaly_SCP173_Skibidi_Static : SCP_CB_Anomaly_SCP173_Static
+    {
+        displayName = CSTRING(SCP173_Skibidi_Static);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP173_Skibidi.jpg);
+        model = QPATHTOF(data\SCP173\SCP173_Skibidi.p3d);
     };
 
     class SCP_CB_Anomaly_SCP294 : SCP_CB_Anomaly_Object_base
@@ -69,6 +173,30 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {QPATHTOF(data\SCP294\SCP294_CO.paa)};
         hiddenSelectionsMaterials[] = {QPATHTOF(data\SCP294\SCP294.rvmat)};
         editorSubcategory = "SCP_EdSubcat_Inanimate";
+    };
+
+    class SCP_CB_Anomaly_SCP1048_Static : SCP_CB_Anomaly_Object_base
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(SCP1048_Static);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP1048_Static.jpg);
+        model = QPATHTOF(data\SCP1048\SCP1048.p3d); // Path to model
+        editorSubcategory = "SCP_EdSubcat_Autonomous_Static";
+    };
+
+    class SCP_CB_Anomaly_SCP1048_Waving_Static : SCP_CB_Anomaly_SCP1048_Static
+    {
+        displayName = CSTRING(SCP1048_Waving_Static);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP1048_Waving_Static.jpg);
+        model = QPATHTOF(data\SCP1048\SCP1048_Waving.p3d); // Path to model
+    };
+
+    class SCP_CB_Anomaly_SCP1048_A : SCP_CB_Anomaly_SCP1048_Static
+    {
+        displayName = CSTRING(SCP1048_A_Static);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP1048_A.jpg);
+        model = QPATHTOF(data\SCP1048\SCP1048_A.p3d); // Path to model
     };
 
     class SCP_CB_Anomaly_SCP1162 : SCP_CB_Anomaly_Object_base
