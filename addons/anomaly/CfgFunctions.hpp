@@ -1,9 +1,9 @@
 class CfgFunctions {
-	class SCP {
+	class scp {
 		class Functions {
 			class 1162_itemExchange { file = QPATHTOF(functions\fnc_1162_itemExchange.sqf); };
 		};
-		class SCP173 {
+		class scp173 {
 			file = QPATHTOF(functions\173);
 			class 173_getValidPath;
 			class 173_getVisible;
@@ -16,7 +16,7 @@ class CfgFunctions {
 			class 173_updatePos;
 			class 173_soundControl;
 		};
-		class MISC {
+		class misc {
 			file = QPATHTOF(functions\misc);
 			class entityCreate;
 			class getBoundingPos;
