@@ -46,6 +46,16 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {QPATHTOF(data\SCP079\SCP079_AIface2_CO.paa)};
     };
 
+    class SCP_CB_Anomaly_SCP066_Static : SCP_CB_Anomaly_Object_base
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(SCP066_Static);
+        editorPreview = QPATHTOF(EditorPreviews\SCP_CB_Anomaly_SCP079.jpg);
+        model = QPATHTOF(data\SCP066\SCP066.p3d); // Path to model
+        editorSubcategory = "SCP_EdSubcat_Autonomous_Static";
+    };
+
     class SCP_CB_Anomaly_SCP096_Static_Pose1 : SCP_CB_Anomaly_Object_base
     {
         scope = 2;

@@ -11,6 +11,7 @@ class CfgPatches
             "SCP_CB_Anomaly_SCP079",
             "SCP_CB_Anomaly_SCP079_Face",
             "SCP_CB_Anomaly_SCP079_X",
+            "SCP_CB_Anomaly_SCP066_Static",
             "SCP_CB_Anomaly_SCP096_Static_Pose1",
             "SCP_CB_Anomaly_SCP096_Static_Pose2",
             "SCP_CB_Anomaly_SCP096_Static_Pose3",
