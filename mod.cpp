@@ -7,6 +7,6 @@ logoOver = "SCP_CB_LogoGlow.paa";
 action = "https://github.com/Sanuki357/Regalis-s-SCP-CB-Assets-for-Arma-3";
 tooltipOwned = "SCP-CB";
 dlcColor[] = {	0.5, 0.5, 0.5, 1};
-overview = "Adds assets from SCP: Containment Breach";
+overview = "Adds assets from SCP: Containment Breach. Version: 0.6.1";
 hideName = 0;
 hidePicture = 0;
