@@ -18,7 +18,9 @@ params ["_from", "_target"];
 private ["_pos", "_left", "_right", "_top", "_bottom", "_inScreen", "_fromPos", "_inSight"];
 
 // onMap, onVehicle, onTurret where will auto check eyePos instead of screen
-if (cameraOn != _from) exitWith {
+// as well as check if a player is looking at SCP-173 through Zeus camera
+_camCurator = curatorCamera;
+if (cameraOn != _from || !isNil "_camCurator") exitWith {
 	[_from, _target] call SCP_fnc_173_inUnitSight;
 };
 
