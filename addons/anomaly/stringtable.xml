@@ -69,6 +69,26 @@
             <English>SCP-096 "The Shy Guy" (Pose 6)</English>
             <Japanese>SCP-096 "シャイガイ" (Pose 6)</Japanese>
         </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP096_Weird_Static_Pose1">
+            <English>SCP-096 "The Nice Guy" (Pose 1)</English>
+            <Japanese>SCP-096 "ナイスガイ" (Pose 1)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP096_Weird_Static_Pose3">
+            <English>SCP-096 "The Nice Guy" (Pose 3)</English>
+            <Japanese>SCP-096 "ナイスガイ" (Pose 3)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP096_Weird_Static_Pose4">
+            <English>SCP-096 "The Nice Guy" (Pose 4)</English>
+            <Japanese>SCP-096 "ナイスガイ" (Pose 4)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP096_Weird_Static_Pose5">
+            <English>SCP-096 "The Nice Guy" (Pose 5)</English>
+            <Japanese>SCP-096 "ナイスガイ" (Pose 5)</Japanese>
+        </Key>
+        <Key ID="STR_RegalisSCP_CB_Anomaly_SCP096_Weird_Static_Pose6">
+            <English>SCP-096 "The Nice Guy" (Pose 6)</English>
+            <Japanese>SCP-096 "ナイスガイ" (Pose 6)</Japanese>
+        </Key>
         <Key ID="STR_RegalisSCP_CB_Anomaly_SCP106">
             <English>SCP-106 "Old Man"</English>
             <Japanese>SCP-106 "オールドマン"</Japanese>
